@@ -1,0 +1,15 @@
+@import '../../Layouts/styles.scss';
+
+.nav {
+  padding: $buffer*2;
+}
+
+.logoWrapper {
+  cursor: pointer;
+  @include transition;
+
+  &:hover {
+    @include transition;
+    transform: scale(1.1) rotate(2deg);
+  }
+}
