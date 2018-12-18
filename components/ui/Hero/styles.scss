@@ -1,0 +1,11 @@
+@import '../../../Layouts/styles.scss';
+
+.hero {
+  padding: $buffer*2;
+  height: calc(80vh - 220px);
+
+  .headline {
+    font-size: $fontSizeHeadline;
+    font-weight: $fontWeightHeavy;
+  }
+}
