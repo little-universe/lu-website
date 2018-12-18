@@ -17,13 +17,6 @@ export default () =>
       <Grid item>
         <Grid container spacing={40}>
 
-          <Link href="/">
-            <Grid item>
-              <NavLink linkTitle="About Us" />
-            </Grid>
-          </Link>
-
-
           <Link href="/work">
             <Grid item>
               <NavLink linkTitle="Work" />

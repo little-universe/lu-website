@@ -11,7 +11,7 @@ export default () =>
       <Nav />
 
       <Hero
-        headline="Our Research Interests"
+        headline="Our Research"
       />
     </div>
 
