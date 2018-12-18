@@ -1,49 +1,30 @@
 import "./styles.scss"
 import Grid from '@material-ui/core/Grid'
 import Project from '../Project'
+import CLIENTS from '../../utils/clients'
 
 export default () =>
-  <div className="nav">
+  <>
     <Grid container direction="column">
       <Grid item>
-        <h1>Our Work</h1>
+        <h1 className="projects-header">Our Work</h1>
       </Grid>
 
       <Grid item>
         <Grid container direction="column">
-          <Grid item>
-            <Project
-              variant="preview"
-              serviceProvided={['Backend', 'Frontend']}
-              projectTitle="VoteCrew"
-              projectBlurb="A platform to help students organize friends and hold each other accountable to voting in every election."
-              projectImageLink=""
-              nextProjectLink=""
-            />
-          </Grid>
-
-          <Grid item>
-            <Project
-              variant="preview"
-              serviceProvided={[]}
-              projectTitle="MyxFitness"
-              projectBlurb="A customizable, efficient, and affordable fitness studio, delivered to your door. Because EVERYONE deserves a quality workout."
-              projectImageLink=""
-              nextProjectLink=""
-            />
-          </Grid>
-
-          <Grid item>
-            <Project
-              variant="preview"
-              serviceProvided={[]}
-              projectTitle="Betterfin"
-              projectBlurb="Betterfin is a service for business owners to get educated on small business lending and navigate commercial products with confidence."
-              projectImageLink=""
-              nextProjectLink=""
-            />
-          </Grid>
+          { CLIENTS.map((client) =>
+            <Grid item>
+              <Project
+                variant="preview"
+                serviceProvided={client.services}
+                projectTitle="VoteCrew"
+                projectBlurb="A platform to help students organize friends and hold each other accountable to voting in every election."
+                projectImageLink=""
+                nextProjectLink=""
+              />
+            </Grid>
+          )}
         </Grid>
       </Grid>
     </Grid>
-  </div>
+  </>

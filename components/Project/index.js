@@ -2,7 +2,7 @@ import "./styles.scss"
 import Grid from '@material-ui/core/Grid'
 
 export default ({
-    variant,
+    variant = "full",
     serviceProvided,
     projectTitle,
     projectBlurb,

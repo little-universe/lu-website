@@ -2,9 +2,4 @@
 
 .navLink {
   cursor: pointer;
-  @include transition;
-  &:hover {
-    @include transition;
-    transform: scale(1.2) rotate(-2deg);
-  }
 }

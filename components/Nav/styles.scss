@@ -6,10 +6,4 @@
 
 .logoWrapper {
   cursor: pointer;
-  @include transition;
-
-  &:hover {
-    @include transition;
-    transform: scale(1.1) rotate(2deg);
-  }
 }
