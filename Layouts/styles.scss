@@ -1,14 +1,22 @@
 // CONSTANTS
 
 $fontFamily: 'Marr Sans Web';
+$fontWeightNormal: normal;
 $fontWeightHeavy: 500;
 $fontColor: #2e3648;
+$fontColorLightened: #adb1bb;
 $fontSizeHeadline: 40px;
+$lineHeightHeadline: $fontSizeHeadline*1.5;
 
 $bgColor: #2e3648;
 $bgColorLight: #fff;
+$bgColorLightened: #f1f3fa;
+$strokeColor: #dbdee6;
+
+$navHeight: 220px;
 
 $buffer: 24px;
+$border: 1px solid $strokeColor;
 $timing: .15s;
 $easing: ease-in-out;
 
@@ -16,6 +24,10 @@ $easing: ease-in-out;
 
 @mixin transition {
   transition: all $timing $easing;
+}
+
+@mixin shadow {
+  box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.06);
 }
 
 
@@ -46,5 +58,14 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-weight: $fontWeightHeavy;
+  font-weight: $fontWeightNormal;
+}
+
+h1 {
+  font-size: $fontSizeHeadline;
+  line-height: $lineHeightHeadline;
+}
+
+.container {
+  padding: $buffer*2;
 }

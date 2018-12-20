@@ -4,22 +4,22 @@ import Grid from '@material-ui/core/Grid'
 import Logo from '../ui/Logo'
 import NavLink from '../ui/NavLink'
 
-export default () =>
-  <div className="nav">
-    <Grid container spacing={24} justify="space-between">
+export default ({ theme }) =>
+  <div className={ theme === "light" ? "nav light" : "nav" }>
+    <Grid container spacing={24} justify="space-between" alignItems="center">
       <Link href="/">
-        <Grid item className="logoWrapper">
+        <Grid item xs={2} className="logoWrapper">
           <Logo />
-          <p>Little Universe</p>
+          { /* <p>Little Universe</p> */ }
         </Grid>
       </Link>
 
-      <Grid item>
-        <Grid container spacing={40}>
+      <Grid item xs={10}>
+        <Grid container spacing={40} justify="flex-end">
 
-          <Link href="/work">
+          <Link href="/agency">
             <Grid item>
-              <NavLink linkTitle="Work" />
+              <NavLink linkTitle="Agency" />
             </Grid>
           </Link>
 

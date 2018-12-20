@@ -1,7 +1,18 @@
 @import '../../Layouts/styles.scss';
 
 .nav {
-  padding: $buffer*2;
+  padding: $buffer*2 $buffer*2 0 $buffer*2;
+
+  &.light {
+    * {
+      color: #fff;
+    }
+    .logo {
+      g {
+        fill: #fff;
+      }
+    }
+  }
 }
 
 .logoWrapper {

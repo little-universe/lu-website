@@ -11,27 +11,29 @@ export default ({
     projectDescription
   }) =>
   <div className="project">
-    <Grid container spacing={24} direction="column">
-    <Grid item>
-      <img src={projectImageLink}/>
-    </Grid>
-      <Grid item>
-        <h2>{projectTitle}</h2>
+    <Grid container spacing={24} alignItems="center">
+      { projectImageLink &&
+        <Grid item>
+          <img src={projectImageLink}/>
+        </Grid>
+      }
+      <Grid item xs={4}>
+        <h1>{projectTitle}</h1>
       </Grid>
 
-      <Grid item>
+      <Grid item xs={4}>
         {
           serviceProvided.map((service) =>
-            <div>{service}</div>
+            <h2 className="service">{service}</h2>
           )
         }
       </Grid>
 
-      { variant === "preview" &&
+      { /* variant === "preview" &&
         <Grid item>
           <p>{projectBlurb}</p>
         </Grid>
-      }
+      */ }
 
       { variant === "full" &&
         <>

@@ -1,5 +1,21 @@
 @import '../../Layouts/styles.scss';
 
 .project {
-  padding: $buffer*2;
+  border: 1px solid transparent;
+  @include transition;
+  padding: $buffer;
+  margin: -$buffer;
+  margin-bottom: $buffer*3;
+  cursor: pointer;
+
+  &:hover {
+    @include transition;
+    @include shadow;
+    border: 1px solid #eee;
+    transform: translateY(-2px);
+  }
+}
+
+.service {
+  color: $fontColorLightened;
 }

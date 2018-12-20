@@ -2,10 +2,19 @@
 
 .hero {
   padding: $buffer*2;
-  height: calc(50vh - 220px);
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  margin-top: -$navHeight;
+  padding-top: $navHeight;
 
-  .headline {
-    font-size: $fontSizeHeadline;
-    font-weight: $fontWeightHeavy;
+  &.hero-betterfin {
+    background-image: url('https://s3.us-east-2.amazonaws.com/lu-assets/bg-betterfin.png');
+  }
+  &.hero-myxfitness {
+    background-image: url('https://s3.us-east-2.amazonaws.com/lu-assets/bg-myxfitness.png');
+  }
+  &.hero-instructrr {
+    background-image: url('https://s3.us-east-2.amazonaws.com/lu-assets/bg-instructrr.png');
   }
 }
