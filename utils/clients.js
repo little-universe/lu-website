@@ -6,7 +6,7 @@ const CLIENTS = [
     title: "",
     blurb: "A platform to help students organize friends and hold each other accountable to voting in every election.",
     hero: "",
-    description: "",
+    description: "Betterfin is a service for business owners to get educated on small business lending and navigate commercial products with confidence. We provide transparency into lending through data analytics. Our goal is to help owners secure business financing they understand.",
     images: [],
     testimonial: {
       statement: "",
@@ -14,7 +14,7 @@ const CLIENTS = [
       author: "Eric Griego",
       role: "CEO, Betterfin"
     },
-    nextProjectLink: ""
+    nextProjectLink: "/myxfitness"
   },
   {
     url: "/myxfitness",
@@ -31,7 +31,7 @@ const CLIENTS = [
       author: "Nick Gammell",
       role: "CEO, MyxFitness"
     },
-    nextProjectLink: ""
+    nextProjectLink: "/instructrr"
   },
   {
     url: "/instructrr",
@@ -48,7 +48,7 @@ const CLIENTS = [
       author: "Andrew Katz",
       role: "Founder & CEO, Instructrr"
     },
-    nextProjectLink: ""
+    nextProjectLink: "/betterfin"
   },
   {
     url: "/betterfin",

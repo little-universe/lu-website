@@ -26,6 +26,7 @@ export default () =>
             projectBlurb={CLIENTS[0].blurb}
             projectImageLink={CLIENTS[0].projectImageLink}
             nextProjectLink={CLIENTS[0].nextProjectLink}
+            projectDescription={CLIENTS[0].description}
           />
         </Grid>
       </Grid>
