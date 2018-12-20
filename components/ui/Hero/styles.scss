@@ -2,10 +2,19 @@
 
 .hero {
   padding: $buffer*2;
-  height: calc(50vh - 220px);
+  height: calc(100vh - 220px);
+  overflow: hidden;
 
   .headline {
-    font-size: $fontSizeHeadline;
+    font-size: $fontSizeHeadline*1.5;
     font-weight: $fontWeightHeavy;
+    width: 50vw;
+    line-height: $fontSizeHeadline*2;
+  }
+
+  video {
+    width: 100%;
+    margin-top: $buffer*2;
+    text-align: center;
   }
 }

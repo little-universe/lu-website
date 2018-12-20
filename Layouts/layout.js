@@ -10,6 +10,8 @@ export default ({ children, title = 'Little Universe' }) => (
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
     </Head>
 
-    { children }
+    <div className="site-content">
+      { children }
+    </div>
   </div>
 )

@@ -4,11 +4,9 @@ import Hero from '../components/ui/Hero'
 
 export default () =>
   <Layout title='Little Universe - Home'>
-    <div>
-      <Nav />
+    <Nav />
 
-      <Hero
-        headline="Little Universe is a digital design agency and research office."
-      />
-    </div>
+    <Hero
+      headline="Little Universe is a digital design agency and research office."
+    />
   </Layout>

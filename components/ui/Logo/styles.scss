@@ -1,3 +1,8 @@
+@import '../../../Layouts/styles.scss';
+
 .logo {
   width: 150px;
+  g {
+    fill: $bgColorLight;
+  }
 }

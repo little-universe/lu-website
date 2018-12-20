@@ -3,9 +3,10 @@
 $fontFamily: 'Marr Sans Web';
 $fontWeightHeavy: 500;
 $fontColor: #2e3648;
+$fontColorLight: #fff;
 $fontSizeHeadline: 40px;
 
-$bgColor: #2e3648;
+$bgColor: #252a34;
 $bgColorLight: #fff;
 
 $buffer: 24px;
@@ -16,6 +17,10 @@ $easing: ease-in-out;
 
 @mixin transition {
   transition: all $timing $easing;
+}
+
+@mixin shadow {
+  box-shadow: 0 2px 30px 10px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -40,10 +45,42 @@ $easing: ease-in-out;
 
 // BASE STYLES
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: $fontFamily;
+  color: $fontColorLight;
+  background: $bgColor;
   margin: 0;
 }
+
+.site-content {
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: -17px;
+  padding-right: 17px;
+}
+@mixin videoSizer($x) {
+  height: $x/1.77;
+  width: $x;
+}
+
+// $videoSize: 80vw;
+//
+// #bg-video {
+//   position: fixed;
+//   left: -($videoSize / 3);
+//   top: calc(50% + ($videoSize/1.77));
+//   overflow: hidden;
+//   @include videoSizer($videoSize);
+//   @include shadow;
+//   z-index: 1;
+// }
 
 h1,h2,h3,h4,h5,h6 {
   font-weight: $fontWeightHeavy;
