@@ -20,18 +20,16 @@ export default () =>
       { CLIENTS.map((client) =>
         <Grid container>
           <Grid item xs={2} />
-          <Link href={client.url}>
-            <Grid item xs={8}>
-              <Project
-                variant="preview"
-                serviceProvided={client.services}
-                projectTitle={client.name}
-                projectBlurb={client.blurb}
-                projectImageLink={client.projectImageLink}
-                nextProjectLink={client.nextProjectLink}
-              />
-            </Grid>
-          </Link>
+          <Grid item xs={8}>
+            <Project
+              variant="preview"
+              serviceProvided={client.services}
+              projectTitle={client.name}
+              projectBlurb={client.blurb}
+              projectImageLink={client.projectImageLink}
+              nextProjectLink={client.nextProjectLink}
+            />
+          </Grid>
         </Grid>
       )}
     </Grid>

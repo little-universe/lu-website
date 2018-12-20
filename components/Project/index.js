@@ -7,6 +7,7 @@ import {arrowUpRight2} from 'react-icons-kit/icomoon/arrowUpRight2'
 
 export default ({
     variant = "full",
+    url,
     serviceProvided,
     projectTitle,
     projectBlurb,
@@ -23,20 +24,37 @@ export default ({
       }
 
       <Grid item xs={4}>
+       { variant === "preview" ?
+        <Link href={url}>
+          <h1 className="project-title">{projectTitle}</h1>
+        </Link>
+        :
         <h1>{projectTitle}</h1>
-      </Grid>
-
-      <Grid item xs={4}>
-        {
-          serviceProvided.map((service) =>
-            <h2 className="service">{service}</h2>
-          )
-        }
+      }
       </Grid>
 
       { variant === "preview" &&
+        <Grid item xs={4}>
+          { serviceProvided.map((service) =>
+            <h2 className="service">{service}</h2>
+          )}
+        </Grid>
+      }
+
+      { variant != "preview" &&
+        <Grid container direction="column">
+        {
+          serviceProvided.map((service) =>
+          <h2 className="service">{service}</h2>
+        )}
+        </Grid>
+      }
+
+      { variant === "preview" &&
         <Grid item xs={4} className="preview-arrow-wrapper">
-          <Icon className="preview-arrow" icon={arrowUpRight2} />
+          <Link href={url}>
+            <Icon className="preview-arrow" icon={arrowUpRight2} />
+          </Link>
         </Grid>
       }
 

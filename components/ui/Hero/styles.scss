@@ -1,8 +1,9 @@
 @import '../../../Layouts/styles.scss';
 
 .hero {
-  padding: $buffer*2;
+  padding: $buffer*3;
   height: 70vh;
+  min-height: 500px;
   background-size: cover;
   background-position: center;
   margin-top: -$navHeight;
