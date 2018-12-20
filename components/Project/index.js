@@ -14,7 +14,7 @@ export default ({
     projectDescription
   }) =>
   <div className="project">
-    <Grid container spacing={24} alignItems="center" justify="space-around">
+    <Grid container spacing={24} alignItems="center" justify="space-between">
       { projectImageLink &&
         <Grid item>
           <img src={projectImageLink}/>

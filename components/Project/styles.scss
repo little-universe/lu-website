@@ -58,8 +58,11 @@
   @include transition;
 }
 
-.preview-arrow svg {
-  fill: $strokeColor;
-  @include transition;
-  transform: rotate(45deg);
+.preview-arrow {
+  margin-right: $buffer*2;
+  svg {
+    fill: $strokeColor;
+    @include transition;
+    transform: rotate(45deg);
+  }
 }
