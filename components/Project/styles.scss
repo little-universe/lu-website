@@ -7,15 +7,59 @@
   margin: -$buffer;
   margin-bottom: $buffer*3;
   cursor: pointer;
+  position: relative;
+
+  &:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform:  translate(-50px, 50px);
+    // border: $border;
+    // @include shadow;
+    background-color: $bgColorLightened;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @include transition;
+    z-index: -1;
+  }
 
   &:hover {
     @include transition;
-    @include shadow;
-    border: 1px solid #eee;
+    // @include shadow;
+    // border: 1px solid #eee;
+    // background-color: $bgColorLightened;
     transform: translateY(-2px);
+
+    &:after {
+      width: 100%;
+      height: 100%;
+      @include transition;
+      transform: translate(0, 0) scale(1);
+      opacity: 1;
+    }
+
+    .preview-arrow svg {
+      fill: $fontColor;
+      @include transition;
+      transform: scale(1.3) rotate(0);
+    }
+
+    .service {
+      color: $fontColor;
+      @include transition;
+    }
   }
 }
 
 .service {
   color: $fontColorLightened;
+  @include transition;
+}
+
+.preview-arrow svg {
+  fill: $strokeColor;
+  @include transition;
+  transform: rotate(45deg);
 }

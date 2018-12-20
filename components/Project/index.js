@@ -1,5 +1,8 @@
 import "./styles.scss"
 import Grid from '@material-ui/core/Grid'
+import { Icon } from 'react-icons-kit'
+
+import {arrowUpRight2} from 'react-icons-kit/icomoon/arrowUpRight2'
 
 export default ({
     variant = "full",
@@ -11,7 +14,7 @@ export default ({
     projectDescription
   }) =>
   <div className="project">
-    <Grid container spacing={24} alignItems="center">
+    <Grid container spacing={24} alignItems="center" justify="space-around">
       { projectImageLink &&
         <Grid item>
           <img src={projectImageLink}/>
@@ -29,11 +32,11 @@ export default ({
         }
       </Grid>
 
-      { /* variant === "preview" &&
+      { variant === "preview" &&
         <Grid item>
-          <p>{projectBlurb}</p>
+          <Icon className="preview-arrow" icon={arrowUpRight2} />
         </Grid>
-      */ }
+      }
 
       { variant === "full" &&
         <>
