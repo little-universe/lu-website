@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid'
 import Nav from '../components/Nav'
 import Hero from '../components/ui/Hero'
 import Project from '../components/Project'
+import Footer from '../components/Footer'
 import CLIENTS from '../utils/clients'
 
 export default () =>
@@ -28,9 +29,12 @@ export default () =>
               projectBlurb={client.blurb}
               projectImageLink={client.projectImageLink}
               nextProjectLink={client.nextProjectLink}
+              url={client.url}
             />
           </Grid>
         </Grid>
       )}
     </Grid>
+
+    <Footer />
   </Layout>

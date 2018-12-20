@@ -4,6 +4,7 @@ import Nav from '../components/Nav'
 import Hero from '../components/ui/Hero'
 import Project from '../components/Project'
 import Research from '../components/Research'
+import Footer from '../components/Footer'
 
 export default () =>
   <Layout title='Little Universe - Work'>
@@ -18,5 +19,7 @@ export default () =>
     <Grid container direction="column">
       <Research />
     </Grid>
+
+    <Footer />
 
   </Layout>

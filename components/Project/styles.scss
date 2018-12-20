@@ -59,3 +59,8 @@
     @include transition;
   }
 }
+
+.project-blurb {
+  margin-bottom: $buffer;
+  font-weight: $fontWeightHeavy;
+}

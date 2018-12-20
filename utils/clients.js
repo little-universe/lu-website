@@ -4,7 +4,7 @@ const CLIENTS = [
     name: "Betterfin",
     services: ['Product Design', 'Backend', 'Frontend'],
     title: "",
-    blurb: "A platform to help students organize friends and hold each other accountable to voting in every election.",
+    blurb: "A whole new way to get business loans.",
     hero: "",
     description: "Betterfin is a service for business owners to get educated on small business lending and navigate commercial products with confidence. We provide transparency into lending through data analytics. Our goal is to help owners secure business financing they understand.",
     images: [],
@@ -21,7 +21,7 @@ const CLIENTS = [
     name: "Myx Fitness",
     services: ['UX/UI Design', 'Frontend'],
     title: "",
-    blurb: "A platform to help students organize friends and hold each other accountable to voting in every election.",
+    blurb: "A private indoor exercise studio at home.",
     hero: "",
     description: "",
     images: [],
@@ -36,9 +36,26 @@ const CLIENTS = [
   {
     url: "/instructrr",
     name: "Instructrr",
-    services: ['UX/UI Design', 'Frontend'],
+    services: ['UI Design', 'UX Research', 'User Testing'],
     title: "",
-    blurb: "The Instructrr mobile app brings an innovative approach to fitness instruction by blending class planning and music selection into one, simple solution.",
+    blurb: "Less prepping classes, more kicking asses.",
+    hero: "",
+    description: "We worked with Instructrr to refine their product vision through development of wireframes and high fidelity mockups. They seek to make class planning and delivery easier for spin instructors, and we were excited to be a part of this challenge. Little Universe provided user experience and visual refinement to their iOS application design. We assisted in user testing several new screens and developed strategies for structuring user feedback.",
+    images: [],
+    testimonial: {
+      statement: "",
+      image: "",
+      author: "Andrew Katz",
+      role: "Founder & CEO, Instructrr"
+    },
+    nextProjectLink: "/betterfin"
+  },
+  {
+    url: "/strive",
+    name: "Strive Digital",
+    services: ['UX/UI Design', 'Frontend', 'Backend'],
+    title: "",
+    blurb: "A platform for progressive campaigns to find and engage their supporters.",
     hero: "",
     description: "",
     images: [],
@@ -48,7 +65,24 @@ const CLIENTS = [
       author: "Andrew Katz",
       role: "Founder & CEO, Instructrr"
     },
-    nextProjectLink: "/betterfin"
+    nextProjectLink: ""
+  },
+  {
+    url: "/votecrew",
+    name: "VoteCrew",
+    services: ['UX/UI Design', 'Frontend'],
+    title: "",
+    blurb: "A platform for students to organize themselves to vote.",
+    hero: "",
+    description: "",
+    images: [],
+    testimonial: {
+      statement: "",
+      image: "",
+      author: "Andrew Katz",
+      role: "Founder & CEO, Instructrr"
+    },
+    nextProjectLink: ""
   },
   {
     url: "/betterfin",

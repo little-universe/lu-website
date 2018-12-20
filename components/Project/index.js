@@ -41,15 +41,6 @@ export default ({
         </Grid>
       }
 
-      { variant != "preview" &&
-        <Grid container direction="column">
-        {
-          serviceProvided.map((service) =>
-          <h2 className="service">{service}</h2>
-        )}
-        </Grid>
-      }
-
       { variant === "preview" &&
         <Grid item xs={4} className="preview-arrow-wrapper">
           <Link href={url}>
@@ -58,18 +49,25 @@ export default ({
         </Grid>
       }
 
-      <Grid item xs={4} />
-
-      { variant === "full" &&
+      { variant != "preview" &&
         <>
+          <Grid container className="project-blurb">
+            <Grid item xs={8}>
+              <p>{projectBlurb}</p>
+            </Grid>
+          </Grid>
+
+          <Grid container direction="column">
+          {
+            serviceProvided.map((service) =>
+            <p className="service">{service}</p>
+          )}
+          </Grid>
+
           <Grid container className="project-description">
             <Grid item xs={8}>
               <p>{projectDescription}</p>
             </Grid>
-          </Grid>
-
-          <Grid container>
-            <Link href={nextProjectLink}><h2 className="next-project-link">Next Project</h2></Link>
           </Grid>
         </>
       }

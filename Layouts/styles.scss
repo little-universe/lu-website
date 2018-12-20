@@ -5,8 +5,9 @@ $fontWeightNormal: normal;
 $fontWeightHeavy: 500;
 $fontColor: #2e3648;
 $fontColorLightened: #adb1bb;
-$fontSize: 24px;
+$fontSize: 20px;
 $fontSizeHeadline: 40px;
+$fontSizeSubHeadline: 30px;
 $lineHeight: $fontSize*1.5;
 $lineHeightHeadline: $fontSizeHeadline*1.5;
 
@@ -73,6 +74,7 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
   font-weight: $fontWeightNormal;
+  margin: 0 0 $buffer 0;
 }
 
 h1 {
@@ -80,11 +82,19 @@ h1 {
   line-height: $lineHeightHeadline;
 }
 
+h2 {
+  font-size: $fontSizeSubHeadline;
+}
+
 p {
   font-size: $fontSize;
   color: $fontColor;
   line-height: $lineHeight;
-  margin: 0 0 $buffer*2 0;
+  margin: 0 0 $buffer 0;
+
+  &.secondary {
+    color: $fontColorLightened;
+  }
 }
 
 a {
