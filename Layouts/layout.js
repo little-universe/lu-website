@@ -1,6 +1,7 @@
 import "./styles.scss"
 import Link from 'next/link'
 import Head from 'next/head'
+import Loader from '../components/Loader'
 
 class Layout extends React.Component {
   state = {
@@ -26,9 +27,9 @@ class Layout extends React.Component {
 
         {
           this.state.loading ?
-          <h1>LOADING MOTHERFUCKERS</h1>
+          <Loader />
           :
-          <div className="pageContent">{children}</div>
+          <div className="page-content">{children}</div>
         }
 
       </div>

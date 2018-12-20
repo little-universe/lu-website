@@ -67,7 +67,7 @@ body {
   color: $fontColor;
 }
 
-.pageContent {
+.page-content {
   @include animation(fadeInUp $timing*2 $easing);
 }
 
