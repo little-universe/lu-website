@@ -2,6 +2,7 @@
 
 .nav {
   padding: $buffer*3 $buffer*3 0 $buffer*3;
+  color: $fontColorLightened;
 
   &.light {
     * {
