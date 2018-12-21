@@ -75,6 +75,21 @@ body {
   @include transition;
   opacity: 1;
   transform: translateY(0);
+  &.betterfin-page {
+    background-color: #dbe3e0;
+  }
+  &.instructrr-page {
+    background-color: #ffbb65;
+    * {
+      color: white;
+    }
+    .logo g {
+      fill: white;
+    }
+  }
+  &.myxfitness-page {
+    background-color: #f1f5f4;
+  }
 }
 
 h1,h2,h3,h4,h5,h6 {
