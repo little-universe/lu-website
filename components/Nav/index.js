@@ -15,7 +15,7 @@ export default ({ theme, onExit }) =>
       </a>
 
       <Grid item xs={10}>
-        <Grid container spacing={24} justify="flex-end">
+        <Grid container spacing={24} justify="flex-end" alignItems="flex-end">
         <Grid item xs={2}>
             <a onClick={() => onExit(() => Router.push('/agency'))}>
               <Grid item>
