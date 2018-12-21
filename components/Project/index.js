@@ -16,7 +16,7 @@ export default ({
     projectDescription
   }) =>
   <div className={ variant === "preview" ? "project preview" : "project" }>
-    <Grid container alignItems="center">
+    <Grid container alignItems="flex-start">
       { projectImageLink &&
         <Grid item>
           <img src={projectImageLink}/>

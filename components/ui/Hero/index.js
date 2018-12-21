@@ -2,7 +2,7 @@ import "./styles.scss"
 import Grid from '@material-ui/core/Grid'
 
 export default ({ className, headline }) =>
-  <Grid className={`hero ${className}`} container alignItems="center">
+  <Grid className={`hero ${className}`} container alignItems="flex-end">
     { headline &&
       <>
         <Grid item xs={8}>
