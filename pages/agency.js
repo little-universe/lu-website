@@ -7,14 +7,14 @@ import Footer from '../components/Footer'
 import CLIENTS from '../utils/clients'
 
 export default () =>
-  <Layout title='Little Universe - Agency'>
-    <div>
-      <Nav />
+  <Layout title='Little Universe - Agency' className="agency-page" render={(onExit) => {
+    return (
+      <>
+      <Nav onExit={onExit} />
 
       <Hero
         headline="Little Universe is a digital product design agency and research studio."
       />
-    </div>
 
     <Grid container className="container">
       <Grid item xs={2} />
@@ -43,6 +43,7 @@ export default () =>
           <Grid item xs={2} />
           <Grid item xs={8}>
             <Project
+              onExit={onExit}
               variant="preview"
               serviceProvided={client.services}
               projectTitle={client.name}
@@ -57,5 +58,6 @@ export default () =>
     </Grid>
 
     <Footer />
-
-  </Layout>
+    </>
+    )
+  }}/>

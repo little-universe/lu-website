@@ -7,51 +7,52 @@ import Footer from '../components/Footer'
 import CLIENTS from '../utils/clients'
 
 export default () =>
-  <Layout title='Betterfin'>
-    <div>
-      <Nav theme="light" />
+  <Layout title='Instructrr' className="instructrr-page" render={(onExit) => (
+    <>
+      <Nav onExit={onExit}/>
 
       <Hero
-        className="hero-instructrr"
+        className="hero-betterfin"
       />
-    </div>
 
-    <div className="container">
-      <Grid container>
-        <Grid item xs={2} />
-        <Grid item xs={8} >
-          <Project
-            variant="full"
-            serviceProvided={CLIENTS[2].services}
-            projectDescription={CLIENTS[2].description}
-            projectTitle={CLIENTS[2].name}
-            projectBlurb={CLIENTS[2].blurb}
-            projectImageLink={CLIENTS[2].projectImageLink}
-            nextProjectLink={CLIENTS[2].nextProjectLink}
-          />
-        </Grid>
-      </Grid>
-    </div>
-
-    <Grid container direction="column" className="container">
-      { CLIENTS.map((client) =>
+      <div className="container">
         <Grid container>
           <Grid item xs={2} />
-          <Grid item xs={8}>
+          <Grid item xs={8} >
             <Project
-              variant="preview"
-              serviceProvided={client.services}
-              projectTitle={client.name}
-              projectBlurb={client.blurb}
-              projectImageLink={client.projectImageLink}
-              nextProjectLink={client.nextProjectLink}
-              url={client.url}
+              variant="full"
+              serviceProvided={CLIENTS[2].services}
+              projectTitle={CLIENTS[2].name}
+              projectBlurb={CLIENTS[2].blurb}
+              projectImageLink={CLIENTS[2].projectImageLink}
+              nextProjectLink={CLIENTS[2].nextProjectLink}
+              projectDescription={CLIENTS[2].description}
             />
           </Grid>
         </Grid>
-      )}
-    </Grid>
+      </div>
 
-    <Footer />
+      <Grid container direction="column" className="container">
+        { CLIENTS.filter(c => c.name !== "Instructrr").map((client) =>
+          <Grid container>
+            <Grid item xs={2} />
+            <Grid item xs={8}>
+              <Project
+                onExit={onExit}
+                variant="preview"
+                serviceProvided={client.services}
+                projectTitle={client.name}
+                projectBlurb={client.blurb}
+                projectImageLink={client.projectImageLink}
+                nextProjectLink={client.nextProjectLink}
+                url={client.url}
+              />
+            </Grid>
+          </Grid>
+        )}
+      </Grid>
 
-  </Layout>
+      <Footer />
+    </>
+  )}
+  />

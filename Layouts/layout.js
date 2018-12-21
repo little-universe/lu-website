@@ -1,11 +1,13 @@
 import "./styles.scss"
 import Link from 'next/link'
 import Head from 'next/head'
+import Router from 'next/router'
 import Loader from '../components/Loader'
 
 class Layout extends React.Component {
   state = {
     loading: true,
+    loadOut: false
   }
 
   componentDidMount() {
@@ -14,8 +16,13 @@ class Layout extends React.Component {
     }.bind(this), 1000);
   };
 
+  onExit = (cb) => {
+    this.setState({ loadOut: true })
+    setTimeout(cb, 150)
+  }
+
   render() {
-    let { children, title } = this.props
+    let { title, className, render } = this.props
 
     return (
       <div>
@@ -29,7 +36,8 @@ class Layout extends React.Component {
           this.state.loading ?
           <Loader />
           :
-          <div className="page-content">{children}</div>
+          <div className={`page-content ${className} ${this.state.loadOut && "fade-out"}`}
+          >{render(this.onExit)}</div>
         }
 
       </div>

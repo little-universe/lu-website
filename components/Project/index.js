@@ -1,5 +1,5 @@
 import "./styles.scss"
-import Link from 'next/link'
+import Router from 'next/router'
 import Grid from '@material-ui/core/Grid'
 import { Icon } from 'react-icons-kit'
 
@@ -13,7 +13,8 @@ export default ({
     projectBlurb,
     projectImageLink,
     nextProjectLink,
-    projectDescription
+    projectDescription,
+    onExit
   }) =>
   <div className={ variant === "preview" ? "project preview" : "project" }>
     <Grid container alignItems="flex-start">
@@ -25,9 +26,9 @@ export default ({
 
       <Grid item xs={6}>
        { variant === "preview" ?
-        <Link href={url}>
+        <a onClick={() => onExit(() => Router.push(`${url}`))}>
           <h1 className="project-title">{projectTitle}</h1>
-        </Link>
+        </a>
         :
         <h1>{projectTitle}</h1>
       }
@@ -43,9 +44,9 @@ export default ({
 
       { variant === "preview" &&
         <Grid item xs={2} className="preview-arrow-wrapper">
-          <Link href={url}>
+          <a onClick={() => onExit(() => Router.push(`${url}`))}>
             <Icon className="preview-arrow" icon={arrowUpRight2} />
-          </Link>
+          </a>
         </Grid>
       }
 

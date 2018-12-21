@@ -7,51 +7,52 @@ import Footer from '../components/Footer'
 import CLIENTS from '../utils/clients'
 
 export default () =>
-  <Layout title='Betterfin'>
-    <div>
-      <Nav />
+  <Layout title='Betterfin' className="betterfin-page" render={(onExit) => (
+    <>
+      <Nav onExit={onExit}/>
 
       <Hero
         className="hero-betterfin"
       />
-    </div>
 
-    <div className="container">
-      <Grid container>
-        <Grid item xs={2} />
-        <Grid item xs={8} >
-          <Project
-            variant="full"
-            serviceProvided={CLIENTS[0].services}
-            projectTitle={CLIENTS[0].name}
-            projectBlurb={CLIENTS[0].blurb}
-            projectImageLink={CLIENTS[0].projectImageLink}
-            nextProjectLink={CLIENTS[0].nextProjectLink}
-            projectDescription={CLIENTS[0].description}
-          />
-        </Grid>
-      </Grid>
-    </div>
-
-    <Grid container direction="column" className="container">
-      { CLIENTS.splice(0).map((client) =>
+      <div className="container">
         <Grid container>
           <Grid item xs={2} />
-          <Grid item xs={8}>
+          <Grid item xs={8} >
             <Project
-              variant="preview"
-              serviceProvided={client.services}
-              projectTitle={client.name}
-              projectBlurb={client.blurb}
-              projectImageLink={client.projectImageLink}
-              nextProjectLink={client.nextProjectLink}
-              url={client.url}
+              variant="full"
+              serviceProvided={CLIENTS[0].services}
+              projectTitle={CLIENTS[0].name}
+              projectBlurb={CLIENTS[0].blurb}
+              projectImageLink={CLIENTS[0].projectImageLink}
+              nextProjectLink={CLIENTS[0].nextProjectLink}
+              projectDescription={CLIENTS[0].description}
             />
           </Grid>
         </Grid>
-      )}
-    </Grid>
+      </div>
 
-    <Footer />
+      <Grid container direction="column" className="container">
+        { CLIENTS.filter(c => c.name !== "Betterfin").map((client) =>
+          <Grid container>
+            <Grid item xs={2} />
+            <Grid item xs={8}>
+              <Project
+                onExit={onExit}
+                variant="preview"
+                serviceProvided={client.services}
+                projectTitle={client.name}
+                projectBlurb={client.blurb}
+                projectImageLink={client.projectImageLink}
+                nextProjectLink={client.nextProjectLink}
+                url={client.url}
+              />
+            </Grid>
+          </Grid>
+        )}
+      </Grid>
 
-  </Layout>
+      <Footer />
+    </>
+  )}
+  />

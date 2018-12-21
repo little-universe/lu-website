@@ -7,19 +7,20 @@ import Research from '../components/Research'
 import Footer from '../components/Footer'
 
 export default () =>
-  <Layout title='Little Universe - Work'>
-    <div>
-      <Nav />
+  <Layout title='Little Universe - Research' className="research-page" render={(onExit) => (
+    <>
+    <Nav onExit={onExit} />
 
-      <Hero
-        headline="Our Research"
-      />
-    </div>
+    <Hero
+      headline="Our Research"
+    />
 
-    <Grid container direction="column">
-      <Research />
-    </Grid>
 
-    <Footer />
+  <Grid container direction="column">
+    <Research />
+  </Grid>
 
-  </Layout>
+  <Footer />
+  </>
+  )
+}/>

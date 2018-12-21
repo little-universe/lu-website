@@ -8,20 +8,21 @@ import Footer from '../components/Footer'
 import CLIENTS from '../utils/clients'
 
 export default () =>
-  <Layout title='Little Universe - Home'>
-    <div>
-      <Nav />
+  <Layout title='Little Universe - Home' render={(onExit) => {
+    return (
+      <>
+      <Nav onExit={onExit} />
 
       <Hero
         headline="Little Universe is a digital product design agency and research studio."
       />
-    </div>
 
     <Grid container direction="column" className="container">
       { CLIENTS.map((client) =>
         <Grid container>
           <Grid item xs={12}>
             <Project
+              onExit={onExit}
               variant="preview"
               serviceProvided={client.services}
               projectTitle={client.name}
@@ -36,4 +37,6 @@ export default () =>
     </Grid>
 
     <Footer />
-  </Layout>
+    </>
+    )
+  }} />

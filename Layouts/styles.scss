@@ -70,6 +70,9 @@ body {
 
 .page-content {
   @include animation(fadeInUp $timing*2 $easing);
+  @include transition;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -107,6 +110,11 @@ a {
   margin-top: $buffer*10;
 }
 
+.fade-out {
+  @include transition;
+  opacity: 0;
+  transform: translateY(10px);
+}
 
 // KEYFRAMES
 
@@ -125,4 +133,21 @@ a {
 @keyframes fadeInUp {
   0%   { opacity: 0; transform: translate(0,10px); }
   100% { opacity: 1; transform: translate(0,0); }
+}
+
+@-webkit-keyframes fadeOutDown {
+  0%   { opacity: 1; transform: translate(0,0); }
+  100% { opacity: 0; transform: translate(0,-10px); }
+}
+@-moz-keyframes fadeOutDown {
+  0%   { opacity: 1; transform: translate(0,0); }
+  100% { opacity: 0; transform: translate(0,-10px); }
+}
+@-o-keyframes fadeOutDown {
+  0%   { opacity: 1; transform: translate(0,0); }
+  100% { opacity: 0; transform: translate(0,-10px); }
+}
+@keyframes fadeOutDown {
+  0%   { opacity: 1; transform: translate(0,0); }
+  100% { opacity: 0; transform: translate(0,-10px); }
 }
