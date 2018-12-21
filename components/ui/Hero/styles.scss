@@ -3,7 +3,7 @@
 .hero {
   padding: $buffer*3;
   height: 80vh;
-  min-height: 500px;
+  min-height: 600px;
   background-size: cover;
   background-position: center;
   margin-top: -$navHeight;
@@ -15,9 +15,14 @@
     background-image: url('https://s3.us-east-2.amazonaws.com/lu-assets/bg-betterfin.png');
   }
   &.hero-myxfitness {
-    background-image: url('https://s3.us-east-2.amazonaws.com/lu-assets/bg-myxfitness.png');
+    background-color: #f1f5f4;
   }
   &.hero-instructrr {
     background-image: url('https://s3.us-east-2.amazonaws.com/lu-assets/bg-instructrr.png');
   }
+}
+
+.hero-image {
+  max-width: 600px;
+
 }
