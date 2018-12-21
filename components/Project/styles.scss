@@ -18,6 +18,9 @@
 .service {
   color: $fontColorLightened;
   @include transition;
+  font-size: $fontSize;
+  line-height: $lineHeight/2.5;
+  vertical-align: top;
 }
 
 .preview-arrow-wrapper {
@@ -25,7 +28,8 @@
 }
 .preview-arrow {
   padding: $buffer*2;
-  margin-right: $buffer*2;
+  padding-right: 0;
+  // margin-right: $buffer*2;
   transform: rotate(45deg);
   @include transition;
 

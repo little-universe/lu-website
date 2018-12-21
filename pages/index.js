@@ -20,8 +20,7 @@ export default () =>
     <Grid container direction="column" className="container">
       { CLIENTS.map((client) =>
         <Grid container>
-          <Grid item xs={2} />
-          <Grid item xs={8}>
+          <Grid item xs={12}>
             <Project
               variant="preview"
               serviceProvided={client.services}

@@ -23,7 +23,7 @@ export default ({
         </Grid>
       }
 
-      <Grid item xs={4}>
+      <Grid item xs={6}>
        { variant === "preview" ?
         <Link href={url}>
           <h1 className="project-title">{projectTitle}</h1>
@@ -42,7 +42,7 @@ export default ({
       }
 
       { variant === "preview" &&
-        <Grid item xs={4} className="preview-arrow-wrapper">
+        <Grid item xs={2} className="preview-arrow-wrapper">
           <Link href={url}>
             <Icon className="preview-arrow" icon={arrowUpRight2} />
           </Link>
