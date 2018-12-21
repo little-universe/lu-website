@@ -12,7 +12,7 @@ export default () =>
     <Nav onExit={onExit} />
 
     <Hero
-      headline="Our Research"
+      headline="Research is making, implementing, writing, thinking, reviewing, or designing. We do it every day."
     />
 
 
