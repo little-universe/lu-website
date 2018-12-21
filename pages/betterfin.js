@@ -18,7 +18,6 @@ export default () =>
 
     <div className="container">
       <Grid container>
-        <Grid item xs={2} />
         <Grid item xs={8} >
           <Project
             variant="full"

@@ -2,7 +2,7 @@ const CLIENTS = [
   {
     url: "/betterfin",
     name: "Betterfin",
-    services: ['Product Design', 'Backend', 'Frontend'],
+    services: ['Product Design', 'Back End Development', 'Front End Development'],
     title: "",
     blurb: "A whole new way to get business loans.",
     hero: "",
@@ -19,7 +19,7 @@ const CLIENTS = [
   {
     url: "/myxfitness",
     name: "Myx Fitness",
-    services: ['UX/UI Design', 'Frontend'],
+    services: ['Product Design', 'Front End Development'],
     title: "",
     blurb: "A private indoor exercise studio at home.",
     hero: "",
@@ -36,7 +36,7 @@ const CLIENTS = [
   {
     url: "/instructrr",
     name: "Instructrr",
-    services: ['UI Design', 'UX Research', 'User Testing'],
+    services: ['Visual Design', 'UX Research', 'User Testing'],
     title: "",
     blurb: "Less prepping classes, more kicking asses.",
     hero: "",

@@ -9,18 +9,17 @@ import CLIENTS from '../utils/clients'
 export default () =>
   <Layout title='Little Universe - Agency'>
     <div>
-      <Nav />
+      <Nav/>
 
       <Hero
-        headline="Little Universe is a digital product design agency and research studio."
+        className="hero-agency"
+        headline="We are concerned not only with the way Digital Products look, function, or produce value, but with the way they are built, maintained, and scaled."
       />
     </div>
 
     <Grid container className="container">
       <Grid item xs={2} />
       <Grid item xs={6}>
-        <p>We are concerned not only with the way Digital Products look, function, or produce value, but with the way they are built, maintained, and scaled.</p>
-
         <p>We are a team of obsessive, critical, and evolutionary makers interested in the way our contemporary Digital context will evolve and continue to influence our lives beyond the screen.</p>
 
         <p>We work diligently and systematically to design, build, scale, and maintain products, websites, and libraries for our clients which support their missions and targets. Through our operation as an agency we are granted an objective view into the problems of our clients allowing for unbiased decision making and focused product thinking.</p>
