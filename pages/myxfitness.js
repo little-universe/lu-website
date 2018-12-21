@@ -13,6 +13,7 @@ export default () =>
 
       <Hero
         className="hero-myxfitness"
+        bgImage="https://s3.us-east-2.amazonaws.com/lu-assets/bg-myxfitness.png"
       />
 
       <div className="container">
