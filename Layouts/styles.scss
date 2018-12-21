@@ -13,7 +13,7 @@ $lineHeight: $fontSize*1.5;
 $lineHeightHeadline: $fontSizeHeadline*1.5;
 
 $bgColor: #2e3648;
-$bgColorMedium: #F6F5F0; 
+$bgColorMedium: #F6F5F0;
 $bgColorLight: #fff;
 $bgColorLightened: #f3f3f3;
 $strokeColor: #dbdee6;
@@ -105,6 +105,11 @@ p {
 a {
   text-decoration: none;
   color: $fontColor;
+  @include transition;
+  &:hover {
+    opacity: 0.8;
+    @include transition;
+  }
 }
 
 .container {

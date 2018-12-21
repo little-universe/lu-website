@@ -5,6 +5,6 @@ import Logo from '../ui/Logo'
 import NavLink from '../ui/NavLink'
 
 export default () =>
-  <Grid className="loader" container spacing={24} justify="center" alignItems="center">
+  <Grid className="loader" container>
     <div className="spinner" />
   </Grid>
