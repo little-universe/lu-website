@@ -13,7 +13,7 @@ $lineHeight: $fontSize*1.5;
 $lineHeightHeadline: $fontSizeHeadline*1.5;
 
 $bgColor: #2e3648;
-$bgColorMedium: #F6F5F0; 
+$bgColorMedium: #F6F5F0;
 $bgColorLight: #fff;
 $bgColorLightened: #f3f3f3;
 $strokeColor: #dbdee6;
@@ -75,6 +75,21 @@ body {
   @include transition;
   opacity: 1;
   transform: translateY(0);
+  &.betterfin-page {
+    background-color: #dbe3e0;
+  }
+  &.instructrr-page {
+    background-color: #ffbb65;
+    * {
+      color: white;
+    }
+    .logo g {
+      fill: white;
+    }
+  }
+  &.myxfitness-page {
+    background-color: #f1f5f4;
+  }
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -105,6 +120,11 @@ p {
 a {
   text-decoration: none;
   color: $fontColor;
+  @include transition;
+  &:hover {
+    opacity: 0.8;
+    @include transition;
+  }
 }
 
 .container {
