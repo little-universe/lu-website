@@ -18,7 +18,6 @@ export default () =>
     </div>
 
     <Grid container className="container">
-      <Grid item xs={2} />
       <Grid item xs={6}>
         <p>We are a team of obsessive, critical, and evolutionary makers interested in the way our contemporary Digital context will evolve and continue to influence our lives beyond the screen.</p>
 
@@ -39,8 +38,7 @@ export default () =>
     <Grid container direction="column" className="container">
       { CLIENTS.map((client) =>
         <Grid container>
-          <Grid item xs={2} />
-          <Grid item xs={8}>
+          <Grid item xs={12}>
             <Project
               variant="preview"
               serviceProvided={client.services}
