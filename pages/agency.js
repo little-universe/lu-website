@@ -7,16 +7,10 @@ import Footer from '../components/Footer'
 import CLIENTS from '../utils/clients'
 
 export default () =>
-<<<<<<< HEAD
   <Layout title='Little Universe - Agency' className="agency-page" render={(onExit) => {
     return (
       <>
       <Nav onExit={onExit} />
-=======
-  <Layout title='Little Universe - Agency'>
-    <div>
-      <Nav/>
->>>>>>> 717b24250371929e5f3ad6ac37854523346924a4
 
       <Hero
         className="hero-agency"
