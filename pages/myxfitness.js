@@ -12,7 +12,7 @@ export default () =>
       <Nav onExit={onExit}/>
 
       <Hero
-        className="hero-betterfin"
+        className="hero-myxfitness"
       />
 
       <div className="container">

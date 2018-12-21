@@ -2,12 +2,18 @@
 
 .hero {
   padding: $buffer*3;
-  height: 90vh;
+  height: 80vh;
   min-height: 500px;
   background-size: cover;
   background-position: center;
-  margin-top: -$navHeight;
-  padding-top: $navHeight;
+  // margin-top: -$navHeight;
+  // padding-top: $navHeight;
+  color: $fontColor;
+  border-bottom: 1px solid #eaeaea;
+
+  &.hero-agency {
+    background: $bgColorMedium;
+  }
 
   &.hero-betterfin {
     background-image: url('https://s3.us-east-2.amazonaws.com/lu-assets/bg-betterfin.png');

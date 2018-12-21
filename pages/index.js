@@ -14,6 +14,7 @@ export default () =>
       <Nav onExit={onExit} />
 
       <Hero
+        className="hero-index"
         headline="Little Universe is a digital product design agency and research studio."
       />
 

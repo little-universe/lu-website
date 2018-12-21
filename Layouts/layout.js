@@ -14,6 +14,7 @@ class Layout extends React.Component {
     setTimeout(function() {
       this.setState({ loading: false });
     }.bind(this), 1000);
+    window.scrollTo(0, 0);
   };
 
   onExit = (cb) => {

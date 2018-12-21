@@ -3,7 +3,8 @@
 $fontFamily: 'Marr Sans Web';
 $fontWeightNormal: normal;
 $fontWeightHeavy: 500;
-$fontColor: #2e3648;
+// $fontColor: #2e3648;
+$fontColor: #555E68;
 $fontColorLightened: #adb1bb;
 $fontSize: 20px;
 $fontSizeHeadline: 40px;
@@ -12,6 +13,7 @@ $lineHeight: $fontSize*1.5;
 $lineHeightHeadline: $fontSizeHeadline*1.5;
 
 $bgColor: #2e3648;
+$bgColorMedium: #F6F5F0; 
 $bgColorLight: #fff;
 $bgColorLightened: #f3f3f3;
 $strokeColor: #dbdee6;
