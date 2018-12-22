@@ -1,5 +1,6 @@
 // CONSTANTS
 $bubbleWidth: 30vw;
+$bubbleMove: 10px;
 
 $fontFamily: 'Marr Sans Web';
 $fontWeightNormal: normal;
@@ -201,24 +202,24 @@ a {
 
 @keyframes bubbleMotion1 {
   0% { transform: translate(0, 0);}
-  50% { transform: translate(-30px, 30px);}
+  50% { transform: translate(-$bubbleMove, $bubbleMove);}
   100% { transform: translate(0, 0);}
 }
 
 @keyframes bubbleMotion2 {
   0% { transform: translate(0, 0);}
-  50% { transform: translate(30px, 30px);}
+  50% { transform: translate($bubbleMove, $bubbleMove);}
   100% { transform: translate(0, 0);}
 }
 
 @keyframes bubbleMotion3 {
   0% { transform: translate(0, 0); }
-  50% { transform: translate(-30px, 30px); }
+  50% { transform: translate(-$bubbleMove, $bubbleMove); }
   100% { transform: translate(0, 0); }
 }
 
 @keyframes bubbleMotion4 {
   0% { transform: translate(0, 0); }
-  50% { transform: translate(30px, 30px); }
+  50% { transform: translate($bubbleMove, $bubbleMove); }
   100% { transform: translate(0, 0); }
 }
