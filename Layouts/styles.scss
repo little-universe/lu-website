@@ -193,19 +193,19 @@ a {
 
 @keyframes bubbleMotion1 {
   0% { transform: translate(0, 0); }
-  50% { transform: translate(80px, 40px); }
+  50% { transform: translate(30px, 40px) rotate(10deg); }
   100% { transform: translate(0, 0); }
 }
 
 @keyframes bubbleMotion2 {
   0% { transform: translate(0, 0); }
-  50% { transform: translate(20px, 50px); }
+  50% { transform: translate(20px, 50px) rotate(10deg); }
   100% { transform: translate(0, 0); }
 }
 
 @keyframes bubbleMotion3 {
   0% { transform: translate(0, 0); }
-  50% { transform: translate(60px, 50px); }
+  50% { transform: translate(60px, 50px) rotate(10deg); }
   100% { transform: translate(0, 0); }
 }
 
