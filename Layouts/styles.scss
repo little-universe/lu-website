@@ -127,19 +127,23 @@ a {
   .bubble {
     position: absolute;
     z-index: -1;
+    @include animation(bubbleMotion 20s infinite);
   }
   .navy-bubble {
     top: -100px;
     right: -100px;
+    animation-delay: 1s;
   }
   .yellow-bubble {
     top: -80px;
     left: 30%;
     width: 600px;
+    animation-delay: 2s;
   }
   .oatmeal-bubble {
     bottom: 80px;
     left: -60px;
+    animation-delay: 3s;
   }
   .green-bubble {
     bottom: -80px;
@@ -182,4 +186,10 @@ a {
 @keyframes fadeOutDown {
   0%   { opacity: 1; transform: translate(0,0); }
   100% { opacity: 0; transform: translate(0,-10px); }
+}
+
+@keyframes bubbleMotion {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(20px, 30px); }
+  100% { transform: translate(0, 0); }
 }
