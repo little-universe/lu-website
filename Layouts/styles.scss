@@ -112,6 +112,9 @@ a {
     opacity: 0.8;
     @include transition;
   }
+  &.disable {
+    pointer-events: none;
+  }
 }
 
 .container {
