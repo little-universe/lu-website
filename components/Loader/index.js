@@ -7,4 +7,5 @@ import NavLink from '../ui/NavLink'
 export default () =>
   <Grid className="loader" container>
     <div className="spinner" />
+    <div className="spinner2" />
   </Grid>
