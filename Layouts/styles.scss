@@ -120,6 +120,7 @@ a {
 
 .container {
   padding: $buffer*3;
+  margin-top: $buffer*2;
 }
 
 .fade-out {
@@ -218,7 +219,7 @@ a {
 
 @keyframes bubbleMotion2 {
   0% { transform: translate(0, 0) scale(1);}
-  50% { transform: translate(30px, 60px) scale(0.8) skewX(5deg);}
+  50% { transform: translate(30px, 60px) scale(0.9) skewX(5deg);}
   100% { transform: translate(0, 0) scale(1);}
 }
 
