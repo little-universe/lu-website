@@ -127,28 +127,31 @@ a {
   .bubble {
     position: absolute;
     z-index: -1;
-    @include animation(bubbleMotion 20s infinite);
   }
   .navy-bubble {
     top: -100px;
     right: -100px;
-    animation-delay: 1s;
+    @include animation(bubbleMotion1 20s infinite);
+    animation-delay: 2s;
   }
   .yellow-bubble {
     top: -80px;
     left: 30%;
     width: 600px;
-    animation-delay: 2s;
+    @include animation(bubbleMotion2 20s infinite);
+    animation-delay: 6s;
   }
   .oatmeal-bubble {
     bottom: 80px;
     left: -60px;
+    @include animation(bubbleMotion3 20s infinite);
     animation-delay: 3s;
   }
   .green-bubble {
     bottom: -80px;
     right: -150px;
     z-index: 1;
+    @include animation(bubbleMotion4 20s infinite);
   }
 }
 
@@ -188,8 +191,26 @@ a {
   100% { opacity: 0; transform: translate(0,-10px); }
 }
 
-@keyframes bubbleMotion {
+@keyframes bubbleMotion1 {
   0% { transform: translate(0, 0); }
-  50% { transform: translate(20px, 30px); }
+  50% { transform: translate(80px, 40px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes bubbleMotion2 {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(20px, 50px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes bubbleMotion3 {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(60px, 50px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes bubbleMotion4 {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(90px, 10px); }
   100% { transform: translate(0, 0); }
 }
