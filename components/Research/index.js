@@ -11,7 +11,7 @@ export default ({
   researchBlurb,
 }) =>
   <div className={ variant === "preview" ? "research preview" : "research" }>
-    <Grid item xs={6}>
+    <Grid item xs={8}>
     { variant ==="preview" ?
       <Grid item>
           <h1 className="research-title">{researchTitle}</h1>
