@@ -1,4 +1,5 @@
 // CONSTANTS
+$bubbleWidth: 30vw;
 
 $fontFamily: 'Marr Sans Web';
 $fontWeightNormal: normal;
@@ -68,6 +69,7 @@ body {
   font-family: $fontFamily;
   margin: 0;
   color: $fontColor;
+  overflow-x: hidden;
 }
 
 .page-content {
@@ -124,34 +126,40 @@ a {
 
 .home-hero-bg {
   position: relative;
+
   .bubble {
+    min-width: 300px;
+    width: $bubbleWidth;
     position: absolute;
     z-index: -1;
   }
   .navy-bubble {
-    top: -100px;
-    right: -100px;
+    top: -35%;
+    right: 5%;
     @include animation(bubbleMotion1 20s infinite);
+    @include transition;
     animation-delay: 2s;
   }
   .yellow-bubble {
-    width: 500px;
-    top: -80px;
-    left: 30%;
+    top: -20%;
+    left: 15%;
     @include animation(bubbleMotion2 20s infinite);
+    @include transition;
     animation-delay: 6s;
   }
   .oatmeal-bubble {
-    bottom: 80px;
-    left: -60px;
+    bottom: -5%;
+    left: -10%;
     @include animation(bubbleMotion3 20s infinite);
+    @include transition;
     animation-delay: 3s;
   }
   .green-bubble {
-    bottom: -80px;
-    right: -150px;
+    bottom: 15%;
+    right: -5%;
     z-index: 1;
     @include animation(bubbleMotion4 20s infinite);
+    @include transition;
   }
 }
 
@@ -192,25 +200,25 @@ a {
 }
 
 @keyframes bubbleMotion1 {
-  0% { transform: translate(0, 0); }
-  50% { transform: translate(30px, 40px) rotate(10deg); }
-  100% { transform: translate(0, 0); }
+  0% { transform: translate(0, 0);}
+  50% { transform: translate(-30px, 30px) rotate(10deg);}
+  100% { transform: translate(0, 0);}
 }
 
 @keyframes bubbleMotion2 {
-  0% { transform: translate(0, 0); }
-  50% { transform: translate(20px, 50px) rotate(10deg); }
-  100% { transform: translate(0, 0); }
+  0% { transform: translate(0, 0);}
+  50% { transform: translate(30px, 30px);}
+  100% { transform: translate(0, 0);}
 }
 
 @keyframes bubbleMotion3 {
   0% { transform: translate(0, 0); }
-  50% { transform: translate(60px, 50px) rotate(10deg); }
+  50% { transform: translate(-30px, 30px) rotate(-5deg); }
   100% { transform: translate(0, 0); }
 }
 
 @keyframes bubbleMotion4 {
   0% { transform: translate(0, 0); }
-  50% { transform: translate(90px, 10px); }
+  50% { transform: translate(30px, 30px); }
   100% { transform: translate(0, 0); }
 }

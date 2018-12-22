@@ -11,7 +11,7 @@ export default () =>
   <Layout className="home-page" title='Little Universe - Home' render={(onExit) => {
     return (
       <>
-      <Nav onExit={onExit} />
+      <Nav onExit={onExit}/>
 
       <div className="home-hero-bg">
         <img className="navy-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/navy.svg" />

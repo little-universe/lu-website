@@ -1,26 +1,24 @@
 import "./styles.scss"
+import Router from 'next/router'
 import Grid from '@material-ui/core/Grid'
+import { Icon } from 'react-icons-kit'
 
-export default () =>
-  <div className="nav">
-    <Grid container className="research" spacing={24} direction="column">
+export default ({
+  variant = "full",
+  url,
+  researchTitle,
+  researchSubtitle,
+  researchBlurb,
+}) =>
+  <div className={ variant === "preview" ? "research preview" : "research" }>
+    <Grid item xs={6}>
+    { variant ==="preview" ?
       <Grid item>
-        <Grid container spacing={24} direction="column">
-          <Grid item xs={6}>
-            <h1>Motion.js and the Non-Nested Web</h1>
-            <p>Motion.js is a tool that we'll use to do some great stuff. </p>
-          </Grid>
-
-          <Grid item xs={6}>
-            <h1>Wireframing and Mocking It Up</h1>
-            <p>Working with complex flows and lots of user inputs makes wireframing and mockups so important. This is how we do it!</p>
-          </Grid>
-
-          <Grid item xs={6}>
-            <h1>Writing the Motion.js API</h1>
-            <p>Motion.js is a tool that we'll use to do some great stuff. </p>
-          </Grid>
-        </Grid>
+          <h1 className="research-title">{researchTitle}</h1>
       </Grid>
+      :
+      <h1>{researchTitle}</h1>
+    }
     </Grid>
+
   </div>
