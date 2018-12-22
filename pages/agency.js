@@ -35,10 +35,18 @@ export default () =>
       </Grid>
     </Grid>
     <Grid container className="container team">
-      <Grid item xs={6}>
-      <h1>Adrian Del Balso</h1>
-      <h1>Zach Smith</h1>
-      <h1>Taylor Zanke</h1>
+      <Grid item xs={6} className="teamMembers">
+        <h1>Adrian Del Balso</h1>
+        <p>Is a Product Designer and stuff and does a really good job at a lot of different things.</p>
+        <h1>Zach Smith</h1>
+        <p>Is a Full Stack Developer...</p>
+        <h1>Taylor Zanke</h1>
+        <p>Is a Product Designer...</p>
+      </Grid>
+      <Grid item xs={6} className="teamPhotos">
+        <img className="adrian activeImage" src=""></img>
+        <img className="zach" src=""></img>
+        <img className="taylor" src=""></img>
       </Grid>
     </Grid>
 
