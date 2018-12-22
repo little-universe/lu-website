@@ -1,5 +1,5 @@
 // CONSTANTS
-$bubbleWidth: 25vw;
+$bubbleWidth: 30vw;
 
 $fontFamily: 'Marr Sans Web';
 $fontWeightNormal: normal;
@@ -134,14 +134,14 @@ a {
     z-index: -1;
   }
   .navy-bubble {
-    top: 1%;
+    top: -35%;
     right: 5%;
     @include animation(bubbleMotion1 20s infinite);
     @include transition;
     animation-delay: 2s;
   }
   .yellow-bubble {
-    top: -5%;
+    top: -20%;
     left: 15%;
     @include animation(bubbleMotion2 20s infinite);
     @include transition;
@@ -149,13 +149,13 @@ a {
   }
   .oatmeal-bubble {
     bottom: -5%;
-    left: -5%;
+    left: -10%;
     @include animation(bubbleMotion3 20s infinite);
     @include transition;
     animation-delay: 3s;
   }
   .green-bubble {
-    bottom: -7%;
+    bottom: 15%;
     right: -5%;
     z-index: 1;
     @include animation(bubbleMotion4 20s infinite);
