@@ -15,22 +15,23 @@ export default () =>
     <Hero
       headline="Research is making, implementing, writing, thinking, reviewing, or designing. We do it every day."
     />
-  <Grid container direction="column" className="container">
-    { RESEARCH.map((research) =>
-      <Grid container>
-        <Grid item xs={12}>
-          <Research
-            onExit={onExit}
-            variant="preview"
-            researchTitle={research.title}
-            researchSubtitle={research.subTitle}
-            researchBlurb={research.blurb}
-            url={research.url}
-          />
+
+    <Grid container direction="column" className="container">
+      { RESEARCH.map((research) =>
+        <Grid container>
+          <Grid item xs={12}>
+            <Research
+              onExit={onExit}
+              variant="preview"
+              researchTitle={research.title}
+              researchSubtitle={research.subTitle}
+              researchBlurb={research.blurb}
+              url={research.url}
+            />
+          </Grid>
         </Grid>
-      </Grid>
-    )}
-  </Grid>
+      )}
+    </Grid>
 
   <Footer />
   </>
