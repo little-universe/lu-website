@@ -113,6 +113,9 @@ a {
     opacity: 0.8;
     @include transition;
   }
+  &.disable {
+    pointer-events: none;
+  }
 }
 
 .container {
@@ -127,6 +130,7 @@ a {
 
 .home-hero-bg {
   position: relative;
+  // @include animation(rotate 30s infinite);
 
   .bubble {
     min-width: 300px;
@@ -160,6 +164,12 @@ a {
     right: -5%;
     z-index: 1;
     @include animation(bubbleMotion4 20s infinite);
+    @include transition;
+  }
+  .research-bubble {
+    @include animation(researchMotion 100s infinite);
+    right: 100px;
+    top: 100px;
     @include transition;
   }
 }
@@ -202,24 +212,37 @@ a {
 
 @keyframes bubbleMotion1 {
   0% { transform: translate(0, 0);}
-  50% { transform: translate(-$bubbleMove, $bubbleMove);}
+  50% { transform: translate(-30px, 30px) rotate(10deg);}
   100% { transform: translate(0, 0);}
 }
 
 @keyframes bubbleMotion2 {
-  0% { transform: translate(0, 0);}
-  50% { transform: translate($bubbleMove, $bubbleMove);}
-  100% { transform: translate(0, 0);}
+  0% { transform: translate(0, 0) scale(1);}
+  50% { transform: translate(30px, 60px) scale(0.8) skewX(20deg);}
+  100% { transform: translate(0, 0) scale(1);}
 }
 
 @keyframes bubbleMotion3 {
-  0% { transform: translate(0, 0); }
-  50% { transform: translate(-$bubbleMove, $bubbleMove); }
-  100% { transform: translate(0, 0); }
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-30px, 30px) rotate(-5deg) scale(.8); }
+  100% { transform: translate(0, 0) scale(1); }
 }
 
 @keyframes bubbleMotion4 {
-  0% { transform: translate(0, 0); }
-  50% { transform: translate($bubbleMove, $bubbleMove); }
-  100% { transform: translate(0, 0); }
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(30px, 30px) rotate(5deg) scale(.9) skewY(10deg); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes researchMotion {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(150px, 30px) rotate(5deg) skewY(10deg) scale(1.2); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  30% { transform: rotate(3deg) skewX(3deg); }
+  60% { transform: rotate(-3deg) skewX(-3deg); }
+  100% { transform: rotate(0deg); }
 }

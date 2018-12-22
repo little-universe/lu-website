@@ -20,7 +20,7 @@ export default () =>
         <img className="green-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/green.svg" />
         <Hero
           className="hero-index"
-          headline="Little Universe is a digital product design agency and research studio."
+          headline={[<span className="emphasis">Little Universe</span>, " is a digital product design agency and research studio."]}
         />
       </div>
 
