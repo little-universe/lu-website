@@ -34,6 +34,13 @@ export default () =>
         <p>We think about the part as well as the whole, the detail within the harmonious outcome, each as its own Little Universe.</p>
       </Grid>
     </Grid>
+    <Grid container className="container team">
+      <Grid item xs={6}>
+      <h1>Adrian Del Balso</h1>
+      <h1>Zach Smith</h1>
+      <h1>Taylor Zanke</h1>
+      </Grid>
+    </Grid>
 
     <Grid container direction="column" className="container">
       { CLIENTS.map((client) =>
