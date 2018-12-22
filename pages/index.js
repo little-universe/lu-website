@@ -8,15 +8,19 @@ import Footer from '../components/Footer'
 import CLIENTS from '../utils/clients'
 
 export default () =>
-  <Layout title='Little Universe - Home' render={(onExit) => {
+  <Layout className="home-page" title='Little Universe - Home' render={(onExit) => {
     return (
       <>
       <Nav onExit={onExit} />
 
-      <Hero
-        className="hero-index"
-        headline="Little Universe is a digital product design agency and research studio."
-      />
+      <div className="home-hero-bg">
+        <img className="navy-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/navy.svg" />
+        <img className="yellow-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/yellow.svg" />
+        <Hero
+          className="hero-index"
+          headline="Little Universe is a digital product design agency and research studio."
+        />
+      </div>
 
     <Grid container direction="column" className="container">
       { CLIENTS.map((client) =>

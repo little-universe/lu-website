@@ -2,5 +2,13 @@
 
 .navLink {
   cursor: pointer;
-  margin-left: $buffer;
+  text-align: right;
+  position: relative;
+  z-index: 1;
+}
+
+.home-page {
+  .navLink {
+    color: #c5c5c5;
+  }
 }
