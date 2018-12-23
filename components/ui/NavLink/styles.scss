@@ -8,14 +8,17 @@
   position: relative;
   z-index: 1;
   color: $fontColorLightened;
+  @include transition;
   &:after {
     content: '';
     position: absolute;
-    top: 20px;
+    top: $buffer;
     display: block;
-    width: 0;
+    background-image: url('https://s3.us-east-2.amazonaws.com/lu-assets/navy.svg');
+    @include transition;
+    background-size: 100% 100%;
     height: 2px;
-    background: $fontColor;
+    width: 0;
     @include transition;
   }
   &:hover::after {
@@ -24,6 +27,7 @@
   }
   &:hover {
     color: $fontColor;
+    @include transition;
   }
 }
 

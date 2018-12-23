@@ -3,7 +3,6 @@
 .nav {
   padding: $buffer*3 $buffer*3 0 $buffer*3;
   color: $fontColorLightened;
-
   a.disable {
     .navLink {
       color: $fontColor !important;
@@ -11,11 +10,14 @@
         content: '';
         display: block;
         position: absolute;
-        top: 20px;
-        width: 100%;
-        height: 2px;
-        background: $fontColor;
+        top: $buffer;
+        // width: 100%;
+        // height: 3px;
+        background-image: url('https://s3.us-east-2.amazonaws.com/lu-assets/navy.svg');
         @include transition;
+        background-size: 100% 100%;
+        height: 2px;
+        width: 100%;
       }
     }
   }
