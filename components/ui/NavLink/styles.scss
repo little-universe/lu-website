@@ -1,14 +1,37 @@
 @import '../../../Layouts/styles.scss';
 
 .navLink {
+  display: block;
   cursor: pointer;
-  text-align: right;
+  // text-align: right;
+  float: right;
   position: relative;
   z-index: 1;
+  color: $fontColorLightened;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    display: block;
+    width: 0;
+    height: 2px;
+    background: $fontColor;
+    @include transition;
+  }
+  &:hover::after {
+    width: 100%;
+    @include transition;
+  }
+  &:hover {
+    color: $fontColor;
+  }
 }
 
 .home-page {
   .navLink {
-    color: $fontColorLightened;
+  }
+}
+.agency-page {
+  .navLink {
   }
 }
