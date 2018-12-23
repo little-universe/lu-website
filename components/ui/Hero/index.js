@@ -10,7 +10,7 @@ export default ({ className, headline, bgImage }) =>
     }
     { headline &&
       <Grid className={`hero ${className}`} container alignItems="flex-end">
-        <Grid item xs={8}>
+        <Grid item md={8}>
           <h1 className="headline">{headline}</h1>
 
         </Grid>
