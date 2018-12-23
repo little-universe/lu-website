@@ -2,6 +2,13 @@
 
 .footer {
   border-top: $border;
+  .agencyName {
+    font-weight: $fontWeightHeavy;
+  }
+  .agencyInfo {}
+  .social {
+    text-align: right;
+  }
   p {
     margin: 0;
   }
