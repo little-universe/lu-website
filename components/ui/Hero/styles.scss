@@ -6,19 +6,25 @@
   min-height: 600px;
   background-size: cover;
   background-position: center;
-  // margin-top: -$navHeight;
-  // padding-top: $navHeight;
   color: $fontColor;
   border-bottom: $border;
 
+  &.project-hero {
+    margin-top: -$navHeight;
+    padding-top: $navHeight;
+  }
+
   &.hero-betterfin {
-    background-image: url('https://s3.us-east-2.amazonaws.com/lu-assets/bg-betterfin.png');
+    background-color: #DBE3E0;
+    .hero-image {
+      max-width: 250px;
+    }
   }
   &.hero-myxfitness {
     background-color: #f1f5f4;
   }
   &.hero-instructrr {
-    background-image: url('https://s3.us-east-2.amazonaws.com/lu-assets/bg-instructrr.png');
+    background-color: #FFBB65;
   }
 }
 

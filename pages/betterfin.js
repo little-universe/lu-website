@@ -12,7 +12,8 @@ export default () =>
       <Nav onExit={onExit}/>
 
       <Hero
-        className="hero-betterfin"
+        className="hero-betterfin project-hero"
+        bgImage="https://s3.us-east-2.amazonaws.com/lu-assets/bg-betterfin.svg"
       />
 
       <div className="container">

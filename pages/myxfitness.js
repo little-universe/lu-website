@@ -12,7 +12,7 @@ export default () =>
       <Nav onExit={onExit}/>
 
       <Hero
-        className="hero-myxfitness"
+        className="hero-myxfitness project-hero"
         bgImage="https://s3.us-east-2.amazonaws.com/lu-assets/bg-myxfitness.png"
       />
 

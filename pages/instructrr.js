@@ -12,7 +12,8 @@ export default () =>
       <Nav onExit={onExit}/>
 
       <Hero
-        className="hero-instructrr"
+        className="hero-instructrr project-hero"
+        bgImage="https://s3.us-east-2.amazonaws.com/lu-assets/bg-instructrr.png"
       />
 
       <div className="container">
