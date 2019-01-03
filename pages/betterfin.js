@@ -29,11 +29,14 @@ export default () =>
               nextProjectLink={CLIENTS[0].nextProjectLink}
               projectDescription={CLIENTS[0].description}
             />
+            <img className="product-screenshot" src="https://s3.us-east-2.amazonaws.com/lu-assets/product-screenshots/betterfin1.png" />
+            <img className="product-screenshot" src="https://s3.us-east-2.amazonaws.com/lu-assets/product-screenshots/betterfin2.png" />
+            <img className="product-screenshot" src="https://s3.us-east-2.amazonaws.com/lu-assets/product-screenshots/betterfin3.png" />
           </Grid>
         </Grid>
       </div>
 
-      <Grid container direction="column" className="container">
+      <Grid container direction="column" className="container project-links">
         { CLIENTS.filter(c => c.name !== "Betterfin").map((client) =>
           <Grid container>
             <Grid item xs={2} />

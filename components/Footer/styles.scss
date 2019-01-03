@@ -58,11 +58,18 @@
   }
 }
 
-.copiedText {
-  opacity: 0;
-  animation: fadeInLeft 2s ease-in;
+p.copiedText {
+  opacity: 1;
+  // animation: fadeInLeft 2s ease-in;
   margin-left: $buffer/2;
   font-size: $fontSizeSmall;
+  color: $fontColorLightened;
+  @include transition();
+
+  &.fadeOut {
+    opacity: 0;
+    @include transition();
+  }
 }
 
 @keyframes fadeInLeft {

@@ -13,8 +13,13 @@ class Footer extends React.Component {
     copiedText: false
   }
 
-  setCopiedText() {
-    this.setState({ copiedText: true })
+  setCopy = () => {
+    this.setState({copied: true, copiedText: true})
+
+    clearTimeout(this.timeout)
+    this.timeout = setTimeout(() => {
+      this.setState({ copiedText: false })
+    }, 1500);
   }
 
   render () {
@@ -31,13 +36,11 @@ class Footer extends React.Component {
             <Grid container alignItems="center">
               <p className="secondary">agency@littleuniverse.com</p>
               <CopyToClipboard text="agency@littleuniverse.com"
-                onCopy={() => this.setState({copied: true})}
+                onCopy={this.setCopy}
               >
                 <Icon className="copyIcon" size={18} icon={ic_content_copy} />
               </CopyToClipboard>
-              { this.state.copiedText &&
-                <p className="secondary copiedText">Copied</p>
-              }
+              <p className={ this.state.copiedText ? "copiedText" : "copiedText fadeOut"}>Copied</p>
             </Grid>
           </Grid>
           <Grid item xs={3} className="footerItem">

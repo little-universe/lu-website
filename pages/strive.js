@@ -33,7 +33,7 @@ export default () =>
         </Grid>
       </div>
 
-      <Grid container direction="column" className="container">
+      <Grid container direction="column" className="container project-links">
         { CLIENTS.filter(c => c.name !== "Strive Digital").map((client) =>
           <Grid container>
             <Grid item xs={2} />

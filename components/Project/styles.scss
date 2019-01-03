@@ -68,3 +68,13 @@
   margin-bottom: $buffer;
   font-weight: $fontWeightHeavy;
 }
+
+.product-screenshot {
+  @include shadow();
+  margin-bottom: 10vh;
+  width: 100%;
+}
+
+.project-links {
+  border-top: $border;
+}
