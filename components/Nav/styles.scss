@@ -24,6 +24,9 @@
   }
 
   &.light {
+    .navLink:after {
+      background-color: white;
+    }
     * {
       color: #fff;
     }

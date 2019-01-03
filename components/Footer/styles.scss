@@ -42,3 +42,44 @@
     margin: 0;
   }
 }
+
+.copyIcon {
+  margin-left: $buffer/2;
+  cursor: pointer;
+  svg {
+    fill: $fontColorLightened;
+    @include transition;
+    position: relative;
+    top: -2px;
+
+    &:hover {
+      fill: $fontColor;
+    }
+  }
+}
+
+.copiedText {
+  opacity: 0;
+  animation: fadeInLeft 2s ease-in;
+  margin-left: $buffer/2;
+  font-size: $fontSizeSmall;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-3px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(3px);
+  }
+}

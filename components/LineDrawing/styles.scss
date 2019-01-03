@@ -3,6 +3,7 @@
 .line-drawing-wrapper {
   opacity: 1;
   @include transition;
+  padding-right: $buffer;
   #line-drawing path {
     animation: dash 5s linear infinite;
   }
@@ -16,8 +17,8 @@
 }
 #line-drawing {
   fill: none;
-  transform: rotate(45deg) scale(2.2);
-  top: 300px;
+  // transform: rotate(45deg) ;
+  // top: 300px;
 
   position: relative;
   z-index: -1;

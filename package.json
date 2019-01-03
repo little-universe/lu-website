@@ -9,7 +9,8 @@
     "next": "^7.0.2",
     "node-sass": "^4.11.0",
     "popmotion": "^8.5.3",
-    "react": "^16.7.0-alpha.2",
+    "react": "^16.7.0",
+    "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.7.0-alpha.2",
     "react-icons-kit": "^1.2.1",
     "react-scripts": "2.1.1"

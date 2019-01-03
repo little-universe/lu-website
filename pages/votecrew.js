@@ -7,13 +7,13 @@ import Footer from '../components/Footer'
 import CLIENTS from '../utils/clients'
 
 export default () =>
-  <Layout title='Instructrr' className="instructrr-page" render={(onExit) => (
+  <Layout title='VoteCrew' className="votecrew-page" render={(onExit) => (
     <>
-      <Nav onExit={onExit} theme="light" />
+      <Nav onExit={onExit}/>
 
       <Hero
-        className="hero-instructrr project-hero"
-        bgImage="https://s3.us-east-2.amazonaws.com/lu-assets/bg-instructrr.png"
+        className="hero-votecrew project-hero"
+        bgImage="https://s3.us-east-2.amazonaws.com/lu-assets/vc_logo.png"
       />
 
       <div className="container">
@@ -22,19 +22,19 @@ export default () =>
           <Grid item xs={8} >
             <Project
               variant="full"
-              serviceProvided={CLIENTS[2].services}
-              projectTitle={CLIENTS[2].name}
-              projectBlurb={CLIENTS[2].blurb}
-              projectImageLink={CLIENTS[2].projectImageLink}
-              nextProjectLink={CLIENTS[2].nextProjectLink}
-              projectDescription={CLIENTS[2].description}
+              serviceProvided={CLIENTS[4].services}
+              projectTitle={CLIENTS[4].name}
+              projectBlurb={CLIENTS[4].blurb}
+              projectImageLink={CLIENTS[4].projectImageLink}
+              nextProjectLink={CLIENTS[4].nextProjectLink}
+              projectDescription={CLIENTS[4].description}
             />
           </Grid>
         </Grid>
       </div>
 
       <Grid container direction="column" className="container">
-        { CLIENTS.filter(c => c.name !== "Instructrr").map((client) =>
+        { CLIENTS.filter(c => c.name !== "VoteCrew").map((client) =>
           <Grid container>
             <Grid item xs={2} />
             <Grid item xs={8}>
