@@ -18,26 +18,36 @@ export default ({ theme, onExit }) =>
 
       <Grid item xs={10}>
         <Grid container spacing={24} justify="flex-end" alignItems="flex-end">
-        <Grid item xs={2}>
+          <Grid item md={2} xs={12}>
+              <a
+                className={ Router.route === '/agency' && 'disable' }
+                onClick={() => onExit(() => Router.push('/agency'))}
+              >
+                <Grid item>
+                  <NavLink linkTitle="Agency"/>
+                </Grid>
+              </a>
+          </Grid>
+          <Grid item md={2} xs={12}>
             <a
-              className={ Router.route === '/agency' && 'disable' }
-              onClick={() => onExit(() => Router.push('/agency'))}
+              className={ Router.route === '/research' && 'disable' }
+              onClick={() => onExit(() => Router.push('/research'))}
             >
-              <Grid item>
-                <NavLink linkTitle="Agency"/>
-              </Grid>
-            </a>
-        </Grid>
-        <Grid item xs={2}>
-          <a
-            className={ Router.route === '/research' && 'disable' }
-            onClick={() => onExit(() => Router.push('/research'))}
-          >
-              <Grid item>
-                <NavLink linkTitle="Research"/>
-              </Grid>
-            </a>
-        </Grid>
+                <Grid item>
+                  <NavLink linkTitle="Research"/>
+                </Grid>
+              </a>
+          </Grid>
+          <Grid item md={2} xs={12}>
+            <a
+              className={ Router.route === '/work-with-us' && 'disable' }
+              onClick={() => onExit(() => Router.push('/work-with-us'))}
+            >
+                <Grid item>
+                  <NavLink linkTitle="Work With Us"/>
+                </Grid>
+              </a>
+          </Grid>
 
         </Grid>
       </Grid>

@@ -18,8 +18,8 @@ export default () =>
 
       <div className="container">
         <Grid container>
-          <Grid item xs={2} />
-          <Grid item xs={8} >
+          <Grid item xs={12} md={2} />
+          <Grid item xs={12} md={8} >
             <Project
               variant="full"
               serviceProvided={CLIENTS[2].services}

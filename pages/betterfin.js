@@ -18,8 +18,8 @@ export default () =>
 
       <div className="container">
         <Grid container>
-          <Grid item xs={2} />
-          <Grid item xs={8} >
+          <Grid item xs={12} md={2} />
+          <Grid item xs={12} md={8} >
             <Project
               variant="full"
               serviceProvided={CLIENTS[0].services}
@@ -39,8 +39,8 @@ export default () =>
       <Grid container direction="column" className="container project-links">
         { CLIENTS.filter(c => c.name !== "Betterfin").map((client) =>
           <Grid container>
-            <Grid item xs={2} />
-            <Grid item xs={8}>
+            <Grid item md={2} xs={12} />
+            <Grid item md={8} xs={12} >
               <Project
                 onExit={onExit}
                 variant="preview"

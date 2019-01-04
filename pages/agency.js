@@ -27,10 +27,10 @@ class Agency extends React.Component {
           />
 
         <Grid container className="container" alignItems="center">
-          <Grid item xs={6}>
+          <Grid item md={6} xs={12}>
             <LineDrawing className={`line-drawing-wrapper ${visible ? 'animate' : ''}`} />
           </Grid>
-          <Grid item xs={6}>
+          <Grid item md={6} xs={12}>
             <p>We are a team of obsessive, critical, and evolutionary makers interested in the way our contemporary Digital context will evolve and continue to influence our lives beyond the screen.</p>
 
             <p>We work diligently and systematically to design, build, scale, and maintain products, websites, and libraries for our clients which support their missions and targets. Through our operation as an agency we are granted an objective view into the problems of our clients allowing for unbiased decision making and focused product thinking.</p>
@@ -47,7 +47,7 @@ class Agency extends React.Component {
           </Grid>
         </Grid>
         <Grid container className="container team">
-          <Grid item xs={6} className="teamMembers">
+          <Grid item md={6} xs={12} className="teamMembers">
             <h1 className="adrianName">Adrian Del Balso</h1>
             <p>Is a Product Designer and stuff and does a really good job at a lot of different things.</p>
             <h1 className="zachName">Zach Smith</h1>
@@ -55,7 +55,7 @@ class Agency extends React.Component {
             <h1 className="taylorName">Taylor Zanke</h1>
             <p>Is a Product Designer...</p>
           </Grid>
-          <Grid item xs={6} className="teamPhotos">
+          <Grid item md={6} xs={false} className="teamPhotos">
             <img className="adrian" src=""></img>
             <img className="zach activeImage" src=""></img>
             <img className="taylor" src=""></img>

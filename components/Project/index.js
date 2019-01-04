@@ -24,7 +24,7 @@ export default ({
         </Grid>
       }
 
-      <Grid item xs={6}>
+      <Grid item md={6} xs={12}>
        { variant === "preview" ?
         <a onClick={() => onExit(() => Router.push(`${url}`))}>
           <h1 className="project-title">{projectTitle}</h1>
@@ -35,7 +35,7 @@ export default ({
       </Grid>
 
       { variant === "preview" &&
-        <Grid item xs={4}>
+        <Grid item md={4} xs={10}>
           { serviceProvided.map((service) =>
             <h2 className="service">{service}</h2>
           )}
@@ -53,7 +53,7 @@ export default ({
       { variant != "preview" &&
         <>
           <Grid container className="project-blurb">
-            <Grid item xs={8}>
+            <Grid item md={8} xs={12}>
               <p>{projectBlurb}</p>
             </Grid>
           </Grid>
@@ -66,7 +66,7 @@ export default ({
           </Grid>
 
           <Grid container className="project-description">
-            <Grid item xs={8}>
+            <Grid item md={8} xs={12}>
               <p>{projectDescription}</p>
             </Grid>
           </Grid>

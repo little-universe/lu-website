@@ -9,6 +9,7 @@ $fontWeightHeavy: 500;
 // $fontColor: #2e3648;
 $fontColor: #555E68;
 $fontColorLightened: #adb1bb;
+$fontColorLight: #fff;
 $fontSize: 20px;
 $fontSizeSmall: 14px;
 $fontSizeHeadline: 40px;
@@ -110,6 +111,7 @@ p {
 a {
   text-decoration: none;
   color: $fontColor;
+  cursor: pointer;
   @include transition;
   &:hover {
     opacity: 0.8;
@@ -120,9 +122,81 @@ a {
   }
 }
 
+button {
+  padding: $buffer;
+  background-color: $accentColor;
+  color: $fontColorLight;
+  font-size: $fontSizeSubHeadline;
+  font-family: $fontFamily;
+  cursor: pointer;
+  border: none;
+  @include transition;
+
+  &:hover {
+    background-color: darken($accentColor, 10%);
+  }
+  &:active {
+    background-color: darken($accentColor, 20%);
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+input, textarea {
+  border: none;
+  border-bottom: 2px solid $strokeColor;
+  font-size: $fontSizeSubHeadline;
+  padding: $buffer/2 0;
+  margin-bottom: $buffer*2;
+  font-family: $fontFamily;
+  color: $fontColor;
+  position: relative;
+  @include transition;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: $fontColor;
+  }
+
+  &:focus, &:active {
+    outline: none;
+    @include transition;
+    border-bottom: 2px solid $fontColor;
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ccc;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ccc;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #ccc;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #ccc;
+}
+
 .container {
   padding: $buffer*3;
   margin-top: $buffer*2;
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    padding: $buffer;
+  }
 }
 
 .fade-out {
@@ -167,6 +241,12 @@ a {
       transform: rotate(-1deg);
       display: none;
     }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .teamPhotos {
+    display: none;
   }
 }
 

@@ -4,9 +4,9 @@ const CLIENTS = [
     name: "Betterfin",
     services: ['Product Design', 'Back End Development', 'Front End Development'],
     title: "",
-    blurb: "A whole new way to get business loans.",
+    blurb: "A platform that uses your business's data to find you the best possible financing.",
     hero: "",
-    description: "Betterfin is a service for business owners to get educated on small business lending and navigate commercial products with confidence. We provide transparency into lending through data analytics. Our goal is to help owners secure business financing they understand.",
+    description: "Betterfin is a service for business owners to get educated on small business lending and navigate commercial products with confidence. They provide transparency into lending through data analytics to help owners secure business financing they understand.",
     images: [],
     testimonial: {
       statement: "",
@@ -55,9 +55,9 @@ const CLIENTS = [
     name: "Strive Digital",
     services: ['UX/UI Design', 'Frontend', 'Backend'],
     title: "",
-    blurb: "A platform for progressive campaigns to find and engage their supporters.",
+    blurb: "A joint venture with Little Universe to support progressive campaigns.",
     hero: "",
-    description: "",
+    description: "Strive Digital is a multi-channel messaging platform for progressive campaigns of all sizes. The founders of Little Universe built the platform and operate it in partnership with Strive as a joint venture.",
     images: [],
     testimonial: {
       statement: "",
