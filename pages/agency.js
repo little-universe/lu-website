@@ -47,9 +47,10 @@ class Agency extends React.Component {
           </Grid>
         </Grid>
         <Grid container className="container team">
+          <Grid item md={6} xs={12} />
           <Grid item md={6} xs={12} className="teamMembers">
             <h1 className="adrianName">Adrian Del Balso</h1>
-            <p>Is a Product Designer and stuff and does a really good job at a lot of different things.</p>
+            <p>Is a Product Designer...</p>
             <h1 className="zachName">Zach Smith</h1>
             <p>Is a Full Stack Developer...</p>
             <h1 className="taylorName">Taylor Zanke</h1>
@@ -57,7 +58,7 @@ class Agency extends React.Component {
           </Grid>
           <Grid item md={6} xs={false} className="teamPhotos">
             <img className="adrian" src=""></img>
-            <img className="zach activeImage" src=""></img>
+            <img className="zach" src=""></img>
             <img className="taylor" src=""></img>
           </Grid>
         </Grid>
