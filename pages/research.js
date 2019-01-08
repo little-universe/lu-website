@@ -16,7 +16,7 @@ export default () =>
       headline="Research is making, implementing, writing, thinking, reviewing, or designing. We do it every day."
     />
 
-    <Grid container direction="column" className="container">
+    <Grid container direction="column" className="container researchTopics">
       { RESEARCH.map((research) =>
         <Grid container>
           <Grid item xs={12}>

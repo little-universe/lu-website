@@ -1,7 +1,8 @@
 @import '../../Layouts/styles.scss';
 
 .footer {
-  border-top: $border;
+  // border-top: $border;
+  padding: $buffer*3;
   .agencyName {
     font-weight: $fontWeightHeavy;
   }

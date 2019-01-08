@@ -26,7 +26,7 @@ class Agency extends React.Component {
             headline="We are concerned not only with the way Digital Products look, function, or produce value, but with the way they are built, maintained, and scaled."
           />
 
-        <Grid container className="container" alignItems="center">
+        <Grid container className="container agencyBlurb" alignItems="center">
           <Grid item md={6} xs={12}>
             <LineDrawing className={`line-drawing-wrapper ${visible ? 'animate' : ''}`} />
           </Grid>

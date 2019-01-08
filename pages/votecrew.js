@@ -31,13 +31,20 @@ export default () =>
             />
           </Grid>
         </Grid>
+        <Grid container>
+          <Grid item xs={1} md={1} />
+          <Grid item xs={10} md={10}>
+            <img className="product-screenshot" src="../static/product-screenshots/votecrew/votecrew-1.png" />
+            <img className="product-screenshot" src="../static/product-screenshots/votecrew/votecrew-2.png" />
+            <img className="product-screenshot" src="../static/product-screenshots/votecrew/votecrew-3.png" />
+          </Grid>
+        </Grid>
       </div>
 
       <Grid container direction="column" className="container project-links">
         { CLIENTS.filter(c => c.name !== "VoteCrew").map((client) =>
           <Grid container>
-            <Grid item xs={2} />
-            <Grid item xs={8}>
+            <Grid item md={12} xs={12} >
               <Project
                 onExit={onExit}
                 variant="preview"

@@ -3,12 +3,19 @@
 .project {
   border: 1px solid transparent;
   @include transition;
-  padding: $buffer;
-  margin: -$buffer;
-  margin-bottom: $buffer*3;
+  padding: $buffer*3;
+  // margin: -$buffer;
+  // margin-bottom: $buffer*3;
   position: relative;
 
   &.preview {
+    border-bottom: $border;
+    h1 {
+      margin-bottom: 0;
+    }
+    h2 {
+      margin-bottom: 0;
+    }
     .preview-arrow, .project-title {
       cursor: pointer;
     }
@@ -16,11 +23,11 @@
 }
 
 .service {
-  color: $fontColorLightened;
+  color: $fontColor;
   @include transition;
   font-size: $fontSize;
   line-height: $lineHeight/4;
-  vertical-align: top;
+  display: inline;
 }
 
 .preview-arrow-wrapper {
@@ -70,7 +77,7 @@
 }
 
 .product-screenshot {
-  @include shadow();
+  // @include shadow();
   margin-bottom: 10vh;
   width: 100%;
 }

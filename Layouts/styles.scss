@@ -114,7 +114,13 @@ a {
   cursor: pointer;
   @include transition;
   &:hover {
-    opacity: 0.8;
+    // opacity: 0.8;
+    h1 {
+      color: $fontColorLightened;
+    }
+    h2 {
+      color: $fontColorLightened;
+    }
     @include transition;
   }
   &.disable {
@@ -189,8 +195,8 @@ input, textarea {
 }
 
 .container {
-  padding: $buffer*3;
-  margin-top: $buffer*2;
+  // padding: $buffer*3;
+  // margin-top: $buffer*2;
 }
 
 @media only screen and (max-width: 640px) {
@@ -204,7 +210,18 @@ input, textarea {
   opacity: 0;
   transform: translateY(10px);
 }
+.agencyBlurb {
+  padding: $buffer*3;
+}
+
+.researchTopics {
+  padding: $buffer*3;
+  border-bottom: $border;
+}
+
 .team {
+  border-bottom: $border;
+  padding-bottom: $buffer*3;
   .teamMembers {
     h1 {
       display: inline-block;

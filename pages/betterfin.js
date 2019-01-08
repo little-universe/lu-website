@@ -18,8 +18,8 @@ export default () =>
 
       <div className="container">
         <Grid container>
-          <Grid item xs={12} md={2} />
-          <Grid item xs={12} md={8} >
+          <Grid item xs={2} md={2} />
+          <Grid item xs={8} md={8} >
             <Project
               variant="full"
               serviceProvided={CLIENTS[0].services}
@@ -29,9 +29,14 @@ export default () =>
               nextProjectLink={CLIENTS[0].nextProjectLink}
               projectDescription={CLIENTS[0].description}
             />
-            <img className="product-screenshot" src="https://s3.us-east-2.amazonaws.com/lu-assets/product-screenshots/betterfin1.png" />
-            <img className="product-screenshot" src="https://s3.us-east-2.amazonaws.com/lu-assets/product-screenshots/betterfin2.png" />
-            <img className="product-screenshot" src="https://s3.us-east-2.amazonaws.com/lu-assets/product-screenshots/betterfin3.png" />
+          </Grid>
+        </Grid>
+        <Grid container>
+          <Grid item xs={1} md={1} />
+          <Grid item xs={10} md={10}>
+            <img className="product-screenshot" src="../static/product-screenshots/betterfin/betterfin-1.png" />
+            <img className="product-screenshot" src="../static/product-screenshots/betterfin/betterfin-2.png" />
+            <img className="product-screenshot" src="../static/product-screenshots/betterfin/betterfin-3.png" />
           </Grid>
         </Grid>
       </div>
@@ -39,8 +44,7 @@ export default () =>
       <Grid container direction="column" className="container project-links">
         { CLIENTS.filter(c => c.name !== "Betterfin").map((client) =>
           <Grid container>
-            <Grid item md={2} xs={12} />
-            <Grid item md={8} xs={12} >
+            <Grid item md={12} xs={12} >
               <Project
                 onExit={onExit}
                 variant="preview"
