@@ -10,8 +10,6 @@ import RESEARCH from '../utils/research'
 export default () =>
   <Layout title='Little Universe - Research' className="research-page" render={(onExit) => (
     <>
-    <Nav onExit={onExit} />
-
     <Hero
       headline="Research is making, implementing, writing, thinking, reviewing, or designing. We do it every day."
     />

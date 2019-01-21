@@ -9,8 +9,6 @@ import CLIENTS from '../utils/clients'
 export default () =>
   <Layout title='VoteCrew' className="votecrew-page" render={(onExit) => (
     <>
-      <Nav onExit={onExit}/>
-
       <Hero
         className="hero-votecrew project-hero"
         bgImage="https://s3.us-east-2.amazonaws.com/lu-assets/vc_logo.png"

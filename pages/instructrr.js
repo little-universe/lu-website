@@ -9,8 +9,6 @@ import CLIENTS from '../utils/clients'
 export default () =>
   <Layout title='Instructrr' className="instructrr-page" render={(onExit) => (
     <>
-      <Nav onExit={onExit} theme="light" />
-
       <Hero
         className="hero-instructrr project-hero"
         bgImage="https://s3.us-east-2.amazonaws.com/lu-assets/bg-instructrr.png"

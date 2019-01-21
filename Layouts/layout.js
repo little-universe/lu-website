@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Router from 'next/router'
 import Loader from '../components/Loader'
+import Nav from '../components/Nav'
 
 class Layout extends React.Component {
   state = {
@@ -33,12 +34,15 @@ class Layout extends React.Component {
           <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         </Head>
 
+        <Nav onExit={this.onExit}/>
         {
           this.state.loading ?
           <Loader />
           :
-          <div className={`page-content ${className} ${this.state.loadOut && "fade-out"}`}
-          >{render(this.onExit)}</div>
+          <>
+            <div className={`page-content ${className} ${this.state.loadOut && "fade-out"}`}
+            >{render(this.onExit)}</div>
+          </>
         }
 
       </div>
