@@ -33,9 +33,9 @@ export default ({
         </Grid>
 
         { variant === "preview" &&
-          <Grid item md={6} xs={12} alignItems="flex-e">
+          <Grid item md={6} xs={12}>
             { serviceProvided.map((service) =>
-              <h2 className="service">{service} </h2>
+              <h2 className="service">{service}</h2>
             )}
           </Grid>
         }
