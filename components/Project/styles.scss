@@ -26,8 +26,7 @@
   color: $fontColor;
   @include transition;
   font-size: $fontSize;
-  line-height: $lineHeight/4;
-  display: inline;
+  line-height: $lineHeight;
 }
 
 .preview-arrow-wrapper {
