@@ -9,6 +9,8 @@ import CLIENTS from '../utils/clients'
 export default () =>
   <Layout title='Myx Fitness' className="myxfitness-page" render={(onExit) => (
     <>
+      <Nav onExit={onExit}/>
+
       <Hero
         className="hero-myxfitness project-hero"
         bgImage="https://s3.us-east-2.amazonaws.com/lu-assets/bg-myxfitness.png"

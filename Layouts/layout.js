@@ -34,7 +34,6 @@ class Layout extends React.Component {
           <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         </Head>
 
-        <Nav onExit={this.onExit}/>
         {
           this.state.loading ?
           <Loader />

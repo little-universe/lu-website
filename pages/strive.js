@@ -9,6 +9,8 @@ import CLIENTS from '../utils/clients'
 export default () =>
   <Layout title='Strive Digital' className="strive-page" render={(onExit) => (
     <>
+      <Nav onExit={onExit}/>
+
       <Hero
         className="hero-strive project-hero"
         bgImage="https://s3.us-east-2.amazonaws.com/lu-assets/strive-logo-web.png"

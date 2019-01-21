@@ -19,6 +19,7 @@ class Agency extends React.Component {
       <Layout title='Little Universe - Agency' className="agency-page" render={(onExit) => {
         return (
           <>
+          <Nav onExit={onExit}/>
 
           <Hero
             className="hero-agency"
