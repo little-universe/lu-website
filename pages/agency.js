@@ -16,20 +16,21 @@ class Agency extends React.Component {
   render() {
     const { visible } = this.state;
     return (
-      <Layout title='Little Universe - Agency' className="agency-page" render={(onExit) => {
         return (
           <>
-          <Nav onExit={onExit}/>
+          <Nav />
+          <div className="home-hero-bg agency">
+            <img className="yellow-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/yellow.svg" />
+            <img className="green-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/green.svg" />
 
           <Hero
             className="hero-agency"
             headline="We are concerned not only with the way Digital Products look, function, or produce value, but with the way they are built, maintained, and scaled."
           />
+          </div>
 
         <Grid container className="container agencyBlurb" alignItems="center">
-          <Grid item md={6} xs={12}>
-            <LineDrawing className={`line-drawing-wrapper ${visible ? 'animate' : ''}`} />
-          </Grid>
+          <Grid item md={6} xs={12}/>
           <Grid item md={6} xs={12}>
             <p>We are a team of obsessive, critical, and evolutionary makers interested in the way our contemporary Digital context will evolve and continue to influence our lives beyond the screen.</p>
 
@@ -47,19 +48,29 @@ class Agency extends React.Component {
           </Grid>
         </Grid>
         <Grid container className="container team">
-          <Grid item md={6} xs={12} />
-          <Grid item md={6} xs={12} className="teamMembers">
-            <h1 className="adrianName">Adrian Del Balso</h1>
-            <p>Is a Product Designer...</p>
-            <h1 className="zachName">Zach Smith</h1>
-            <p>Is a Full Stack Developer...</p>
-            <h1 className="taylorName">Taylor Zanke</h1>
-            <p>Is a Product Designer...</p>
+          <Grid container className="teamAdrian teamMember">
+            <Grid item md={6} xs={12} className="adrianName memberName">
+              <h1>Adrian Del Balso</h1>
+            </Grid>
+            <Grid item md={6} xs={12} className="adrianDesc memberDesc">
+              <p>A Senior Product Designer and Product manager with front end development and visual design expertise.</p>
+            </Grid>
           </Grid>
-          <Grid item md={6} xs={false} className="teamPhotos">
-            <img className="adrian" src=""></img>
-            <img className="zach" src=""></img>
-            <img className="taylor" src=""></img>
+          <Grid container className="teamZach teamMember">
+            <Grid item md={6} xs={12} className="zachName memberName">
+              <h1>Zach Smith</h1>
+            </Grid>
+            <Grid item md={6} xs={12} className="zachDesc memberDesc">
+              <p>Senior Full Stack Engineer with experience building products and technical infrastructure at scale.</p>
+            </Grid>
+          </Grid>
+          <Grid container className="teamTaylor teamMember">
+            <Grid item md={6} xs={12} className="taylorName memberName">
+              <h1>Taylor Zanke</h1>
+            </Grid>
+            <Grid item md={6} xs={12} className="taylorDesc memberDesc">
+              <p>Lead Product Designer and trained architect with front end development and visual design expertise.</p>
+            </Grid>
           </Grid>
         </Grid>
 
@@ -68,7 +79,6 @@ class Agency extends React.Component {
             <Grid container>
               <Grid item xs={12}>
                 <Project
-                  onExit={onExit}
                   variant="preview"
                   serviceProvided={client.services}
                   projectTitle={client.name}
@@ -85,7 +95,6 @@ class Agency extends React.Component {
         <Footer />
         </>
         )
-      }}/>
     )
   }
 }

@@ -7,9 +7,8 @@ import Footer from '../components/Footer'
 import CLIENTS from '../utils/clients'
 
 export default () =>
-  <Layout title='Strive Digital' className="strive-page" render={(onExit) => (
     <>
-      <Nav onExit={onExit}/>
+      <Nav/>
 
       <Hero
         className="hero-strive project-hero"
@@ -44,7 +43,6 @@ export default () =>
           <Grid container>
             <Grid item md={12} xs={12} >
               <Project
-                onExit={onExit}
                 variant="preview"
                 serviceProvided={client.services}
                 projectTitle={client.name}
@@ -60,5 +58,4 @@ export default () =>
 
       <Footer />
     </>
-  )}
-  />
+  )}/>

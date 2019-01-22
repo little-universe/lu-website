@@ -7,9 +7,9 @@ import Footer from '../components/Footer'
 import CLIENTS from '../utils/clients'
 
 export default () =>
-  <Layout title='Betterfin' className="betterfin-page" render={(onExit) => (
+  <Layout title='Betterfin' className="betterfin-page">
     <>
-      <Nav onExit={onExit}/>
+      <Nav/>
 
       <Hero
         className="hero-betterfin project-hero"
@@ -62,5 +62,4 @@ export default () =>
 
       <Footer />
     </>
-  )}
-  />
+  </Layout>
