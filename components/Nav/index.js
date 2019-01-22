@@ -5,7 +5,7 @@ import Logo from '../ui/Logo'
 import React from 'react'
 import NavLink from '../ui/NavLink'
 
-export default ({ theme }) =>
+export default ({ theme, route }) =>
   <div className={ theme === "light" ? "nav light" : "nav" }>
     <Grid container spacing={24} justify="space-between" alignItems="flex-start">
       <Link href="/">
@@ -18,21 +18,21 @@ export default ({ theme }) =>
         <Grid container spacing={24} justify="flex-end" alignItems="flex-end">
           <Grid item md={2} xs={12}>
             <Link href='/agency'>
-              <Grid item>
-                <NavLink linkTitle="Agency"/>
+              <Grid item className={ route === '/agency' && 'disable' }>
+                <NavLink linkTitle="Agency" />
               </Grid>
             </Link>
           </Grid>
           <Grid item md={2} xs={12}>
             <Link href='/research'>
-              <Grid item>
+              <Grid item className={ route === '/research' && 'disable' }>
                 <NavLink linkTitle="Research"/>
               </Grid>
             </Link>
           </Grid>
           <Grid item md={2} xs={12}>
             <Link href='/work-with-us'>
-              <Grid item>
+              <Grid item className={ route === '/work-with-us' && 'disable' }>
                 <NavLink linkTitle="Work With Us"/>
               </Grid>
             </Link>

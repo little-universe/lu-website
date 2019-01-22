@@ -17,9 +17,10 @@ export default class MyApp extends App {
 
   render() {
     const { Component, pageProps, router } = this.props
+    const { route } = router
     return (
       <Container>
-        <Nav theme={router.route === '/instructrr' ? 'light' : 'dark'}/>
+        <Nav theme={route === '/instructrr' ? 'light' : 'dark'} route={route.toString()} />
         <PageTransition
           timeout={300}
           classNames="page-transition"
