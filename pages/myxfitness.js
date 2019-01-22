@@ -7,15 +7,11 @@ import Footer from '../components/Footer'
 import CLIENTS from '../utils/clients'
 
 export default () =>
-  <Layout title='Myx Fitness' className="myxfitness-page" render={(onExit) => (
-    <>
-      <Nav onExit={onExit}/>
-
-      <Hero
-        className="hero-myxfitness project-hero"
-        bgImage="https://s3.us-east-2.amazonaws.com/lu-assets/bg-myxfitness.png"
-      />
-
+  <Layout title='Myx Fitness' className="myxfitness-page">
+    <Hero
+      className="hero-myxfitness project-hero"
+      bgImage="https://s3.us-east-2.amazonaws.com/lu-assets/bg-myxfitness.png"
+    />
       <div className="container">
         <Grid container>
           <Grid item xs={12} md={2} />
@@ -44,7 +40,6 @@ export default () =>
           <Grid container>
             <Grid item md={12} xs={12} >
               <Project
-                onExit={onExit}
                 variant="preview"
                 serviceProvided={client.services}
                 projectTitle={client.name}
@@ -59,6 +54,4 @@ export default () =>
       </Grid>
 
       <Footer />
-    </>
-  )}
-  />
+    </ Layout>

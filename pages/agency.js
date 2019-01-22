@@ -16,11 +16,7 @@ class Agency extends React.Component {
   render() {
     const { visible } = this.state;
     return (
-      <Layout title='Little Universe - Agency' className="agency-page" render={(onExit) => {
-        return (
-          <>
-          <Nav onExit={onExit}/>
-
+      <Layout title='Little Universe - Agency' className="agency-page">
           <Hero
             className="hero-agency"
             headline="We are concerned not only with the way Digital Products look, function, or produce value, but with the way they are built, maintained, and scaled."
@@ -68,7 +64,6 @@ class Agency extends React.Component {
             <Grid container>
               <Grid item xs={12}>
                 <Project
-                  onExit={onExit}
                   variant="preview"
                   serviceProvided={client.services}
                   projectTitle={client.name}
@@ -83,9 +78,7 @@ class Agency extends React.Component {
         </Grid>
 
         <Footer />
-        </>
-        )
-      }}/>
+      </Layout>
     )
   }
 }

@@ -27,24 +27,14 @@ class Layout extends React.Component {
     let { title, className, render } = this.props
 
     return (
-      <div>
+      <>
         <Head>
           <title>{ title }</title>
           <meta charSet='utf-8' />
           <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         </Head>
-
-        {
-          this.state.loading ?
-          <Loader />
-          :
-          <>
-            <div className={`page-content ${className} ${this.state.loadOut && "fade-out"}`}
-            >{render(this.onExit)}</div>
-          </>
-        }
-
-      </div>
+        {this.props.children}
+      </>
     )
   }
 }

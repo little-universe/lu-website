@@ -7,10 +7,7 @@ import Footer from '../components/Footer'
 import CLIENTS from '../utils/clients'
 
 export default () =>
-  <Layout title='Instructrr' className="instructrr-page" render={(onExit) => (
-    <>
-      <Nav onExit={onExit} theme="light" />
-
+  <Layout title='Instructrr' className="instructrr-page">
       <Hero
         className="hero-instructrr project-hero"
         bgImage="https://s3.us-east-2.amazonaws.com/lu-assets/bg-instructrr.png"
@@ -44,7 +41,6 @@ export default () =>
           <Grid container>
             <Grid item md={12} xs={12} >
               <Project
-                onExit={onExit}
                 variant="preview"
                 serviceProvided={client.services}
                 projectTitle={client.name}
@@ -59,6 +55,4 @@ export default () =>
       </Grid>
 
       <Footer />
-    </>
-  )}
-  />
+    </Layout>

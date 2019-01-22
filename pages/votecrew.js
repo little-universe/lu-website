@@ -7,10 +7,7 @@ import Footer from '../components/Footer'
 import CLIENTS from '../utils/clients'
 
 export default () =>
-  <Layout title='VoteCrew' className="votecrew-page" render={(onExit) => (
-    <>
-      <Nav onExit={onExit}/>
-
+  <Layout title='VoteCrew' className="votecrew-page">
       <Hero
         className="hero-votecrew project-hero"
         bgImage="https://s3.us-east-2.amazonaws.com/lu-assets/vc_logo.png"
@@ -46,7 +43,6 @@ export default () =>
           <Grid container>
             <Grid item md={12} xs={12} >
               <Project
-                onExit={onExit}
                 variant="preview"
                 serviceProvided={client.services}
                 projectTitle={client.name}
@@ -61,6 +57,4 @@ export default () =>
       </Grid>
 
       <Footer />
-    </>
-  )}
-  />
+    </ Layout>

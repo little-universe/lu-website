@@ -7,10 +7,8 @@ import Footer from '../components/Footer'
 import CLIENTS from '../utils/clients'
 
 export default () =>
-  <Layout title='Betterfin' className="betterfin-page" render={(onExit) => (
+  <Layout title='Betterfin' className="betterfin-page">
     <>
-      <Nav onExit={onExit}/>
-
       <Hero
         className="hero-betterfin project-hero"
         bgImage="https://s3.us-east-2.amazonaws.com/lu-assets/bg-betterfin.svg"
@@ -46,7 +44,6 @@ export default () =>
           <Grid container>
             <Grid item md={12} xs={12} >
               <Project
-                onExit={onExit}
                 variant="preview"
                 serviceProvided={client.services}
                 projectTitle={client.name}
@@ -62,5 +59,4 @@ export default () =>
 
       <Footer />
     </>
-  )}
-  />
+  </ Layout>

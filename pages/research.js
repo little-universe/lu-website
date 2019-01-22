@@ -8,10 +8,7 @@ import Footer from '../components/Footer'
 import RESEARCH from '../utils/research'
 
 export default () =>
-  <Layout title='Little Universe - Research' className="research-page" render={(onExit) => (
-    <>
-    <Nav onExit={onExit} />
-
+  <Layout title='Little Universe - Research' className="research-page">
     <Hero
       headline="Research is making, implementing, writing, thinking, reviewing, or designing. We do it every day."
     />
@@ -21,7 +18,6 @@ export default () =>
         <Grid container>
           <Grid item xs={12}>
             <Research
-              onExit={onExit}
               variant="preview"
               researchTitle={research.title}
               researchSubtitle={research.subTitle}
@@ -34,6 +30,4 @@ export default () =>
     </Grid>
 
   <Footer />
-  </>
-  )
-}/>
+</ Layout>

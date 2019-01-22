@@ -13,8 +13,7 @@ export default ({
     projectBlurb,
     projectImageLink,
     nextProjectLink,
-    projectDescription,
-    onExit
+    projectDescription
   }) =>
     <div className={ variant === "preview" ? "project preview" : "project" }>
       <Grid container alignItems="center">
@@ -25,7 +24,7 @@ export default ({
         }
         <Grid item md={6} xs={12}>
          { variant === "preview" ?
-         <a onClick={() => onExit(() => Router.push(`${url}`))}>
+         <a onClick={() => Router.push(`${url}`)}>
             <h1 className="project-title">{projectTitle}</h1>
           </a>
           :

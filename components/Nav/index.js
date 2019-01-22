@@ -2,53 +2,41 @@ import "./styles.scss"
 import Link from 'next/link'
 import Grid from '@material-ui/core/Grid'
 import Logo from '../ui/Logo'
-import Router from 'next/router'
+import React from 'react'
 import NavLink from '../ui/NavLink'
 
-export default ({ theme, onExit }) =>
+export default ({ theme }) =>
   <div className={ theme === "light" ? "nav light" : "nav" }>
     <Grid container spacing={24} justify="space-between" alignItems="flex-start">
-      <a className={ Router.route === '/' && 'disable' }
-        onClick={() => onExit(() => Router.push('/'))}
-      >
+      <Link href="/">
         <Grid item xs={2} className="logoWrapper">
           <Logo />
         </Grid>
-      </a>
+      </Link>
 
       <Grid item xs={10}>
         <Grid container spacing={24} justify="flex-end" alignItems="flex-end">
           <Grid item md={2} xs={12}>
-              <a
-                className={ Router.route === '/agency' && 'disable' }
-                onClick={() => onExit(() => Router.push('/agency'))}
-              >
-                <Grid item>
-                  <NavLink linkTitle="Agency"/>
-                </Grid>
-              </a>
+            <Link href='/agency'>
+              <Grid item>
+                <NavLink linkTitle="Agency"/>
+              </Grid>
+            </Link>
           </Grid>
           <Grid item md={2} xs={12}>
-            <a
-              className={ Router.route === '/research' && 'disable' }
-              onClick={() => onExit(() => Router.push('/research'))}
-            >
-                <Grid item>
-                  <NavLink linkTitle="Research"/>
-                </Grid>
-              </a>
+            <Link href='/research'>
+              <Grid item>
+                <NavLink linkTitle="Research"/>
+              </Grid>
+            </Link>
           </Grid>
           <Grid item md={2} xs={12}>
-            <a
-              className={ Router.route === '/work-with-us' && 'disable' }
-              onClick={() => onExit(() => Router.push('/work-with-us'))}
-            >
-                <Grid item>
-                  <NavLink linkTitle="Work With Us"/>
-                </Grid>
-              </a>
+            <Link href='/work-with-us'>
+              <Grid item>
+                <NavLink linkTitle="Work With Us"/>
+              </Grid>
+            </Link>
           </Grid>
-
         </Grid>
       </Grid>
     </Grid>
