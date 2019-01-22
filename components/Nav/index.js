@@ -38,16 +38,7 @@ export default ({ theme, onExit }) =>
                 </Grid>
               </a>
           </Grid>
-          <Grid item md={2} xs={12}>
-            <a
-              className={ Router.route === '/work-with-us' && 'disable' }
-              onClick={() => onExit(() => Router.push('/work-with-us'))}
-            >
-                <Grid item>
-                  <NavLink linkTitle="Work With Us"/>
-                </Grid>
-              </a>
-          </Grid>
+
 
         </Grid>
       </Grid>

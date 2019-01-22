@@ -8,20 +8,22 @@ import Footer from '../components/Footer'
 import RESEARCH from '../utils/research'
 
 export default () =>
-  <Layout title='Little Universe - Research' className="research-page" render={(onExit) => (
-    <>
-    <Nav onExit={onExit} />
-
-    <Hero
-      headline="Research is making, implementing, writing, thinking, reviewing, or designing. We do it every day."
-    />
+<Layout title='Little Universe - Research' className="research-page" render={(onExit) => (
+  <>
+  <Nav onExit={onExit} />
+    <div className="home-hero-bg research">
+      <img className="navy-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/navy.svg" />
+      <img className="oatmeal-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/oatmeal.svg" />
+      <Hero
+        headline="Research is making, implementing, writing, thinking, reviewing, or designing. We do it every day."
+      />
+    </div>
 
     <Grid container direction="column" className="container researchTopics">
       { RESEARCH.map((research) =>
         <Grid container>
           <Grid item xs={12}>
             <Research
-              onExit={onExit}
               variant="preview"
               researchTitle={research.title}
               researchSubtitle={research.subTitle}
@@ -32,8 +34,7 @@ export default () =>
         </Grid>
       )}
     </Grid>
-
-  <Footer />
-  </>
-  )
-}/>
+    <Footer />
+    </>
+    )
+  }/>

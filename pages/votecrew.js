@@ -7,9 +7,9 @@ import Footer from '../components/Footer'
 import CLIENTS from '../utils/clients'
 
 export default () =>
-  <Layout title='VoteCrew' className="votecrew-page" render={(onExit) => (
-    <>
-      <Nav onExit={onExit}/>
+<Layout title='VoteCrew' className="votecrew-page" render={(onExit) => (
+  <>
+    <Nav onExit={onExit}/>
 
       <Hero
         className="hero-votecrew project-hero"

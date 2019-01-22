@@ -3,31 +3,34 @@
 .line-drawing-wrapper {
   opacity: 1;
   @include transition;
-  padding-right: $buffer;
+  // padding-right: $buffer;
   #line-drawing path {
-    animation: dash 5s linear infinite;
+    // animation: dash 5s linear;
   }
   &.animate {
     opacity: 1;
     @include transition;
     #line-drawing path {
-      animation: dash 6s linear infinite;
+      // animation: dash 6s linear;
     }
   }
 }
 #line-drawing {
   fill: none;
-  // transform: rotate(45deg) ;
+  position: absolute;
+  top: 0;
+  right: -$buffer*3;
+  transform: rotate(15deg) ;
   // top: 300px;
 
-  position: relative;
-  z-index: -1;
+  // position: relative;
+  z-index: 1;
   path {
    stroke: $accentColor;
     stroke-dasharray: 5000;
     stroke-dashoffset: 5000;
     stroke-linejoin: round;
-    stroke-width: 1.8;
+    stroke-width: 1;
   }
 }
 

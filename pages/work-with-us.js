@@ -6,9 +6,9 @@ import Footer from '../components/Footer'
 import LeadForm from '../components/LeadForm'
 
 export default () =>
-  <Layout title='Little Universe - Research' className="research-page" render={(onExit) => (
-    <>
-      <Nav onExit={onExit} />
+<Layout title='Little Universe - Research' className="research-page" render={(onExit) => (
+  <>
+    <Nav onExit={onExit} />
 
       <LeadForm />
 

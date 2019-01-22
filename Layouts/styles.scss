@@ -221,45 +221,23 @@ input, textarea {
 
 .team {
   border-bottom: $border;
-  padding-bottom: $buffer*3;
-  .teamMembers {
-    h1 {
-      display: inline-block;
-      @include transition;
-      &:hover {
+  padding: $buffer*2;
+  border-top: $border;
+  .teamMember{
+    color: $fontColorLightened;
+    padding-bottom: $buffer;
+    &:last-child {
+      padding-bottom: 0;
+    }
+    .memberName {
+      &:hover + .memberPhoto{
+        opacity: 1;
         cursor: pointer;
-        color: $fontColorLightened;
         @include transition;
       }
     }
-    p {
-      color: $fontColorLightened;
-    }
   }
-  .teamPhotos {
-    text-align: right;
-    img {
-      position: absolute;
-      right: $buffer*5;
-      width: 300px; height: 400px;
-      background: grey;
-    }
-    img.activeImage {
-      display: block;
-    }
-    .adrian {
-      transform: rotate(2deg);
-      display: none;
-    }
-    .zach {
-      transform: rotate(-4deg);
-      display: none;
-    }
-    .taylor {
-      transform: rotate(-1deg);
-      display: none;
-    }
-  }
+
 }
 
 @media only screen and (max-width: 960px) {
@@ -271,6 +249,36 @@ input, textarea {
 .home-hero-bg {
   position: relative;
   // @include animation(rotate 30s infinite);
+
+  &.agency {
+    .bubble {
+      // min-width: 50%;
+      width: $bubbleWidth*1.5;
+      z-index:-15;
+    }
+    .yellow-bubble {
+       left: -10%;
+       top: -25%;
+    }
+    .green-bubble {
+      top: 10%;
+
+    }
+  }
+
+  &.research {
+    .bubble {
+      // min-width: 50%;
+      width: $bubbleWidth*1.5;
+      z-index:-15;
+    }
+    .navy-bubble {
+
+    }
+    .oatmeal-bubble {
+
+    }
+  }
 
   .bubble {
     min-width: 300px;

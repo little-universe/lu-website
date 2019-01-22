@@ -33,7 +33,8 @@ class Layout extends React.Component {
           <meta charSet='utf-8' />
           <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         </Head>
-
+        <Layout>
+          <Nav/>
         {
           this.state.loading ?
           <Loader />
@@ -43,6 +44,7 @@ class Layout extends React.Component {
             >{render(this.onExit)}</div>
           </>
         }
+        </Layout>
 
       </div>
     )
