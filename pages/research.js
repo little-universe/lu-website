@@ -8,8 +8,9 @@ import Footer from '../components/Footer'
 import RESEARCH from '../utils/research'
 
 export default () =>
+<Layout title='Little Universe - Research' className="research-page" render={(onExit) => (
   <>
-    <Nav />
+  <Nav onExit={onExit} />
     <div className="home-hero-bg research">
       <img className="navy-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/navy.svg" />
       <img className="oatmeal-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/oatmeal.svg" />
@@ -34,6 +35,6 @@ export default () =>
       )}
     </Grid>
     <Footer />
-  </>
-  )
-}/>
+    </>
+    )
+  }/>

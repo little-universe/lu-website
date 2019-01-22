@@ -7,9 +7,9 @@ import Footer from '../components/Footer'
 import CLIENTS from '../utils/clients'
 
 export default () =>
-  <Layout title='Betterfin' className="betterfin-page">
-    <>
-      <Nav/>
+<Layout title='Betterfin' className="betterfin-page" render={(onExit) => (
+  <>
+    <Nav onExit={onExit}/>
 
       <Hero
         className="hero-betterfin project-hero"
@@ -21,6 +21,7 @@ export default () =>
           <Grid item xs={1} md={1} />
           <Grid item xs={8} md={8} >
             <Project
+              onExit={onExit}
               variant="full"
               serviceProvided={CLIENTS[0].services}
               projectTitle={CLIENTS[0].name}
@@ -62,4 +63,5 @@ export default () =>
 
       <Footer />
     </>
-  </Layout>
+  )}
+  />

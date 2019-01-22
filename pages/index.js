@@ -8,8 +8,10 @@ import Footer from '../components/Footer'
 import CLIENTS from '../utils/clients'
 
 export default () =>
+<Layout className="home-page" title='Little Universe - Home' render={(onExit) => {
+  return (
     <>
-      <Nav/>
+    <Nav onExit={onExit}/>
 
       <div className="home-hero-bg">
         <img className="navy-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/navy.svg" />
@@ -27,6 +29,7 @@ export default () =>
         <Grid container>
           <Grid item xs={12}>
             <Project
+              onExit={onExit}
               variant="preview"
               serviceProvided={client.services}
               projectTitle={client.name}
@@ -43,4 +46,4 @@ export default () =>
     <Footer />
     </>
     )
-  }/>
+  }} />
