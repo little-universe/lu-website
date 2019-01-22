@@ -3,13 +3,14 @@
 .project {
   border: 1px solid transparent;
   @include transition;
-  padding: $buffer*3;
   // margin: -$buffer;
   // margin-bottom: $buffer*3;
   position: relative;
+  padding: $buffer*3 0 $buffer*3 0;
 
   &.preview {
     border-bottom: $border;
+    padding: $buffer*2;
     h1 {
       margin-bottom: 0;
     }
@@ -27,6 +28,11 @@
   @include transition;
   font-size: $fontSize;
   line-height: $lineHeight;
+}
+
+p.service {
+  margin-bottom: 0;
+  color: $fontColorLightened;
 }
 
 .preview-arrow-wrapper {
