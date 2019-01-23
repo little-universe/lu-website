@@ -17,15 +17,17 @@ class Agency extends React.Component {
     const { visible } = this.state;
     return (
       <Layout title='Little Universe - Agency' className="agency-page">
-          <Hero
-            className="hero-agency"
-            headline="We are concerned not only with the way Digital Products look, function, or produce value, but with the way they are built, maintained, and scaled."
-          />
+      <div className="home-hero-bg">
+        <img className="yellow-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/yellow.svg" />
+        <img className="green-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/green.svg" />
+        <Hero
+          className="hero-agency"
+          headline="We are concerned not only with the way Digital Products look, function, or produce value, but with the way they are built, maintained, and scaled."
+        />
+      </div>
 
         <Grid container className="container agencyBlurb" alignItems="center">
-          <Grid item md={6} xs={12}>
-            <LineDrawing className={`line-drawing-wrapper ${visible ? 'animate' : ''}`} />
-          </Grid>
+          <Grid item md={6} xs={12}/>
           <Grid item md={6} xs={12}>
             <p>We are a team of obsessive, critical, and evolutionary makers interested in the way our contemporary Digital context will evolve and continue to influence our lives beyond the screen.</p>
 
@@ -44,18 +46,13 @@ class Agency extends React.Component {
         </Grid>
         <Grid container className="container team">
           <Grid item md={6} xs={12} />
-          <Grid item md={6} xs={12} className="teamMembers">
+          <Grid item md={4} xs={12} className="teamMembers">
             <h1 className="adrianName">Adrian Del Balso</h1>
-            <p>Is a Product Designer...</p>
+            <p>Is a Product Designer and Project Manager.</p>
             <h1 className="zachName">Zach Smith</h1>
-            <p>Is a Full Stack Developer...</p>
+            <p>Is a Full Stack Developer.</p>
             <h1 className="taylorName">Taylor Zanke</h1>
-            <p>Is a Product Designer...</p>
-          </Grid>
-          <Grid item md={6} xs={false} className="teamPhotos">
-            <img className="adrian" src=""></img>
-            <img className="zach" src=""></img>
-            <img className="taylor" src=""></img>
+            <p>Is a Product Designer and trained architect.</p>
           </Grid>
         </Grid>
 

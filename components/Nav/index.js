@@ -30,13 +30,7 @@ export default ({ theme, route }) =>
               </Grid>
             </Link>
           </Grid>
-          <Grid item md={2} xs={12}>
-            <Link href='/work-with-us'>
-              <Grid item className={ route === '/work-with-us' && 'disable' }>
-                <NavLink linkTitle="Work With Us"/>
-              </Grid>
-            </Link>
-          </Grid>
+          
         </Grid>
       </Grid>
     </Grid>
