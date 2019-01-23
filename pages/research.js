@@ -6,6 +6,7 @@ import Project from '../components/Project'
 import Research from '../components/Research'
 import Footer from '../components/Footer'
 import RESEARCH from '../utils/research'
+import CLIENTS from '../utils/clients'
 
 export default () =>
   <Layout title='Little Universe - Research' className="research-page">
@@ -20,13 +21,30 @@ export default () =>
     <Grid container direction="column" className="container researchTopics">
       { RESEARCH.map((research) =>
         <Grid container>
-          <Grid item xs={12}>
+          <Grid item xs={12} md={12}>
             <Research
               variant="preview"
               researchTitle={research.title}
               researchSubtitle={research.subTitle}
               researchBlurb={research.blurb}
               url={research.url}
+            />
+          </Grid>
+        </Grid>
+      )}
+    </Grid>
+    <Grid container direction="column" className="container">
+      { CLIENTS.map((client) =>
+        <Grid container>
+          <Grid item xs={12}>
+            <Project
+              variant="preview"
+              serviceProvided={client.services}
+              projectTitle={client.name}
+              projectBlurb={client.blurb}
+              projectImageLink={client.projectImageLink}
+              nextProjectLink={client.nextProjectLink}
+              url={client.url}
             />
           </Grid>
         </Grid>

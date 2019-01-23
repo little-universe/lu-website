@@ -4,11 +4,6 @@
   color: $fontColor;
   h1 {
     @include transition;
-    &:hover {
-      cursor: pointer;
-      color: $fontColorLightened;
-      @include transition;
-    }
   }
   p {
     color: $fontColorLightened;
