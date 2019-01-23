@@ -32,6 +32,9 @@ export default () =>
           <Grid item xs={1} md={1} />
           <Grid item xs={10} md={10}>
             <img className="product-screenshot" src="../static/product-screenshots/strive/strive-1.png" />
+            <img className="product-screenshot" src="../static/product-screenshots/strive/strive-2.png" />
+            <img className="product-screenshot" src="../static/product-screenshots/strive/strive-3.png" />
+            <img className="product-screenshot" src="../static/product-screenshots/strive/strive-4.png" />
           </Grid>
         </Grid>
       </div>
