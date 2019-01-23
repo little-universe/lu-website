@@ -3,6 +3,7 @@ import React from 'react'
 import { PageTransition } from 'next-page-transitions'
 import Nav from '../components/Nav'
 import Loader from '../components/Loader'
+import "../static/empty.css"
 
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx, pathName }) {
