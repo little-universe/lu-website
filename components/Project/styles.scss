@@ -7,10 +7,25 @@
   // margin-bottom: $buffer*3;
   position: relative;
   padding: $buffer*3 0 $buffer*3 0;
+  pointer-events: none !important;
+    &:hover {
+      cursor: default;
+      pointer-events: none !important;
+      color: $fontColor;
+  }
 
   &.preview {
     border-bottom: $border;
-    padding: $buffer*2;
+    padding: 0;
+    pointer-events: auto !important;
+    a {
+      padding: $buffer*2;
+      display: block;
+    }
+    &:hover {
+      cursor: pointer;
+      pointer-events: auto !important;
+    }
     h1 {
       margin-bottom: 0;
     }
@@ -68,13 +83,13 @@ p.service {
   cursor: pointer;
 }
 
-.project-title {
-  @include transition;
-  &:hover {
-    opacity: .8;
-    @include transition;
-  }
-}
+// .project-title {
+//   @include transition;
+//   &:hover {
+//     opacity: .8;
+//     @include transition;
+//   }
+// }
 
 .project-blurb {
   margin-bottom: $buffer;

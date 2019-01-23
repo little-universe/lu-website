@@ -225,12 +225,6 @@ input, textarea {
   .teamMembers {
     h1 {
       display: inline-block;
-      @include transition;
-      &:hover {
-        cursor: pointer;
-        color: $fontColorLightened;
-        @include transition;
-      }
     }
     p {
       color: $fontColorLightened;

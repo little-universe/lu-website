@@ -16,6 +16,7 @@ export default ({
     projectDescription
   }) =>
     <div className={ variant === "preview" ? "project preview" : "project" }>
+    <a onClick={() => Router.push(`${url}`)}>
       <Grid container alignItems="center">
         { projectImageLink &&
           <Grid item>
@@ -24,9 +25,7 @@ export default ({
         }
         <Grid item md={6} xs={12}>
          { variant === "preview" ?
-         <a onClick={() => Router.push(`${url}`)}>
             <h1 className="project-title">{projectTitle}</h1>
-          </a>
           :
           <h1>{projectTitle}</h1>
         }
@@ -64,4 +63,5 @@ export default ({
           </>
         }
       </Grid>
+      </a>
     </div>
