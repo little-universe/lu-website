@@ -3,3 +3,8 @@
 .form-instructions-text {
   margin-bottom: $buffer*3;
 }
+
+.leadFormContainer {
+  padding: $buffer*8 0 $buffer*8 0;
+  border-bottom: $border;
+}

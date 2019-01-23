@@ -275,8 +275,8 @@ input, textarea {
 
   &.agency {
     .bubble {
-      min-width: 30%;
-      width: $bubbleWidth*1.5;
+      min-width: 20%;
+      width: $bubbleWidth;
     }
     .yellow-bubble {
       top: -20%;
@@ -291,16 +291,16 @@ input, textarea {
   }
   &.research {
     .bubble {
-      min-width: 30%;
-      width: $bubbleWidth*1.5;
+      min-width: 20%;
+      width: $bubbleWidth;
     }
     .navy-bubble {
-      top: 30%;
+      top: 20%;
       right: -10%;
     }
     .oatmeal-bubble {
       top: -15%;
-      left: -15%;
+      left: -5%;
     }
   }
 

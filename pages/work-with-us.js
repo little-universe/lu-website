@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 import LeadForm from '../components/LeadForm'
 
 export default () =>
-  <Layout title='Little Universe - Research' className="research-page">
+  <Layout title='Little Universe - Work With Us' className="workWithUs-page">
     <LeadForm />
     <Footer />
   </ Layout>
