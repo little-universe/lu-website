@@ -47,12 +47,10 @@ class Agency extends React.Component {
         <Grid container className="container team">
           <Grid item md={6} xs={12} />
           <Grid item md={4} xs={12} className="teamMembers">
+            <p>Current Team Members</p>
             <h1 className="adrianName">Adrian Del Balso</h1>
-            <p>Is a Product Designer and Project Manager.</p>
             <h1 className="zachName">Zach Smith</h1>
-            <p>Is a Full Stack Developer.</p>
             <h1 className="taylorName">Taylor Zanke</h1>
-            <p>Is a Product Designer and trained architect.</p>
           </Grid>
         </Grid>
 

@@ -74,7 +74,7 @@ const CLIENTS = [
     title: "",
     blurb: "A platform for students to organize themselves to vote.",
     hero: "",
-    description: "Developed in close contact with the founder, we devised and implemented a strategy for bootstrapping a proof of concept. Little Universe designed and built a landing page and social platform UI.",
+    description: "Developed in close contact with the founder, we devised and implemented a strategy for bootstrapping a proof of concept. We designed and built a landing page and social platform UI.",
     images: [],
     testimonial: {
       statement: "",
@@ -85,13 +85,13 @@ const CLIENTS = [
     nextProjectLink: ""
   },
   {
-    url: "/betterfin",
+    url: "/dv01",
     name: "DV01",
     services: ['UX/UI Design', 'Front End Development', 'Back End Development'],
     title: "",
-    blurb: "The Instructrr mobile app brings an innovative approach to fitness instruction by blending class planning and music selection into one, simple solution.",
+    blurb: "",
     hero: "",
-    description: "",
+    description: "We've worked closely with Dv01 building their data infrastructure and back end. We developed scalable solutions for managing massive sets of financial data and rendering those in the UI.",
     images: [],
     testimonial: {
       statement: "",
