@@ -19,7 +19,7 @@
     padding: 0;
     pointer-events: auto !important;
     a {
-      padding: $buffer*2;
+      padding: $buffer*3;
       display: block;
     }
     &:hover {
@@ -28,9 +28,11 @@
     }
     h1 {
       margin-bottom: 0;
+      @include transition;
     }
     h2 {
       margin-bottom: 0;
+      @include transition;
     }
     .preview-arrow, .project-title {
       cursor: pointer;
@@ -108,5 +110,6 @@ p.service {
 }
 
 .project-links {
+  padding: 0 !important;
   border-top: $border;
 }

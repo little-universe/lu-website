@@ -21,7 +21,7 @@ $bgColor: #2e3648;
 $bgColorMedium: #F6F5F0;
 $bgColorLight: #fff;
 $bgColorLightened: #f3f3f3;
-$strokeColor: #eaeaea;
+$strokeColor: #f1f1f1;
 
 $navHeight: 220px;
 
@@ -221,7 +221,7 @@ input, textarea {
 
 .team {
   border-bottom: $border;
-  padding-bottom: $buffer*3;
+  padding: $buffer*3;
   .teamMembers {
     h1 {
       display: inline-block;
@@ -265,13 +265,46 @@ input, textarea {
 .home-hero-bg {
   position: relative;
   // @include animation(rotate 30s infinite);
+  z-index: -1;
 
   .bubble {
     min-width: 300px;
     width: $bubbleWidth;
     position: absolute;
-    z-index: -1;
+    z-index: -100 !important;
   }
+
+  &.agency {
+    .bubble {
+      min-width: 30%;
+      width: $bubbleWidth*1.5;
+    }
+    .yellow-bubble {
+      top: -20%;
+      left: -10%;
+    }
+    .green-bubble {
+      top: 5%;
+      right: -15%;
+      @include animation(bubblemotion2 20s infinite)
+      animation-direction: reverse;
+    }
+  }
+  &.research {
+    .bubble {
+      min-width: 30%;
+      width: $bubbleWidth*1.5;
+    }
+    .navy-bubble {
+      top: 30%;
+      right: -10%;
+    }
+    .oatmeal-bubble {
+      top: -15%;
+      left: -15%;
+    }
+  }
+
   .navy-bubble {
     top: -35%;
     right: 5%;

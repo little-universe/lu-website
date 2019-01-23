@@ -17,7 +17,7 @@ class Agency extends React.Component {
     const { visible } = this.state;
     return (
       <Layout title='Little Universe - Agency' className="agency-page">
-      <div className="home-hero-bg">
+      <div className="home-hero-bg agency">
         <img className="yellow-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/yellow.svg" />
         <img className="green-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/green.svg" />
         <Hero
