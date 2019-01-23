@@ -42,11 +42,6 @@ export default ({
 
         { variant != "preview" &&
           <>
-            <Grid container className="project-blurb">
-              <Grid item md={6} xs={12}>
-                <p>{projectBlurb}</p>
-              </Grid>
-            </Grid>
 
             <Grid container direction="column">
             {
@@ -55,8 +50,14 @@ export default ({
             )}
             </Grid>
 
+            <Grid container className="project-blurb">
+              <Grid item md={6} xs={12}>
+                <p>{projectBlurb}</p>
+              </Grid>
+            </Grid>
+
             <Grid container className="project-description">
-              <Grid item md={8} xs={12}>
+              <Grid item md={12} xs={12}>
                 <p>{projectDescription}</p>
               </Grid>
             </Grid>

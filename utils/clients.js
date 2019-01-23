@@ -6,7 +6,7 @@ const CLIENTS = [
     title: "",
     blurb: "A platform that uses your business's data to find you the best possible financing.",
     hero: "",
-    description: "Betterfin is a service for business owners to get educated on small business lending and navigate commercial products with confidence. They provide transparency into lending through data analytics to help owners secure business financing they understand.",
+    description: "Betterfin is a service for business owners to get educated on small business lending and navigate commercial products with confidence. They provide transparency into lending through data analytics to help owners secure business financing they understand. We provide front and back end technical expertise as well as product design services.",
     images: [],
     testimonial: {
       statement: "",
@@ -23,7 +23,7 @@ const CLIENTS = [
     title: "",
     blurb: "A private indoor exercise studio at home.",
     hero: "",
-    description: "",
+    description: "MyxFitness is a private indoor exercise studio for the home. We worked closely with the founder on product design and visual design, as well as implemented front end code for several web interfaces.",
     images: [],
     testimonial: {
       statement: "",
@@ -74,7 +74,7 @@ const CLIENTS = [
     title: "",
     blurb: "A platform for students to organize themselves to vote.",
     hero: "",
-    description: "",
+    description: "Developed in close contact with the founder we devised and implemented a strategy for bootstrapping a proof of concept. ",
     images: [],
     testimonial: {
       statement: "",
