@@ -22,8 +22,6 @@
       }
     }
   }
-  
-
   &.light {
     .navLink:after {
       background-color: white;
@@ -43,4 +41,7 @@
 }
 .logoWrapper {
   cursor: pointer;
+}
+.workWith {
+  background: blue;
 }
