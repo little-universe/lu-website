@@ -7,24 +7,30 @@
   // margin-bottom: $buffer*3;
   position: relative;
   padding: $buffer*6 0 0 0;
-  pointer-events: none !important;
     &:hover {
       cursor: default;
-      pointer-events: none !important;
       color: $fontColor;
   }
 
   &.preview {
     border-bottom: $border;
     padding: 0;
-    pointer-events: auto !important;
-    a {
+    position: relative;
+    .project-link {
       padding: $buffer*3;
       display: block;
     }
     &:hover {
       cursor: pointer;
-      pointer-events: auto !important;
+    }
+    &:before {
+      content: ' ';
+      height: 6px;
+      width: 6px;
+      background: $accentColor;
+      position: absolute;
+      top: calc(50% - 3px);
+      left: -3px;
     }
     h1 {
       margin-bottom: 0;
@@ -38,6 +44,11 @@
       cursor: pointer;
     }
   }
+}
+
+.website-link {
+  margin-bottom: $buffer;
+  display: block;
 }
 
 .service {

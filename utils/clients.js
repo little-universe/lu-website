@@ -6,7 +6,7 @@ const CLIENTS = [
     title: "",
     blurb: "A platform that uses your business's data to find you the best possible financing.",
     hero: "",
-    description: "Betterfin is a service for business owners to get educated on small business lending and navigate commercial products with confidence. They provide transparency into lending through data analytics to help owners secure business financing they understand. We provide front and back end technical expertise as well as product design services.",
+    description: "Betterfin is a service for business owners to get educated on small business lending and navigate commercial products with confidence. They provide transparency into lending through data analytics to help owners secure business financing they understand.",
     images: [],
     testimonial: {
       statement: "",
@@ -53,6 +53,7 @@ const CLIENTS = [
   {
     url: "/strive",
     name: "Strive Digital",
+    website: "https://strivedigital.org/",
     services: ['UX/UI Design', 'Front End Development', 'Back End Development'],
     title: "",
     blurb: "A joint venture with Little Universe to support progressive campaigns.",
@@ -85,13 +86,13 @@ const CLIENTS = [
     nextProjectLink: ""
   },
   {
-    url: "/dv01",
-    name: "DV01",
+    url: "/h1",
+    name: "H1 Insights",
     services: ['UX/UI Design', 'Front End Development', 'Back End Development'],
     title: "",
     blurb: "",
     hero: "",
-    description: "We've worked closely with Dv01 building their data infrastructure and back end. We developed scalable solutions for managing massive sets of financial data and rendering those in the UI.",
+    description: "We built a strong foundation for H1's data engineering infrastructure, while mentoring the team on Apache Spark best practices. As they grew their pipeline, we helped them build the engineering team.",
     images: [],
     testimonial: {
       statement: "",

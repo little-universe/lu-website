@@ -15,6 +15,7 @@
     }
   }
 }
+
 #line-drawing {
   fill: none;
   // transform: rotate(45deg) ;
@@ -23,11 +24,17 @@
   position: relative;
   z-index: -1;
   path {
-   stroke: $accentColor;
-    stroke-dasharray: 5000;
-    stroke-dashoffset: 5000;
+    // stroke: $accentColor;
+    // stroke-dasharray: 5000;
+    // stroke-dashoffset: 5000;
+    // stroke-linejoin: round;
+    // stroke-width: 2;
+    //
+    // animation: dash 6s linear infinite;
+
+    stroke: $accentColor;
     stroke-linejoin: round;
-    stroke-width: 1.8;
+    stroke-width: 2;
   }
 }
 

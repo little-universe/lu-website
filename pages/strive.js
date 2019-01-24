@@ -21,6 +21,7 @@ export default () =>
               variant="full"
               serviceProvided={CLIENTS[3].services}
               projectTitle={CLIENTS[3].name}
+              website={CLIENTS[3].website}
               projectBlurb={CLIENTS[3].blurb}
               projectImageLink={CLIENTS[3].projectImageLink}
               nextProjectLink={CLIENTS[3].nextProjectLink}
@@ -41,7 +42,7 @@ export default () =>
 
       <Grid container direction="column" className="container project-links">
         { CLIENTS.filter(c => c.name !== "Strive Digital").map((client) =>
-          <Grid container>
+          <Grid container direction="column" className="container">
             <Grid item md={12} xs={12} >
               <Project
                 variant="preview"

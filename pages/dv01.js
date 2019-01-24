@@ -32,7 +32,7 @@ export default () =>
 
       <Grid container direction="column" className="container project-links">
         { CLIENTS.filter(c => c.name !== "DV01").map((client) =>
-          <Grid container>
+          <Grid container direction="column" className="container">
             <Grid item md={12} xs={12} >
               <Project
                 variant="preview"

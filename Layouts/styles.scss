@@ -110,18 +110,22 @@ p {
 
 a {
   text-decoration: none;
-  color: $fontColor;
   cursor: pointer;
   @include transition;
-  &:hover {
-    // opacity: 0.8;
-    h1 {
-      color: $fontColorLightened;
-    }
-    h2 {
-      color: $fontColorLightened;
-    }
+  color: $fontColor;
+  svg {
     @include transition;
+    position: relative;
+    top: -1px;
+    left: 4px;
+  }
+  &:hover {
+    opacity: 0.8;
+    @include transition;
+    svg {
+      transform: translateX(3px);
+      @include transition;
+    }
   }
   &.disable {
     pointer-events: none;
@@ -181,6 +185,13 @@ input, textarea {
   }
 }
 
+hr {
+  height: 1px;
+  color: $strokeColor;
+  background-color: $strokeColor;
+  border: none;
+}
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #ccc;
 }
@@ -195,8 +206,14 @@ input, textarea {
 }
 
 .container {
-  // padding: $buffer*3;
-  // margin-top: $buffer*2;
+  padding: $buffer*3;
+  margin-top: $buffer*2;
+}
+
+.homepage-graphic {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 640px) {

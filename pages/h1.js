@@ -7,10 +7,10 @@ import Footer from '../components/Footer'
 import CLIENTS from '../utils/clients'
 
 export default () =>
-  <Layout title='VoteCrew' className="votecrew-page">
+  <Layout title='H1 Insights' className="h1-page">
       <Hero
-        className="hero-votecrew project-hero"
-        bgImage="https://s3.us-east-2.amazonaws.com/lu-assets/vc_logo.png"
+        className="hero-h1 project-hero"
+        bgImage="https://s3.us-east-2.amazonaws.com/lu-assets/strive-logo-web.png"
       />
 
       <div className="container">
@@ -19,27 +19,19 @@ export default () =>
           <Grid item xs={12} md={8} >
             <Project
               variant="full"
-              serviceProvided={CLIENTS[4].services}
-              projectTitle={CLIENTS[4].name}
-              projectBlurb={CLIENTS[4].blurb}
-              projectImageLink={CLIENTS[4].projectImageLink}
-              nextProjectLink={CLIENTS[4].nextProjectLink}
-              projectDescription={CLIENTS[4].description}
+              serviceProvided={CLIENTS[5].services}
+              projectTitle={CLIENTS[5].name}
+              projectBlurb={CLIENTS[5].blurb}
+              projectImageLink={CLIENTS[5].projectImageLink}
+              nextProjectLink={CLIENTS[5].nextProjectLink}
+              projectDescription={CLIENTS[5].description}
             />
-          </Grid>
-        </Grid>
-        <Grid container>
-          <Grid item xs={1} md={1} />
-          <Grid item xs={10} md={10}>
-            <img className="product-screenshot" src="../static/product-screenshots/votecrew/votecrew-1.png" />
-            <img className="product-screenshot" src="../static/product-screenshots/votecrew/votecrew-2.png" />
-            <img className="product-screenshot" src="../static/product-screenshots/votecrew/votecrew-3.png" />
           </Grid>
         </Grid>
       </div>
 
       <Grid container direction="column" className="container project-links">
-        { CLIENTS.filter(c => c.name !== "VoteCrew").map((client) =>
+        { CLIENTS.filter(c => c.name !== "Strive Digital").map((client) =>
           <Grid container direction="column" className="container">
             <Grid item md={12} xs={12} >
               <Project
