@@ -230,6 +230,7 @@ hr {
 .agencyBlurb {
   padding: $buffer*3;
   @media only screen and (max-width: 640px) {
+    padding: $buffer;
     p {
       font-size: $fontSize !important;
       line-height: $lineHeight !important;
@@ -240,6 +241,13 @@ hr {
 .researchTopics {
   padding: $buffer*3;
   border-bottom: $border;
+  @media only screen and (max-width: 640px) {
+    padding: $buffer;
+    h1 {
+      font-size: $fontSize !important;
+      line-height: $lineHeight !important;
+    }
+  }
 }
 
 .team {
@@ -288,6 +296,13 @@ hr {
     width: $bubbleWidth;
     position: absolute;
     z-index: -100 !important;
+    @media only screen and (max-width: 640px) {
+      min-width: auto;
+      width: $bubbleWidth*1.25;
+      &.yellow-bubble {
+        left: -20%;
+      }
+    }
   }
 
   &.agency {
