@@ -9,6 +9,10 @@
   color: $fontColor;
   border-bottom: $border;
 
+  @media only screen and (max-width: 640px) {
+    padding: $buffer;
+  }
+
   &.project-hero {
     margin-top: -$navHeight;
     padding-top: $navHeight;
@@ -32,10 +36,12 @@
   &.hero-dv01 {
     background-color: #fafafa;
   }
-  @media only screen and (max-width: 640px) {
-    h1.headline {
-      font-size: $fontSize !important;
-      line-height: $lineHeight !important;
+  &.hero-agency {
+    @media only screen and (max-width: 640px) {
+      h1.headline {
+        font-size: $fontSize !important;
+        line-height: $lineHeight !important;
+      }
     }
   }
 }
