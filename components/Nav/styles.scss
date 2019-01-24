@@ -3,6 +3,9 @@
 .nav {
   padding: $buffer*3 $buffer*3 0 $buffer*3;
   color: $fontColorLightened;
+  @media only screen and (max-width: 640px) {
+    padding: $buffer !important;
+  }
   .disable {
     .navLink {
       color: $fontColor !important;
