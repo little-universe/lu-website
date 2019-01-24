@@ -35,22 +35,22 @@ export default () =>
         </Grid>
       </div>
 
-      <Grid container direction="column" className="container project-links">
-        { CLIENTS.filter(c => c.name !== "Myx Fitness").map((client) =>
+      <Grid container direction="column" className="project-links">
           <Grid container direction="column" className="container">
-            <Grid item md={12} xs={12} >
-              <Project
-                variant="preview"
-                serviceProvided={client.services}
-                projectTitle={client.name}
-                projectBlurb={client.blurb}
-                projectImageLink={client.projectImageLink}
-                nextProjectLink={client.nextProjectLink}
-                url={client.url}
-              />
-            </Grid>
+            { CLIENTS.filter(c => c.name !== "Betterfin").map((client) =>
+              <Grid item md={12} xs={12} >
+                <Project
+                  variant="preview"
+                  serviceProvided={client.services}
+                  projectTitle={client.name}
+                  projectBlurb={client.blurb}
+                  projectImageLink={client.projectImageLink}
+                  nextProjectLink={client.nextProjectLink}
+                  url={client.url}
+                />
+              </Grid>
+            )}
           </Grid>
-        )}
       </Grid>
 
       <Footer />

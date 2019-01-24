@@ -253,6 +253,9 @@ hr {
 .team {
   border-bottom: $border;
   padding: $buffer*3;
+  @media only screen and (max-width: 640px) {
+    padding: $buffer;
+  }
   .teamMembers {
     h1 {
     }

@@ -1,12 +1,14 @@
 @import '../../Layouts/styles.scss';
 
+
+
 .project {
   border: 1px solid transparent;
   @include transition;
   // margin: -$buffer;
   // margin-bottom: $buffer*3;
   position: relative;
-  padding: $buffer*6 0 0 0;
+  // padding: $buffer*2 0 0 0;
     &:hover {
       cursor: default;
       color: $fontColor;
@@ -17,7 +19,7 @@
     padding: 0;
     position: relative;
     .project-link {
-      padding: $buffer*3;
+      padding: $buffer*2;
       display: block;
     }
     &:hover {
@@ -122,5 +124,5 @@ p.service {
 
 .project-links {
   padding: 0 !important;
-  border-top: $border;
+  // border-top: $border;
 }
