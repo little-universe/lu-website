@@ -4,6 +4,10 @@
   color: $fontColor;
   h1 {
     @include transition;
+    @media only screen and (max-width: 640px) {
+        font-size: $fontSize !important;
+        line-height: $lineHeight !important;
+    }
   }
   p {
     color: $fontColorLightened;

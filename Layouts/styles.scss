@@ -229,6 +229,12 @@ hr {
 }
 .agencyBlurb {
   padding: $buffer*3;
+  @media only screen and (max-width: 640px) {
+    p {
+      font-size: $fontSize !important;
+      line-height: $lineHeight !important;
+    }
+  }
 }
 
 .researchTopics {

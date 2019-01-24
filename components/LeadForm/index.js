@@ -7,7 +7,7 @@ class LeadForm extends React.Component {
     return (
       <div className="container" className="leadFormContainer">
         <Grid container>
-          <Grid item xs={0} md={3} />
+          <Grid item xs={8} md={3} />
           <Grid item xs={12} md={6}>
             <Grid container direction="column">
               <h1>Let's build something together.</h1>
