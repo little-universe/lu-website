@@ -38,7 +38,6 @@
   &.hero-dv01 {
     background-color: #fafafa;
   }
-<<<<<<< HEAD
   &.hero-agency {
     @media only screen and (max-width: 640px) {
       h1.headline {
@@ -46,11 +45,10 @@
         line-height: $lineHeight !important;
       }
     }
-=======
   &.hero-h1 {
     background-color: #060464;
->>>>>>> bc62cd41366feb7f38a5b551897b545888a964e6
   }
+}
 }
 
 .hero-image {
