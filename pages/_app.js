@@ -21,7 +21,7 @@ export default class MyApp extends App {
     const { route } = router
     return (
       <Container>
-        <Nav theme={route === '/instructrr' ? 'light' : 'dark'} route={route.toString()} />
+        <Nav theme={(route === '/instructrr' || route === '/h1') ? 'light' : 'dark'} route={route.toString()} />
         <PageTransition
           timeout={300}
           classNames="page-transition"
