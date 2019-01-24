@@ -10,7 +10,7 @@ export default () =>
   <Layout title='H1 Insights' className="h1-page">
       <Hero
         className="hero-h1 project-hero"
-        bgImage="https://s3.us-east-2.amazonaws.com/lu-assets/strive-logo-web.png"
+        bgImage="https://s3.us-east-2.amazonaws.com/lu-assets/bg-h1.svg"
       />
 
       <div className="container">
