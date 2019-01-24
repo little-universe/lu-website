@@ -7,4 +7,10 @@
 .leadFormContainer {
   padding: $buffer*8 0 $buffer*8 0;
   border-bottom: $border;
+  @media only screen and (max-width: 640px) {
+    padding: $buffer*2;
+    input {
+      font-size: $fontSize;
+    }
+  }
 }
