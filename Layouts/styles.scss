@@ -434,7 +434,7 @@ hr {
       &.bubbleOne {
         height: $smallBubbleWidth*0.25;
         left:15vw;
-        top: 5vh;
+        top: 1vh;
         @include animation(bubbleMotion1 20s infinite);
         @include transition;
         animation-delay: 2s;
