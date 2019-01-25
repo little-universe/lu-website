@@ -257,10 +257,20 @@ hr {
   position: relative;
   .containerCard {
     background: $accentColorLight;
+    text-align: center;
     h2 {
-      font-family: $fontFamily;
-      text-align: center;
+      font-family: $fontFamilySecondary;
+    }
+    p {
+      display: inline-block;
       margin-bottom: 0;
+      .navLink {
+        text-align: center;
+        float: none;
+        &:after {
+          margin-top: 10px;
+        }
+      }
     }
   }
   .section-bubbles {

@@ -51,7 +51,14 @@ export default ({ theme, route }) =>
       <Grid container className="containerCard" spacing={40} alignItems="center">
       <Grid container className="valueStatementSection" alignItems="center">
         <Grid item md={12} xs={12}>
-          <h2>Work With Us</h2>
+          <h2>Small Team, Full Stack.</h2>
+          <p>
+            <Link href="/agency">
+              <Grid item className={ route === '/agency' && 'disable' }>
+                <NavLink linkTitle="Check Us Out" />
+              </Grid>
+            </Link>
+          </p>
         </Grid>
       </Grid>
       </Grid>
@@ -66,12 +73,12 @@ export default ({ theme, route }) =>
     <Grid container className="container aboutUs" spacing={40} alignItems="center">
       <Grid container className="aboutUsStatement" alignItems="center">
         <Grid item md={6} xs={12}>
-          <h1>Small Team, Full Stack</h1>
+          <h1>Let's Work Together.</h1>
         </Grid>
       </Grid>
       <Grid container className="aboutUsStatement" alignItems="center">
         <Grid item md={6} xs={12}>
-          <p>Our team has gone to bat with all things startup. We’ve built, launched and scaled multiple ventures as founders, managers, operators and dreamers. We’ve seen huge successes and formidable failures. We understand what it means to operate in ambiguity, where to make tough calls, and we have the skills to back it up.</p>
+          <p>Drop us a line mayne.</p>
           <p>
             <Link href="/agency">
               <Grid item className={ route === '/agency' && 'disable' }>
