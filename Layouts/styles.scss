@@ -4,6 +4,7 @@ $smallBubbleWidth: 15vw;
 $bubbleMove: 10px;
 $accentColor: #ffde7c;
 $accentColorLight: #ECECE6;
+$accentColorPink: #F6D3EA;
 
 $fontFamily: 'Roboto';
 $fontWeightNormal: 300;
@@ -616,8 +617,8 @@ hr {
 }
 
 ::selection {
-  background: $accentColor; /* WebKit/Blink Browsers */
+  background: $accentColorPink; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: $accentColor; /* Gecko Browsers */
+  background: $accentColorPink; /* Gecko Browsers */
 }
