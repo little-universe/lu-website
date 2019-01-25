@@ -1,0 +1,48 @@
+@import '../../Layouts/styles.scss';
+
+.line-drawing-wrapper {
+  opacity: 1;
+  @include transition;
+  padding-right: $buffer;
+  #line-drawing path {
+    animation: dash 5s linear infinite;
+  }
+  &.animate {
+    opacity: 1;
+    @include transition;
+    #line-drawing path {
+      animation: dash 6s linear infinite;
+    }
+  }
+}
+
+#line-drawing {
+  fill: none;
+  // transform: rotate(45deg) ;
+  // top: 300px;
+
+  position: relative;
+  z-index: -1;
+  path {
+    // stroke: $accentColor;
+    // stroke-dasharray: 5000;
+    // stroke-dashoffset: 5000;
+    // stroke-linejoin: round;
+    // stroke-width: 2;
+    //
+    // animation: dash 6s linear infinite;
+
+    stroke: $accentColor;
+    stroke-linejoin: round;
+    stroke-width: 2;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 5000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

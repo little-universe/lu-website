@@ -77,6 +77,7 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
+  font-family: $fontFamilySecondary;
   font-weight: $fontWeightNormal;
   margin: 0 0 $buffer 0;
 }
@@ -235,6 +236,15 @@ hr {
     }
   }
 }
+
+
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 .contactUs {
   background: $accentColor;
   padding: $buffer*2;
@@ -255,6 +265,29 @@ hr {
   .containerCard {
     background: $accentColorLight;
     text-align: center;
+    cursor: pointer;
+    @include transition;
+    &:hover {
+      background: darken($accentColorLight, 5%);
+      @include transition;
+      svg {
+        transform: translateX(12px);
+        @include transition;
+        path {
+          stroke-dasharray: 0;
+          stroke-dashoffset: 0;
+          @include transition;
+        }
+      }
+    }
+    svg {
+      @include transition;
+      path {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        @include transition;
+      }
+    }
     h2 {
       font-family: $fontFamilySecondary;
     }

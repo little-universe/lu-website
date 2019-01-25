@@ -6,6 +6,9 @@ import Project from '../components/Project'
 import Footer from '../components/Footer'
 import LeadForm from '../components/LeadForm'
 import NavLink from '../components/ui/NavLink'
+import ArrowSquiggly from '../components/ArrowSquiggly'
+import { Icon } from 'react-icons-kit'
+import {ic_keyboard_arrow_right} from 'react-icons-kit/md/ic_keyboard_arrow_right'
 import CLIENTS from '../utils/clients'
 
 export default ({ theme, route }) =>
@@ -47,21 +50,18 @@ export default ({ theme, route }) =>
         </Grid>
       </Grid>
     </Grid>
+
+
     <Grid container className="container contactUs" spacing={40} alignItems="center">
-      <Grid container className="containerCard" spacing={40} alignItems="center">
-      <Grid container className="valueStatementSection" alignItems="center">
-        <Grid item md={12} xs={12}>
-          <h2>Small Team, Full Stack.</h2>
-          <p>
-            <Link href="/agency">
-              <Grid item className={ route === '/agency' && 'disable' }>
-                <NavLink linkTitle="Check Us Out" />
-              </Grid>
-            </Link>
-          </p>
+      <Link href="/agency">
+        <Grid container className="containerCard" spacing={40} alignItems="center">
+          <Grid container className="valueStatementSection" alignItems="center">
+            <Grid item md={12} xs={12}>
+              <h2>Learn more about us <ArrowSquiggly /><Icon size={42} icon={ic_keyboard_arrow_right} /></h2>
+            </Grid>
+          </Grid>
         </Grid>
-      </Grid>
-      </Grid>
+      </Link>
       <div className="section-bubbles">
         <img className="smallYellowBubble bubble bubbleOne" src="../static/smallYellowBubble.svg" />
         <img className="smallYellowBubble bubble bubbleTwo" src="../static/smallYellowBubble.svg" />
