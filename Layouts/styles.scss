@@ -274,7 +274,7 @@ hr {
         transform: translateX(12px);
         @include transition;
         path {
-          stroke-dasharray: 0;
+          stroke-dasharray: 260;
           stroke-dashoffset: 0;
           @include transition;
         }
@@ -283,8 +283,8 @@ hr {
     svg {
       @include transition;
       path {
-        stroke-dasharray: 1000;
-        stroke-dashoffset: 1000;
+        stroke-dasharray: 260;
+        stroke-dashoffset: 260;
         @include transition;
       }
     }
