@@ -5,8 +5,8 @@ $bubbleMove: 10px;
 $accentColor: #ffde7c;
 $accentColorLight: #ECECE6;
 
-$fontFamily: 'Marr Sans Web';
-$fontWeightNormal: normal;
+$fontFamily: 'Roboto';
+$fontWeightNormal: 300;
 $fontWeightHeavy: 500;
 $fontFamilySecondary: 'Playfair Display';
 
@@ -55,27 +55,14 @@ $easing: ease-in-out;
 
 // FONTS
 
-@font-face {
-    font-family: 'Marr Sans Web';
-    src: url('https://s3.us-east-2.amazonaws.com/lu-assets/fonts/MarrSansWeb-Regular.woff2') format('woff2'),
-        url('https://s3.us-east-2.amazonaws.com/lu-assets/fonts/MarrSansWeb-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Marr Sans Web';
-    src: url('https://s3.us-east-2.amazonaws.com/lu-assets/fonts/MarrSansWeb-Medium.woff2') format('woff2'),
-        url('https://s3.us-east-2.amazonaws.com/lu-assets/fonts/MarrSansWeb-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display%7CRoboto:300,400,700');
 
 
 // BASE STYLES
 
 body {
   font-family: $fontFamily;
+  font-weight: $fontWeightNormal;
   margin: 0;
   color: $fontColor;
   overflow-x: hidden;
