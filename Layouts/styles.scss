@@ -250,11 +250,20 @@ hr {
 .contactUs {
   background: $accentColor;
   padding: $buffer*2;
-  padding-bottom: $buffer*8;
-  border-bottom-left-radius: 20%;
-  border-bottom-right-radius: 50%;
   padding-top: 0;
   position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -153px;
+    left: 0;
+    right: 0;
+    height: 153px;
+    background-image: url(https://s3.us-east-2.amazonaws.com/lu-assets/bottom-morpher.svg);
+    background-position: center center;
+    background-size: 100%;
+    @include animation(bubbleMotion4 20s infinite);
+  }
   .containerCard {
     background: $accentColorLight;
     h2 {

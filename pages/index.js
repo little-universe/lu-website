@@ -12,7 +12,7 @@ export default ({ theme, route }) =>
     <>
         <Hero
           className="hero-index"
-          headline={["Every product is its own Little Universe."]}
+          headline={["Every product is its own ", <span className="emphasis">Little Universe.</span>]}
           subhead={["We’re Little Universe, a digital product agency based in Brooklyn, NY."]}
         />
         <div className="home-hero-bg">
