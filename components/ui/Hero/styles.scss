@@ -21,12 +21,12 @@
     .headline {
       font-size: $fontSizeHeadline*1.55;
       line-height: $lineHeightHeadline*1.5;
-      color: $fontColorLight;
+      color: $fontColor;
       font-weight: $fontWeightHeavy;
       font-family: $fontFamilySecondary;
     }
     .subhead {
-      color: $fontColorLight;;
+      color: $fontColor;
       font-size: $fontSizeSubHeadline;
     }
   }
