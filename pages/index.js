@@ -5,9 +5,10 @@ import Hero from '../components/ui/Hero'
 import Project from '../components/Project'
 import Footer from '../components/Footer'
 import LeadForm from '../components/LeadForm'
+import NavLink from '../components/ui/NavLink'
 import CLIENTS from '../utils/clients'
 
-export default () =>
+export default ({ theme, route }) =>
     <>
         <Hero
           className="hero-index"
@@ -57,10 +58,11 @@ export default () =>
       <div className="section-bubbles">
         <img className="smallYellowBubble bubble bubbleOne" src="../static/smallYellowBubble.svg" />
         <img className="smallYellowBubble bubble bubbleTwo" src="../static/smallYellowBubble.svg" />
-        <img className="smallYellowBubble bubble bubbleThree" src="../static/smallYellowBubble.svg" />
         <img className="smallYellowBubble bubble bubbleFour" src="../static/smallYellowBubble.svg" />
       </div>
     </Grid>
+
+
     <Grid container className="container aboutUs" spacing={40} alignItems="center">
       <Grid container className="aboutUsStatement" alignItems="center">
         <Grid item md={6} xs={12}>
@@ -70,33 +72,16 @@ export default () =>
       <Grid container className="aboutUsStatement" alignItems="center">
         <Grid item md={6} xs={12}>
           <p>Our team has gone to bat with all things startup. We’ve built, launched and scaled multiple ventures as founders, managers, operators and dreamers. We’ve seen huge successes and formidable failures. We understand what it means to operate in ambiguity, where to make tough calls, and we have the skills to back it up.</p>
+          <p>
+            <Link href="/agency">
+              <Grid item className={ route === '/agency' && 'disable' }>
+                <NavLink linkTitle="Learn More" />
+              </Grid>
+            </Link>
+          </p>
         </Grid>
       </Grid>
-      <Grid container className="aboutUsOffering" alignItems="flex-Start">
-        <Grid item md={4} xs={12}>
-          <h2>Design</h2>
-          <ul className="offeringList">
-            <li>UX Design</li>
-            <li>UI Design</li>
-            <li>User Research</li>
-          </ul>
-        </Grid>
-        <Grid item md={4} xs={12}>
-          <h2>Development</h2>
-          <ul className="offeringList">
-            <li>React</li>
-            <li>Node</li>
-          </ul>
-        </Grid>
-        <Grid item md={4} xs={12}>
-          <h2>Strategy</h2>
-          <ul className="offeringList">
-            <li>Product Management</li>
-            <li>Business Management</li>
-            <li>Team Strategy</li>
-          </ul>
-        </Grid>
-      </Grid>
+
     </Grid>
 
     <Footer />

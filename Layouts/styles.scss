@@ -250,6 +250,9 @@ hr {
 .contactUs {
   background: $accentColor;
   padding: $buffer*2;
+  padding-bottom: $buffer*8;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 50%;
   padding-top: 0;
   position: relative;
   .containerCard {
@@ -272,32 +275,24 @@ hr {
       &.bubbleOne {
         height: $smallBubbleWidth*0.25;
         left: 2vw;
-        top: 70vh;
-        @include animation(bubbleMotion1 20s infinite);
-        @include transition;
-        animation-delay: 2s;
-      }
-      &.bubbleTwo {
-        width: $bubbleWidth*3;
-        left: -35vw;
-        top: -100vh;
-        @include animation(bubbleMotion2 20s infinite);
-        @include transition;
-        animation-delay: 5s;
-      }
-      &.bubbleThree {
-        width: $smallBubbleWidth*2;
-        right: -5vw;
-        top: -5vw;
+        top: 50vh;
         @include animation(bubbleMotion3 20s infinite);
         @include transition;
         animation-delay: 1s;
       }
+      &.bubbleTwo {
+        height: $smallBubbleWidth*1.25;
+        left: 20vw;
+        top: 45vh;
+        @include animation(bubbleMotion4 20s infinite);
+        @include transition;
+        animation-delay: 3s;
+      }
       &.bubbleFour {
         width: $smallBubbleWidth*0.75;
-        right: -5vw;
-        top: 35vw;
-        @include animation(bubbleMotion3 20s infinite);
+        right: 5vw;
+        top: 40vh;
+        @include animation(bubbleMotion1 20s infinite);
         @include transition;
         animation-delay: 1s;
       }
@@ -310,12 +305,16 @@ hr {
   .aboutUsStatement {
     padding: $buffer;
     justify-content: center;
+    // color: $fontColorLight;
     h1  {
       font-family: $fontFamilySecondary;
       text-align: center;
     }
     p {
-      color: $fontColorLightened;
+      // color: $fontColorLight;
+    }
+    .navLink {
+      float: left !important;
     }
   }
   .aboutUsOffering {
@@ -425,6 +424,7 @@ hr {
       &.bubbleOne {
         height: $smallBubbleWidth*0.25;
         left:15vw;
+        top: 5vh;
         @include animation(bubbleMotion1 20s infinite);
         @include transition;
         animation-delay: 2s;
@@ -447,7 +447,7 @@ hr {
       &.bubbleFour {
         width: $smallBubbleWidth*0.75;
         left: 15vw;
-        top: -45vw;
+        top: -75vh;
         @include animation(bubbleMotion3 20s infinite);
         @include transition;
         animation-delay: 1s;
@@ -580,7 +580,7 @@ hr {
 
 @keyframes bubbleMotion2 {
   0% { transform: translate(0, 0) scale(1);}
-  50% { transform: translate(30px, 40px) scale(0.9) skewX(5deg);}
+  50% { transform: translate(35px, 40px) scale(0.9) skewX(5deg);}
   100% { transform: translate(0, 0) scale(1);}
 }
 
