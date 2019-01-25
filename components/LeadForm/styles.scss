@@ -5,12 +5,19 @@
 }
 
 .leadFormContainer {
-  padding: $buffer*8 $buffer $buffer*8 $buffer;
-  border-bottom: $border;
+  // padding: $buffer*8 $buffer $buffer*8 $buffer;
   @media only screen and (max-width: 640px) {
     padding: $buffer*2;
     input {
       font-size: $fontSize;
+    }
+  }
+  &.leadFormIndex {
+    background: $accentColor;
+    padding: $buffer*2;
+    padding-top: 0;
+    .containerCard {
+      background: $accentColorLight;
     }
   }
 }

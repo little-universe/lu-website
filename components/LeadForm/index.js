@@ -5,8 +5,12 @@ class LeadForm extends React.Component {
 
   render() {
     return (
-      <div className="container" className="leadFormContainer">
-        <Grid container>
+
+
+
+
+      <Grid container className={`container leadFormContainer ${this.props.className}`} spacing={40} alignItems="center">
+        <Grid container className="containerCard" spacing={40} alignItems="center">
           <Grid item xs={8} md={3} />
           <Grid item xs={12} md={6}>
             <Grid container direction="column">
@@ -25,7 +29,10 @@ class LeadForm extends React.Component {
             </Grid>
           </Grid>
         </Grid>
-      </div>
+      </Grid>
+
+
+
     )
   }
 }

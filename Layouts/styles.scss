@@ -2,19 +2,23 @@
 $bubbleWidth: 30vw;
 $bubbleMove: 10px;
 $accentColor: #ffde7c;
+$accentColorLight: #ECECE6;
 
 $fontFamily: 'Marr Sans Web';
 $fontWeightNormal: normal;
 $fontWeightHeavy: 500;
+$fontFamilySecondary: 'Playfair Display';
+
+
 // $fontColor: #2e3648;
 $fontColor: #555E68;
 $fontColorLightened: #adb1bb;
 $fontColorLight: #fff;
 $fontSize: 20px;
 $fontSizeSmall: 14px;
-$fontSizeHeadline: 40px;
-$fontSizeSubHeadline: 30px;
-$lineHeight: $fontSize*1.5;
+$fontSizeHeadline: 48px;
+$fontSizeSubHeadline: 36px;
+$lineHeight: $fontSize*1.75;
 $lineHeightHeadline: $fontSizeHeadline*1.5;
 
 $bgColor: #2e3648;
@@ -206,8 +210,39 @@ hr {
 }
 
 .container {
+  padding: $buffer*2;
+  // margin-top: $buffer*2;
+}
+
+.containerCard {
+  background: white;
+  margin: 0 $buffer*1 !important;
   padding: $buffer*3;
-  margin-top: $buffer*2;
+  margin-bottom: 0;
+}
+
+.productProblem {
+  background: $accentColor;
+  padding-bottom: 0;
+  .containerCard {
+    .valueStatementSection {
+      margin-bottom: $buffer*6;
+      h1 {
+        font-family: $fontFamilySecondary;
+        font-weight: 100;
+      }
+      p {
+        color: $fontColorLightened;
+        line-height: $lineHeight;
+      }
+      p.emphasisPoint {
+        color: $fontColor;
+        span {
+          border-bottom: 3px solid $accentColor;
+        }
+      }
+    }
+  }
 }
 
 .homepage-graphic {

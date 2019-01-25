@@ -9,7 +9,7 @@ export default ({ theme, route }) =>
   <div className={ theme === "light" ? "nav light" : "nav" }>
     <Grid container spacing={24} justify="space-between" alignItems="flex-start">
       <Link href="/">
-        <Grid item xs={2} className="logoWrapper">
+        <Grid item xs={1} className="logoWrapper">
           <Logo />
         </Grid>
       </Link>

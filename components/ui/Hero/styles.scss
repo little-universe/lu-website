@@ -7,12 +7,28 @@
   background-size: cover;
   background-position: center;
   color: $fontColor;
-  border-bottom: $border;
 
   @media only screen and (max-width: 640px) {
     padding: $buffer;
     height: 60vh;
     min-height: 200px;
+  }
+  &.hero-index {
+    height: 95vh;
+    margin-top: -$navHeight;
+    padding-top: $navHeight;
+    background-color: $accentColor;
+    .headline {
+      font-size: $fontSizeHeadline*1.55;
+      line-height: $lineHeightHeadline*1.5;
+      color: $fontColorLight;
+      font-weight: $fontWeightHeavy;
+      font-family: $fontFamilySecondary;
+    }
+    .subhead {
+      color: #FEC62E;
+      font-size: $fontSizeSubHeadline;
+    }
   }
 
   &.project-hero {
