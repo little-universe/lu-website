@@ -316,7 +316,7 @@ hr {
       &.bubbleOne {
         height: $smallBubbleWidth*0.25;
         left: 2vw;
-        top: 50vh;
+        top: 55vh;
         @include animation(bubbleMotion3 20s infinite);
         @include transition;
         animation-delay: 1s;
@@ -324,7 +324,7 @@ hr {
       &.bubbleTwo {
         height: $smallBubbleWidth*1.25;
         left: 20vw;
-        top: 45vh;
+        top: 55vh;
         @include animation(bubbleMotion4 20s infinite);
         @include transition;
         animation-delay: 3s;
@@ -332,7 +332,7 @@ hr {
       &.bubbleFour {
         width: $smallBubbleWidth*0.75;
         right: 5vw;
-        top: 40vh;
+        top: 45vh;
         @include animation(bubbleMotion1 20s infinite);
         @include transition;
         animation-delay: 1s;
@@ -342,7 +342,7 @@ hr {
 }
 
 .aboutUs {
-  padding: $buffer*6;
+  padding: $buffer*10;
   .aboutUsStatement {
     padding: $buffer;
     justify-content: center;
