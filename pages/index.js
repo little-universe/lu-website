@@ -76,19 +76,6 @@ export default ({ theme, route }) =>
           <h1>Let's Work Together.</h1>
         </Grid>
       </Grid>
-      <Grid container className="aboutUsStatement" alignItems="center">
-        <Grid item md={6} xs={12}>
-          <p>Drop us a line mayne.</p>
-          <p>
-            <Link href="/about">
-              <Grid item className={ route === '/about' && 'disable' }>
-                <NavLink linkTitle="Learn More" />
-              </Grid>
-            </Link>
-          </p>
-        </Grid>
-      </Grid>
-
     </Grid>
 
     <Footer />
