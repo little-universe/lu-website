@@ -26,8 +26,8 @@ class Footer extends React.Component {
     return (
       <div className="footer container">
         <Grid container>
-          <Grid item xs={12} md={6} className="footerItem agencyName">
-            <p className="secondary">Little Universe</p>
+          <Grid item xs={12} md={6} className="footerItem agencyMark">
+            <p className="secondary"><Logo /></p>
           </Grid>
           <Grid item xs={12} md={6} className="footerItem agencyInfo">
             <p className="secondary">260 Ainslie Street, 3rd Floor</p>

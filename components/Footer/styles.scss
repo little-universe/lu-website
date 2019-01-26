@@ -3,13 +3,11 @@
 .footer {
   // border-top: $border;
   padding: $buffer*3;
-
+  background: $fontColor;
   * {
-    color: $fontColorLightened;
+    color: $fontColorLight;
   }
-  .agencyName {
-    font-weight: $fontWeightHeavy;
-  }
+  .agencyName {}
   .agencyInfo {}
   .social {
     text-align: right;
@@ -19,7 +17,7 @@
       text-align: right;
       position: relative;
       z-index: 1;
-      color: $fontColorLightened;
+      color: $fontColorLight;
       @include transition;
       &:after {
         content: '';
@@ -58,7 +56,7 @@
     top: -2px;
 
     &:hover {
-      fill: $fontColor;
+      fill: $fontColorLight;
     }
   }
 }
