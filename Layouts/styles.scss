@@ -272,20 +272,20 @@ hr {
       @include transition;
       svg {
         transform: translateX(12px);
-        @include transition;
+        transition: all .5s ease-in-out;
         path {
           stroke-dasharray: 260;
           stroke-dashoffset: 0;
-          @include transition;
+          transition: all .5s ease-in-out;
         }
       }
     }
     svg {
-      @include transition;
+      transition: all .5s ease-in-out;
       path {
         stroke-dasharray: 260;
         stroke-dashoffset: 260;
-        @include transition;
+        transition: all .5s ease-in-out;
       }
     }
     h2 {
