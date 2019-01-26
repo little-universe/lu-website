@@ -72,7 +72,7 @@ export default ({ theme, route }) =>
 
     <Grid container className="container aboutUs" spacing={40} alignItems="center">
       <Grid container className="aboutUsStatement" alignItems="center">
-        <Grid item md={6} xs={12}>
+        <Grid item md={8} xs={12}>
           <h1>Let's Work Together.</h1>
         </Grid>
       </Grid>
