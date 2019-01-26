@@ -17,9 +17,9 @@ export default ({ theme, route }) =>
       <Grid item xs={10}>
         <Grid container spacing={24} justify="flex-end" alignItems="flex-end">
           <Grid item md={2} xs={12}>
-            <Link href='/agency'>
-              <Grid item className={ route === '/agency' && 'disable' }>
-                <NavLink linkTitle="Agency" />
+            <Link href='/about'>
+              <Grid item className={ route === '/about' && 'disable' }>
+                <NavLink linkTitle="About Us" />
               </Grid>
             </Link>
           </Grid>

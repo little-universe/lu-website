@@ -30,7 +30,7 @@ export default ({ theme, route }) =>
       <Grid container className="containerCard" spacing={40} alignItems="center">
         <Grid container className="valueStatementSection" alignItems="center">
           <Grid item md={6} xs={12}>
-            <h1>We solve the product problem.</h1>
+            <h1>We solve the product problem</h1>
             <p>Our small team has collectively built up 30+ years of experience helping build, launch and scale startups.</p>
             <p className="emphasisPoint">We know how to achieve <span>product market fit</span>.</p>
           </Grid>
@@ -38,7 +38,7 @@ export default ({ theme, route }) =>
         <Grid container className="valueStatementSection" alignItems="center">
           <Grid item md={6} xs={12} />
           <Grid item md={6} xs={12}>
-            <h1>Our experience goes beyond product.</h1>
+            <h1>Experience that goes beyond product</h1>
             <p>We’re seasoned veterans who can help your business get started on the right foot. We de-risk your product strategy while helping your business grow strategically. We can help you hire, onboard, and handoff our work with minimal technical debt.</p>
           </Grid>
         </Grid>

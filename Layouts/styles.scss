@@ -260,6 +260,7 @@ hr {
     background-image: url(https://s3.us-east-2.amazonaws.com/lu-assets/bottom-morpher.svg);
     background-position: center center;
     background-size: 100%;
+    background-repeat: no-repeat;
     @include animation(morph 12s infinite);
   }
   .containerCard {

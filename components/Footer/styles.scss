@@ -3,6 +3,10 @@
 .footer {
   // border-top: $border;
   padding: $buffer*3;
+
+  * {
+    color: $fontColorLightened;
+  }
   .agencyName {
     font-weight: $fontWeightHeavy;
   }
