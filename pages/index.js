@@ -53,7 +53,7 @@ export default ({ theme, route }) =>
 
 
     <Grid container className="container contactUs" spacing={40} alignItems="center">
-      <Link href="/agency">
+      <Link href="/about">
         <Grid container className="containerCard" spacing={40} alignItems="center">
           <Grid container className="valueStatementSection" alignItems="center">
             <Grid item md={12} xs={12}>
@@ -80,8 +80,8 @@ export default ({ theme, route }) =>
         <Grid item md={6} xs={12}>
           <p>Drop us a line mayne.</p>
           <p>
-            <Link href="/agency">
-              <Grid item className={ route === '/agency' && 'disable' }>
+            <Link href="/about">
+              <Grid item className={ route === '/about' && 'disable' }>
                 <NavLink linkTitle="Learn More" />
               </Grid>
             </Link>
