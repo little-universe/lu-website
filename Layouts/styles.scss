@@ -577,6 +577,41 @@ hr {
   }
 }
 
+.small-team-container {
+  margin-bottom: $buffer*5;
+  position: relative;
+  &:after {
+    content: '</>';
+    font-size: 350px;
+    position: absolute;
+    top: calc(50% - 135px);
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: -1;
+    font-weight: bold;
+    line-height: 270px;
+    color: darken($bgColorLightened, 1%);
+  }
+}
+
+.skills-container {
+  background: $bgColorLightened;
+  padding:$buffer*2;
+}
+.skill-description {
+  min-height: 175px;
+}
+.skill {
+  color: $fontColorLightened;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.cta-container {
+  margin-top: $buffer*4;
+}
+
 // KEYFRAMES
 
 @-webkit-keyframes fadeInUp {

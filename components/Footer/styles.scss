@@ -3,9 +3,11 @@
 .footer {
   // border-top: $border;
   padding: $buffer*3;
-  background: $fontColor;
   * {
     color: $fontColorLight;
+  }
+  #lu-logo {
+    fill: $fontColorLightened;
   }
   .agencyName {}
   .agencyInfo {}
