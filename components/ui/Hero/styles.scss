@@ -18,6 +18,8 @@
     margin-top: -$navHeight;
     padding-top: $navHeight;
     background-color: $accentColor;
+    // background-color: linear-gradient($accentColor, #FEC62E);
+    // background: linear-gradient(#FFD667  10%, 50%,$accentColor 80%);
     .headline {
       font-size: $fontSizeHeadline*1.55;
       line-height: $lineHeightHeadline*1.5;
