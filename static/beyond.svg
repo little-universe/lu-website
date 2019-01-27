@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="433px" height="402px" viewBox="0 0 433 402" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy" transform="translate(0.000000, -22.000000)">
+            <g id="Group" transform="translate(0.000000, 12.000000)">
+                <rect id="Rectangle" fill="#ECECE6" transform="translate(153.032620, 261.305503) rotate(-5.000000) translate(-153.032620, -261.305503) " x="11.5326202" y="122.805503" width="283" height="277"></rect>
+                <path d="M319,180.5 L319,48 L425,48 L425,325 L142,325 L142,273 C142,264.715729 148.715729,258 157,258 L212,258 C220.284271,258 227,251.284271 227,243 L227,195.5 C227,187.215729 233.715729,180.5 242,180.5 L319,180.5 Z" id="Rectangle-Copy" fill="#6F9B30" transform="translate(283.500000, 186.500000) rotate(3.000000) translate(-283.500000, -186.500000) "></path>
+                <path d="M321,140.5 L321,8 L427,8 L427,285 L144,285 L144,233 C144,224.715729 150.715729,218 159,218 L214,218 C222.284271,218 229,211.284271 229,203 L229,155.5 C229,147.215729 235.715729,140.5 244,140.5 L321,140.5 Z" id="Rectangle-Copy" fill="#AED354" transform="translate(285.500000, 146.500000) rotate(3.000000) translate(-285.500000, -146.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

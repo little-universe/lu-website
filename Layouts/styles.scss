@@ -217,8 +217,17 @@ hr {
   padding-bottom: 0;
   .containerCard {
     background: $bgColorLightened;
+    overflow: hidden;
+    position: relative;
     .valueStatementSection {
-      margin-bottom: $buffer*6;
+      margin: $buffer*4 0;
+      position: relative;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
       h1 {
         font-family: $fontFamilySecondary;
         font-weight: 100;
@@ -231,6 +240,27 @@ hr {
         color: $fontColor;
         span {
           border-bottom: 3px solid $accentColor;
+        }
+      }
+      .valueStatementIllustration {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        img {
+          width: 40vw;
+        }
+        &.productFitIllustration {
+          position: absolute;
+          right: -10vw;
+        }
+        &.beyondProductIllustration {
+          position: absolute;
+          left: -10vw;
+        }
+        &.ourProcessIllustration {
+          position: absolute;
+          right: -10vw;
+          bottom: 2vh;
         }
       }
     }
