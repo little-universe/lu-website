@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="189px" height="102px" viewBox="0 0 189 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>marker</title>
+    <desc>Created with Sketch.</desc>
+    <g id="marker" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M97.2500286,99.2700646 C97.4930661,99.0818238 97.8012576,98.8286934 98.1788948,98.5032272 C100.113787,96.8356429 103.262613,93.801493 107.885349,89.0677265 L108.326747,88.6157264 L108.95852,88.6157264 C144.979257,88.6157264 144.979257,88.6157264 180.999994,88.6157258 C184.03756,88.6157258 186.499994,86.1532922 186.499994,83.1157262 L186.500001,6.99960853 C186.500001,3.96204241 184.037567,1.49960853 181.000001,1.49960853 L7,1.49960909 C3.96243388,1.49960909 1.5,3.96204296 1.5,6.99960909 L1.5,83.1157264 C1.5,86.1532925 3.96243388,88.6157264 7,88.6157264 C26.6430696,88.6157264 26.6430696,88.6157264 46.2861393,88.6157264 C65.9292089,88.6157264 65.9292089,88.6157264 85.5722786,88.6157264 L86.1600006,88.6157264 L86.5912859,89.0149884 C93.346802,95.268902 96.2207164,97.929426 97.2500286,99.2700646 Z" id="Rectangle" stroke="#FFDE7C" stroke-width="3" fill="#2E3648"></path>
+        <text id="Little-Universe-260" font-family="Roboto-Regular, Roboto" font-size="25" font-weight="normal" line-spacing="30" fill="#FFFFFF">
+            <tspan x="16.8928223" y="39">Little Universe</tspan>
+            <tspan x="37.7670898" y="69" font-size="19">260 Ainslie St</tspan>
+        </text>
+    </g>
+</svg>
