@@ -24,9 +24,9 @@ export default ({ theme, route }) =>
             </Link>
           </Grid>
           <Grid item md={2} xs={12}>
-            <Link href='/research'>
-              <Grid item className={ route === '/research' && 'disable' }>
-                <NavLink linkTitle="Research"/>
+            <Link href='/work'>
+              <Grid item className={ route === '/work' && 'disable' }>
+                <NavLink linkTitle="Work"/>
               </Grid>
             </Link>
           </Grid>
