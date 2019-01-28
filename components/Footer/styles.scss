@@ -10,7 +10,11 @@
   #lu-logo {
     fill: $fontColorLightened;
   }
-  .agencyName {}
+  .agencyMark {
+    &:hover {
+      cursor: pointer;
+    }
+  }
   .agencyInfo {}
   .social {
     text-align: right;
