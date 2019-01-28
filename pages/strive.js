@@ -7,56 +7,59 @@ import Footer from '../components/Footer'
 import CLIENTS from '../utils/clients'
 
 export default () =>
-  <Layout title='Strive Digital' className="strive-page">
+  <Layout title='Strive Digital' className="strive-page projectPage">
       <Hero
         className="hero-strive project-hero"
-        bgImage="https://s3.us-east-2.amazonaws.com/lu-assets/strive-logo-web.png"
+        headline="Strive Digital"
       />
-
-      <div className="container">
-        <Grid container>
-          <Grid item xs={1} md={1} />
-          <Grid item xs={12} md={8} >
-            <Project
-              variant="full"
-              serviceProvided={CLIENTS[3].services}
-              projectTitle={CLIENTS[3].name}
-              website={CLIENTS[3].website}
-              projectBlurb={CLIENTS[3].blurb}
-              projectImageLink={CLIENTS[3].projectImageLink}
-              nextProjectLink={CLIENTS[3].nextProjectLink}
-              projectDescription={CLIENTS[3].description}
-            />
-          </Grid>
+      <Grid container className="container projectAbout" spacing={40} alignItems="flex-start">
+        <Grid item md={8} xs={12} className="aboutItem">
+          <p>Strive Digital is a multi-channel messaging platform for progressive campaigns of all sizes. The founders of Little Universe built the platform and operate it in partnership with Strive as a joint venture.</p>
         </Grid>
-        <Grid container>
-          <Grid item xs={1} md={1} />
-          <Grid item xs={10} md={10}>
-            <img className="product-screenshot" src="../static/product-screenshots/strive/strive-1.png" />
-            <img className="product-screenshot" src="../static/product-screenshots/strive/strive-2.png" />
-            <img className="product-screenshot" src="../static/product-screenshots/strive/strive-3.png" />
-            <img className="product-screenshot" src="../static/product-screenshots/strive/strive-4.png" />
-          </Grid>
-        </Grid>
-      </div>
-
-      <Grid container direction="column" className="project-links">
-          <Grid container direction="column" className="container">
-            { CLIENTS.filter(c => c.name !== "Betterfin").map((client) =>
-              <Grid item md={12} xs={12} >
-                <Project
-                  variant="preview"
-                  serviceProvided={client.services}
-                  projectTitle={client.name}
-                  projectBlurb={client.blurb}
-                  projectImageLink={client.projectImageLink}
-                  nextProjectLink={client.nextProjectLink}
-                  url={client.url}
-                />
-              </Grid>
-            )}
-          </Grid>
       </Grid>
+      <Grid container className="container projectContext" spacing={40} alignItems="flex-start">
+        <Grid item md={3} xs={12} className="contextItem contextChallenge">
+          <h4>Challenge</h4>
+          <p>The challenge was this. We worked really hard to do this and this and that and this.</p>
+        </Grid>
+        <Grid item md={3} xs={12} className="contextItem contextApproach">
+          <h4>Approach</h4>
+          <p>We took a level approach and worked hard to make sure the design matched the intention of the business.</p>
+        </Grid>
+        <Grid item md={3} xs={12} className="contextItem contextValue">
+          <h4>Value</h4>
+          <p>Through a process of this and that we delivered a great deal of value and it was great.</p>
+        </Grid>
+      </Grid>
+      <Grid container className="container projectCallout" spacing={40} alignItems="center">
+        <Grid item md={8} xs={12} className="calloutItem">
+          <h4>UX Design</h4>
+          <h2>We never just jump straight into design. For this project we spent a good deal of time conducting UX research, building out proto-personas, users journeys, and visual storyboards in order to map the who, where, and how for all potential site users.</h2>
+        </Grid>
+      </Grid>
+      <Grid container className="container projectFeatureImage projectFeatureImageLeft" spacing={40} alignItems="center">
+        <Grid item md={7} xs={12} className="featureImageAsset">
+          <img className="product-screenshot" src="../static/product-screenshots/strive/strive-1.png" />
+        </Grid>
+        <Grid item md={1} xs={0}/>
+        <Grid item md={4} xs={12} className="featureImageDescription">
+          <h2>Texts for days.</h2>
+          <p>We built a call and text tool that was special as friggin anything and did the job it was supposed to it was great.</p>
+        </Grid>
+      </Grid>
+      <Grid container className="container projectSplitScreen" spacing={40} alignItems="center">
+        <Grid item md={6} xs={12} className="splitScreenItem splitScreenLeft">
 
-      <Footer />
-    </ Layout>
+        </Grid>
+        <Grid item md={6} xs={12} className="splitScreenItem splitScreenRight">
+
+        </Grid>
+      </Grid>
+      <Grid container className="container projectFeatureImage .projectFeatureImageCenter" spacing={40} alignItems="center">
+        <Grid item md={2} xs={12}/>
+        <Grid item md={8} xs={12} className="featureImageAsset">
+          <img className="product-screenshot" src="../static/product-screenshots/strive/strive-1.png" />
+        </Grid>
+      </Grid>
+    <Footer />
+  </ Layout>

@@ -28,6 +28,7 @@ $bgColorMedium: #F6F5F0;
 $bgColorLight: #fff;
 $bgColorLightened: #fafafa;
 $strokeColor: #f1f1f1;
+$bgColorMediumLight: #f1f1f1;
 
 $navHeight: 220px;
 
@@ -43,7 +44,7 @@ $easing: ease-in-out;
 }
 
 @mixin shadow {
-  box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.06);
+  box-shadow: 0px 30px 50px 0px rgba(69, 65, 78, 0.06);
 }
 
 @mixin animation($value) {
@@ -640,6 +641,78 @@ hr {
 
 .cta-container {
   margin-top: $buffer*4;
+}
+
+.projectPage {
+  h4 {
+    font-family: $fontFamily;
+    font-weight: $fontWeightHeavy;
+  }
+  .projectAbout {
+    .aboutItem {
+      p {
+        margin-bottom: 0;
+        font-family: $fontFamilySecondary;
+      }
+    }
+  }
+  .projectContext {
+    background: $bgColorLightened;
+    .contextItem {
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .projectCallout {
+    padding: $buffer*8 0;
+    display: flex;
+    justify-content: center;
+    background: $bgColorMediumLight;
+    .calloutItem {
+      text-align: center;
+      h4 {
+        color: $fontColorLightened;
+        padding-bottom: $buffer*2;
+      }
+      h2 {
+        line-height: $lineHeight*1.5;
+      }
+    }
+  }
+  .projectFeatureImage {
+    background: $bgColor;
+    .featureImageAsset {
+      img {
+        @include shadow;
+      }
+    }
+    .featureImageDescription {
+      h2 {
+        font-family: $fontFamily;
+        color: $fontColorLight;
+      }
+      p {
+        color: $fontColorLightened;
+      }
+    }
+    .projectFeatureImageCenter {
+      height: 30vh;
+      overflow: visible;
+    }
+  }
+  .projectSplitScreen {
+    padding: 20px;
+    .splitScreenItem {
+      height: 40vh;
+    }
+    .splitScreenLeft {
+      background: $bgColorLight;
+    }
+    .splitScreenRight {
+      background: $bgColorMedium;
+    }
+  }
 }
 
 // KEYFRAMES

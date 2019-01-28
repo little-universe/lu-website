@@ -33,7 +33,9 @@ class Layout extends React.Component {
           <meta charSet='utf-8' />
           <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         </Head>
-        {this.props.children}
+        <div className={className}>
+          {this.props.children}
+        </div>
       </>
     )
   }
