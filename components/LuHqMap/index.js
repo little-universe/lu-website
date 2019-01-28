@@ -12,7 +12,7 @@ const styles = require('../../utils/GoogleMapStyles.json')
 const LuHqMap = withScriptjs(
   withGoogleMap(props => (
     <GoogleMap
-      defaultZoom={15}
+      defaultZoom={13}
       defaultCenter={{
         lat: 40.713257,
         lng: -73.943672
