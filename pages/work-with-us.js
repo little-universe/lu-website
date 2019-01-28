@@ -9,11 +9,15 @@ import LuHqMap from '../components/LuHqMap'
 export default () =>
   <>
     <Layout title='Little Universe - Work With Us' className="workWithUs-page">
+    <div className="home-hero-bg agency">
+      <img className="yellow-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/yellow.svg" />
+      <img className="green-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/green.svg" />
     <Hero
       className="hero-workWith"
       headline={<>Work With Us</>}
       subhead={["Drop us a line or give us a call. We're always excited to talk concept or talk shop."]}
     />
+    </div>
         <Grid container className="container visitUs"  spacing={40} alignItems="center">
           <Grid item md={6} xs={12}>
             <div className="visitItem visitUsContact">

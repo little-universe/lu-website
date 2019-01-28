@@ -18,29 +18,29 @@ class Agency extends React.Component {
     const { visible } = this.state;
     return (
       <Layout title='Little Universe - Agency' className="agency-page">
-      {/*}  <div className="home-hero-bg agency">
+        <div className="home-hero-bg agency">
           <img className="yellow-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/yellow.svg" />
           <img className="green-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/green.svg" />
           <Hero
             className="hero-agency"
             headline={<>We're a pretty cool bunch of folks who <br/>asbolutely <span className="emphasis">love product</span>.</>}
           />
-        </div>*/}
+        </div>
 
-        <Hero
+        {/*<Hero
           className="hero-agency"
-          bgImage="../static/office.JPG"
-        />
+          bgImage="../static/office-2.JPG"
+        />*/}
 
-        <div className="home-hero-bg">
+        {/*}<div className="home-hero-bg">
           <div className="section-bubbles">
             <img className="smallWhiteBubble bubble bubbleOne" src="../static/bubble-circle.svg" />
             <img className="smallWhiteBubble bubble bubbleThree" src="../static/bubble-circle.svg" />
             <img className="smallWhiteBubble bubble bubbleFour" src="../static/bubble-circle.svg" />
           </div>
-      </div>
+      </div>*/}
 
-        {/*}<div className="container">
+        <div className="container">
           <Grid container spacing={40} alignItems="center">
             <Grid item md={6} xs={12}>
             <h1>Small team, <span className="emphasis">full stack</span>.</h1>
@@ -48,13 +48,13 @@ class Agency extends React.Component {
             <p>We’ve seen huge successes and formidable failures. We understand what it means to operate in ambiguity, where to make tough calls, and we have the skills to back it up.</p>
             </Grid>
             <Grid item md={6} xs={12}>
-              <img style={{width: "100%"}} src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" />
+              <img style={{width: "100%"}} src="../static/office-2.JPG" />
             </Grid>
           </Grid>
-        </div>*/}
+        </div>
 
         <div className="container">
-
+{/*
           <Grid container className="small-team-container">
             <Grid item md={3} xs={12}/>
             <Grid item md={6} xs={12} style={{textAlign: "center"}}>
@@ -62,7 +62,7 @@ class Agency extends React.Component {
               <p>Our team has gone to bat with all things startup. We’ve built, launched and scaled multiple ventures as founders, managers, operators and dreamers.</p>
               <p>We’ve seen huge successes and formidable failures. We understand what it means to operate in ambiguity, where to make tough calls, and we have the skills to back it up.</p>
             </Grid>
-          </Grid>
+          </Grid>*/}
 
           <Grid container spacing={40}>
             <Grid item md={6} xs={12}>
