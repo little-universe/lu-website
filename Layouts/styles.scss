@@ -204,6 +204,8 @@ hr {
 
 .container {
   padding: $buffer*2;
+  max-width: 1400px;
+  margin: 0 auto;
   // margin-top: $buffer*2;
 }
 
@@ -280,7 +282,7 @@ hr {
     cursor: pointer;
     @include transition;
     &:hover {
-      background: $primaryColor;
+      background: $secondaryColor;
       @include transition;
       svg {
         transform: translateX(12px);
@@ -299,7 +301,7 @@ hr {
     svg {
       transition: all .5s ease-in-out;
       path {
-        stroke: $primaryColor !important;
+        stroke: $secondaryColor !important;
         stroke-dasharray: 260;
         stroke-dashoffset: 260;
         transition: all .5s ease-in-out;
@@ -631,10 +633,7 @@ hr {
 .projectPage {
   .projectAbout {
     .aboutItem {
-      text-align: center;
-      p {
-        margin-bottom: 0;
-      }
+      margin-bottom: $buffer*2;
     }
   }
   .projectContext {
@@ -677,10 +676,6 @@ hr {
         color: $fontColorLightened;
       }
     }
-    .projectFeatureImageCenter {
-      height: 30vh;
-      overflow: visible;
-    }
   }
   .projectSplitScreen {
     padding: 20px;
@@ -688,7 +683,7 @@ hr {
       // height: 40vh;
       padding: $buffer*3;
       .splitScreenImg {
-        height: 50vh;
+        // height: 50vh;
       }
     }
     .splitScreenLeft {

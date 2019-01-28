@@ -78,6 +78,12 @@ p.copiedText {
   }
 }
 
+.footer-links {
+  p {
+    cursor: pointer;
+  }
+}
+
 @keyframes fadeInLeft {
   0% {
     opacity: 0;

@@ -64,45 +64,52 @@ class Agency extends React.Component {
             </Grid>
           </Grid>*/}
 
-          <Grid container spacing={40}>
+          <Grid container className="skills-container" spacing={40}>
             <Grid item md={6} xs={12}>
-              <div className="skills-container">
-                <h2>Design</h2>
-                <p className="skill-description">Our designers are fluent frontend developers, to ensure designs are implemented to the highest possible quality while staying lean and fast.</p>
-                <p className="skill">UX Design</p>
-                <p className="skill">UI Design</p>
-                <p className="skill">User Research</p>
-              </div>
+              <h2>Design</h2>
+              <p className="skill">UX Design</p>
+              <p className="skill">UI Design</p>
+              <p className="skill">User Research</p>
             </Grid>
-
             <Grid item md={6} xs={12}>
-              <div className="skills-container">
-                <h2>Web Development</h2>
-                <p className="skill-description">We take a cross-functional approach to web development, backed by some of the best developers in the industry. We know how to move fast and craft great products.</p>
-                <p className="skill">React</p>
-                <p className="skill">Next</p>
-                <p className="skill">Node</p>
-              </div>
+              <p className="skill-description">Our designers are fluent frontend developers, to ensure designs are implemented to the highest possible quality while staying lean and fast.</p>
             </Grid>
+          </Grid>
 
+          <Grid container className="skills-container" spacing={40}>
             <Grid item md={6} xs={12}>
-              <div className="skills-container">
-                <h2>Data Engineering</h2>
-                <p className="skill-description">Having built and scaled massive data pipelines, we make things work under the hood.</p>
-                <p className="skill">Scala</p>
-                <p className="skill">Apache</p>
-                <p className="skill">Mega logs</p>
-              </div>
+              <h2>Web Development</h2>
+              <p className="skill">React</p>
+              <p className="skill">Next</p>
+              <p className="skill">Node</p>
             </Grid>
-
             <Grid item md={6} xs={12}>
-              <div className="skills-container">
-                <h2>Strategy</h2>
-                <p className="skill-description">We’ve been early employees, managers and founders at startups that have scaled through multiple milestones and funding rounds. We’re strategic thinkers who understand what it means to build a company.</p>
-                <p className="skill">Product Management</p>
-                <p className="skill">Business Strategy</p>
-                <p className="skill">Team Management</p>
-              </div>
+              <p className="skill-description">We take a cross-functional approach to web development, backed by some of the best developers in the industry. We know how to move fast and craft great products.</p>
+            </Grid>
+          </Grid>
+
+          <Grid container className="skills-container" spacing={40}>
+            <Grid item md={6} xs={12}>
+              <h2>Data Engineering</h2>
+              <p className="skill">Scala</p>
+              <p className="skill">Spark</p>
+              <p className="skill">Databricks</p>
+              <p className="skill">Airflow</p>
+            </Grid>
+            <Grid item md={6} xs={12}>
+              <p className="skill-description">Having built and scaled massive data pipelines, we make things work under the hood.</p>
+            </Grid>
+          </Grid>
+
+          <Grid container className="skills-container" spacing={40}>
+            <Grid item md={6} xs={12}>
+              <h2>Strategy</h2>
+              <p className="skill">Product Management</p>
+              <p className="skill">Business Strategy</p>
+              <p className="skill">Team Management</p>
+            </Grid>
+            <Grid item md={6} xs={12}>
+              <p className="skill-description">We’ve been early employees, managers and founders at startups that have scaled through multiple milestones and funding rounds. We’re strategic thinkers who understand what it means to build a company.</p>
             </Grid>
           </Grid>
 

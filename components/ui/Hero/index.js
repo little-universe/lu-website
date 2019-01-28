@@ -5,15 +5,19 @@ export default ({ className, headline, subhead, bgImage }) =>
   <>
     { bgImage &&
       <Grid className={`hero ${className}`} container justify="center" alignItems="center">
-        <img className="hero-image" src={bgImage} />
+        <div className="container">
+          <img className="hero-image" src={bgImage} />
+        </div>
       </Grid>
     }
     { headline &&
-      <Grid className={`hero ${className}`} container alignItems="center">
-        <Grid item md={10} xs={12}>
-          <h1 className="headline">{headline}</h1>
-          <p className="subhead">{subhead}</p>
+      <div className="container">
+        <Grid className={`hero ${className}`} container alignItems="center">
+          <Grid item md={10} xs={12}>
+            <h1 className="headline">{headline}</h1>
+            <p className="subhead">{subhead}</p>
+          </Grid>
         </Grid>
-      </Grid>
+      </div>
     }
   </>

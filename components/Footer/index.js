@@ -24,26 +24,39 @@ class Footer extends React.Component {
 
   render () {
     return (
-      <div className="footer container">
-        <Grid container>
-          <Grid item xs={12} md={6} className="footerItem agencyMark">
-            <p className="secondary"><Logo /></p>
-          </Grid>
-          <Grid item xs={12} md={6} className="footerItem agencyInfo">
-            <p className="secondary">260 Ainslie Street, 3rd Floor</p>
-            <p className="secondary">Brooklyn, NY 11211</p>
-            <br />
-            <Grid container alignItems="center">
-              <p className="secondary">agency@littleuniverse.com</p>
-              <CopyToClipboard text="agency@littleuniverse.com"
-                onCopy={this.setCopy}
-              >
-                <Icon className="copyIcon" size={18} icon={ic_content_copy} />
-              </CopyToClipboard>
-              <p className={ this.state.copiedText ? "copiedText" : "copiedText fadeOut"}>Copied</p>
+      <div className="footer">
+        <div className="container">
+          <Grid container>
+            <Grid item xs={12} md={4} className="footerItem agencyMark">
+              <p className="secondary"><Logo /></p>
+            </Grid>
+            <Grid item xs={12} md={4} className="footerItem footer-links">
+              <Link href="/about">
+                <p className="secondary">About Us</p>
+              </Link>
+              <Link href="/work">
+                <p className="secondary">Our Work</p>
+              </Link>
+              <Link href="/work-with-us">
+                <p className="secondary">Contact</p>
+              </Link>
+            </Grid>
+            <Grid item xs={12} md={4} className="footerItem agencyInfo">
+              <p className="secondary">260 Ainslie Street, 3rd Floor</p>
+              <p className="secondary">Brooklyn, NY 11211</p>
+              <br />
+              <Grid container alignItems="center">
+                <p className="secondary">agency@littleuniverse.com</p>
+                <CopyToClipboard text="agency@littleuniverse.com"
+                  onCopy={this.setCopy}
+                >
+                  <Icon className="copyIcon" size={18} icon={ic_content_copy} />
+                </CopyToClipboard>
+                <p className={ this.state.copiedText ? "copiedText" : "copiedText fadeOut"}>Copied</p>
+              </Grid>
             </Grid>
           </Grid>
-        </Grid>
+        </div>
       </div>
     )
   }
