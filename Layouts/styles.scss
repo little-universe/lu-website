@@ -700,6 +700,32 @@ hr {
   }
 }
 
+.workWithUs-page {
+  .hero-workWith {
+    .headline {
+      padding-bottom: $buffer*2;
+    }
+  }
+  h2 {
+
+  }
+  .contactInfo {
+  }
+  .visitUs {
+    background: $bgColorMedium;
+    .visitItem {
+      margin-bottom: $buffer*3;
+      text-align: center;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      p {
+        color: $fontColorLightened;
+      }
+    }
+  }
+}
+
 // KEYFRAMES
 
 @-webkit-keyframes fadeInUp {

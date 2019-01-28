@@ -1,7 +1,7 @@
 @import '../../../Layouts/styles.scss';
 
 .hero {
-  padding: $buffer*3;
+  padding: $buffer*2;
   height: 80vh;
   min-height: 600px;
   background-size: cover;
@@ -30,6 +30,13 @@
     .subhead {
       color: $fontColorLight;
       font-size: $fontSizeSubHeadline;
+    }
+  }
+  &.hero-workWith {
+    height: 3vh !important;
+    min-height: 400px;
+    .headline {
+      margin: 0;
     }
   }
 
