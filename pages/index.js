@@ -88,7 +88,10 @@ export default ({ theme, route }) =>
     <Grid container className="container aboutUs" alignItems="center">
       <Grid container className="aboutUsStatement" alignItems="center">
         <Grid item md={12} xs={12}>
-          <h1><Link href="/work-with-us">Let's Work Together.</Link></h1>
+          <h1>We'd love to build something with you.</h1>
+          <Link href="/work-with-us">
+            <button>Work With Us</button>
+          </Link>
         </Grid>
       </Grid>
     </Grid>

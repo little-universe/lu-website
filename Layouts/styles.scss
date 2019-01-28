@@ -131,9 +131,10 @@ a {
 
 button {
   padding: $buffer;
-  background-color: $accentColor;
-  color: $fontColorLight;
-  font-size: $fontSizeSubHeadline;
+  color: $fontColor;
+  background: $accentColorLight;
+  @include shadow;
+  font-size: $fontSize;
   font-family: $fontFamily;
   cursor: pointer;
   border: none;
@@ -371,6 +372,7 @@ hr {
   .aboutUsStatement {
     padding: $buffer;
     justify-content: center;
+    text-align: center;
 
     // color: $fontColorLight;
     h1  {
