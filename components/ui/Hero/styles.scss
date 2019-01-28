@@ -33,10 +33,20 @@
     }
   }
   &.hero-workWith {
-    height: 3vh !important;
-    min-height: 400px;
+    // height: 3vh !important;
+    // min-height: 400px;
     .headline {
       margin: 0;
+      margin-bottom: $buffer;
+    }
+  }
+
+  &.hero-workPage {
+    // height: 3vh !important;
+    // min-height: 400px;
+    .headline {
+      margin: 0;
+      margin-bottom: $buffer;
     }
   }
 

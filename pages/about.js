@@ -32,6 +32,14 @@ class Agency extends React.Component {
           bgImage="../static/office.JPG"
         />
 
+        <div className="home-hero-bg">
+          <div className="section-bubbles">
+            <img className="smallWhiteBubble bubble bubbleOne" src="../static/bubble-circle.svg" />
+            <img className="smallWhiteBubble bubble bubbleThree" src="../static/bubble-circle.svg" />
+            <img className="smallWhiteBubble bubble bubbleFour" src="../static/bubble-circle.svg" />
+          </div>
+      </div>
+
         {/*}<div className="container">
           <Grid container spacing={40} alignItems="center">
             <Grid item md={6} xs={12}>

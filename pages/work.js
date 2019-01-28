@@ -9,12 +9,12 @@ import CLIENTS from '../utils/clients'
 
 export default () =>
   <Layout title='Little Universe - Work' className="work-page">
-  <div className="home-hero-bg work">
     <Hero
-      headline="We collect reference, do research, and make connections."
+      className="hero-workPage"
+      headline={<>We make a difference for our clients.</>}
+      subhead={["Each project has its own parameters for success."]}
     />
-    </div>
-
+    
 
   <Footer />
 </ Layout>
