@@ -689,8 +689,10 @@ hr {
     .splitScreenItem {
       // height: 40vh;
       // max-height: 50vh;
+      // width: 100%;
       padding: $buffer*3;
-      .splitScreenImg {
+      img {
+        height: 100%;
       }
     }
     .splitScreenLeft {
