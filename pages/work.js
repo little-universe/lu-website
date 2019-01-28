@@ -37,7 +37,13 @@ export default () =>
         </Link>
       </Grid>
       <Grid container className="container linksToWork" spacing={40} alignItems="center">
-      <Grid item md={6} xs={12} className="workLink"><a href="https://www.myxfitness.com/">Myx Fitness</a></Grid>
+        <Grid item md={6} xs={12} className="linksDescription">
+          <p>We've worked with some pretty amazing people whose businesses are always growing and changing. We've helped in one capacity or another with the growth of these companies over the years.</p>
+        </Grid>
+        <Grid item md={12} xs={12} className="workLink"><a href="https://www.myxfitness.com/"><h2>Myx Fitness</h2></a></Grid>
+        <Grid item md={12} xs={12} className="workLink"><a href="https://dv01.co//"><h2>Dv01</h2></a></Grid>
+        <Grid item md={12} xs={12} className="workLink"><a href="https://h1insights.com/"><h2>H1 Insights</h2></a></Grid>
+        <Grid item md={12} xs={12} className="workLink"><a href="https://votecrew.org/"><h2>Vote Crew</h2></a></Grid>
       </Grid>
     </Grid>
 
