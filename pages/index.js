@@ -29,7 +29,7 @@ export default ({ theme, route }) =>
     <div className="index-page">
       <div className="productProblem container">
         <Grid container spacing={40} alignItems="center">
-          <Grid container className="containerCard" spacing={40} alignItems="center">
+          <Grid container className="containerCard" alignItems="center">
             <Grid container className="valueStatementSection" alignItems="center">
               <Grid item md={6} xs={12}>
                 <h1>We solve the product problem</h1>
@@ -59,16 +59,23 @@ export default ({ theme, route }) =>
               </Grid>
             </Grid>
           </Grid>
-        </Grid>
-        <Grid container className="contactUs">
-          <Link href="/about">
-            <h2>Learn more about us <ArrowSquiggly /><Icon size={42} icon={ic_keyboard_arrow_right} /></h2>
-          </Link>
+          <Grid container className="contactUs">
+            <Link href="/about">
+              <h2>Learn more about us <ArrowSquiggly /><Icon size={42} icon={ic_keyboard_arrow_right} /></h2>
+            </Link>
+            <Grid container className="valueStatementSection" spacing={40} alignItems="center">
+              <div className="section-bubbles">
+                <img className="smallYellowBubble bubble bubbleOne" src="../static/smallYellowBubble.svg" />
+                <img className="smallYellowBubble bubble bubbleTwo" src="../static/smallYellowBubble.svg" />
+                <img className="smallYellowBubble bubble bubbleFour" src="../static/smallYellowBubble.svg" />
+              </div>
+            </Grid>
+          </Grid>
         </Grid>
       </div>
     </div>
 
-    <div className="container">
+    {/*<div className="container">
       <Grid container className="valueStatementSection" spacing={40} alignItems="center">
         <div className="section-bubbles">
           <img className="smallYellowBubble bubble bubbleOne" src="../static/smallYellowBubble.svg" />
@@ -76,11 +83,11 @@ export default ({ theme, route }) =>
           <img className="smallYellowBubble bubble bubbleFour" src="../static/smallYellowBubble.svg" />
         </div>
       </Grid>
-    </div>
+    </div>*/}
 
-    <Grid container className="container aboutUs" spacing={40} alignItems="center">
+    <Grid container className="container aboutUs" alignItems="center">
       <Grid container className="aboutUsStatement" alignItems="center">
-        <Grid item md={8} xs={12}>
+        <Grid item md={12} xs={12}>
           <h1><Link href="/work-with-us">Let's Work Together.</Link></h1>
         </Grid>
       </Grid>

@@ -211,7 +211,7 @@ hr {
 
 .containerCard {
   background: $bgColorLightened;
-  margin: 0 $buffer*1 !important;
+  // margin: 0 $buffer*1 !important;
   padding: $buffer*3;
   margin-bottom: 0;
   z-index: 100;
@@ -278,12 +278,15 @@ hr {
 }
 
 .contactUs {
-  background: $accentColor;
-  padding: $buffer*3;
-  text-align: center;
+  // background: $accentColor;
+  position: relative;
+  padding: $buffer*2;
+  display: flex;
+  justify-content: center;
   background: $accentColorLight;
   &:hover {
     background: $secondaryColor;
+    cursor: pointer;
     @include transition;
     svg {
       transform: translateX(12px);
@@ -332,7 +335,7 @@ hr {
   .section-bubbles {
     position: absolute;
     width: 100vw;
-    top: -10vh;
+    top: -20vh;
     z-index: -10;
     .bubble {
       min-width: 100px;
@@ -356,7 +359,7 @@ hr {
       }
       &.bubbleFour {
         width: $smallBubbleWidth*0.75;
-        right: 5vw;
+        right: 25vw;
         top: 45vh;
         @include animation(bubbleMotion1 20s infinite);
         @include transition;
@@ -371,6 +374,7 @@ hr {
   .aboutUsStatement {
     padding: $buffer;
     justify-content: center;
+
     // color: $fontColorLight;
     h1  {
       font-family: $fontFamilySecondary;
