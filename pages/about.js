@@ -18,16 +18,21 @@ class Agency extends React.Component {
     const { visible } = this.state;
     return (
       <Layout title='Little Universe - Agency' className="agency-page">
-        <div className="home-hero-bg agency">
+      {/*}  <div className="home-hero-bg agency">
           <img className="yellow-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/yellow.svg" />
           <img className="green-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/green.svg" />
           <Hero
             className="hero-agency"
             headline={<>We're a pretty cool bunch of folks who <br/>asbolutely <span className="emphasis">love product</span>.</>}
           />
-        </div>
+        </div>*/}
 
-        <div className="container">
+        <Hero
+          className="hero-agency"
+          bgImage="../static/office.JPG"
+        />
+
+        {/*}<div className="container">
           <Grid container spacing={40} alignItems="center">
             <Grid item md={6} xs={12}>
             <h1>Small team, <span className="emphasis">full stack</span>.</h1>
@@ -38,7 +43,7 @@ class Agency extends React.Component {
               <img style={{width: "100%"}} src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" />
             </Grid>
           </Grid>
-        </div>
+        </div>*/}
 
         <div className="container">
 

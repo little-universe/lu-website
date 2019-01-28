@@ -715,7 +715,7 @@ hr {
     background: $bgColorMedium;
     .visitItem {
       margin-bottom: $buffer*3;
-      text-align: center;
+      // text-align: center;
       &:last-child {
         margin-bottom: 0;
       }
