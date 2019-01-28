@@ -15,7 +15,7 @@ export default () =>
       <Hero
         className="hero-workWith"
         headline={<>Work With Us</>}
-        subhead={["Drop us a line or give us a call. We're always excited to talk concept or talk shop."]}
+        subhead="We're always interested in hearing great ideas that we can collaborate on."
       />
       </div>
       <div className="visitUs">
@@ -42,7 +42,7 @@ export default () =>
           </Grid>
         </div>
       </div>
-      
+
       <Footer />
     </ Layout>
   </>
