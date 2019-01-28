@@ -116,10 +116,11 @@ p.service {
   // font-weight: $fontWeightHeavy;
 }
 
-.product-screenshot {
+.product-screenshot, .splitScreenImg {
   // @include shadow();
   // margin-bottom: 10vh;
   width: 100%;
+  height: 100%;
 }
 
 .project-links {
