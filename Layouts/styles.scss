@@ -763,6 +763,13 @@ hr {
       }
     }
   }
+  .linksToWork {
+    .workLink {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 // KEYFRAMES
