@@ -669,6 +669,7 @@ hr {
     }
     .featureImageDescription {
       h2 {
+        // font-family: $fontFamily;
         color: $fontColorLight;
       }
       p {
@@ -682,11 +683,45 @@ hr {
   }
   .projectSplitScreen {
     padding: 20px;
+    .splitScreenItem {
+      // height: 40vh;
+      padding: $buffer*3;
+      .splitScreenImg {
+        height: 50vh;
+      }
+    }
     .splitScreenLeft {
       background: $bgColorLight;
     }
     .splitScreenRight {
-      background: $bgColorMedium;
+      // background: $bgColorMedium;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.workWithUs-page {
+  .hero-workWith {
+    .headline {
+    }
+  }
+  h2 {
+
+  }
+  .contactInfo {
+  }
+  .visitUs {
+    background: $bgColorMedium;
+    .visitItem {
+      margin-bottom: $buffer*3;
+      // text-align: center;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      p {
+        color: $fontColorLightened;
+      }
     }
   }
 }
