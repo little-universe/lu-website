@@ -629,15 +629,10 @@ hr {
 }
 
 .projectPage {
-  h4 {
-    font-family: $fontFamily;
-    font-weight: $fontWeightHeavy;
-  }
   .projectAbout {
     .aboutItem {
       p {
         margin-bottom: 0;
-        font-family: $fontFamilySecondary;
       }
     }
   }
@@ -674,7 +669,6 @@ hr {
     }
     .featureImageDescription {
       h2 {
-        font-family: $fontFamily;
         color: $fontColorLight;
       }
       p {
@@ -688,9 +682,6 @@ hr {
   }
   .projectSplitScreen {
     padding: 20px;
-    .splitScreenItem {
-      height: 40vh;
-    }
     .splitScreenLeft {
       background: $bgColorLight;
     }

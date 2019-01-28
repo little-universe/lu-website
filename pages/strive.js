@@ -19,15 +19,15 @@ export default () =>
       </Grid>
       <Grid container className="container projectContext" spacing={40} alignItems="flex-start">
         <Grid item md={3} xs={12} className="contextItem contextChallenge">
-          <h4>Challenge</h4>
-          <p>The challenge was this. We worked really hard to do this and this and that and this.</p>
+          <h2>Challenge</h2>
+          <p>We were tasked with figuring out how to make an expensive and powerful tool like text messaging available to grassroots organizations with tight budgets.</p>
         </Grid>
         <Grid item md={3} xs={12} className="contextItem contextApproach">
-          <h4>Approach</h4>
+          <h2>Approach</h2>
           <p>We took a level approach and worked hard to make sure the design matched the intention of the business.</p>
         </Grid>
         <Grid item md={3} xs={12} className="contextItem contextValue">
-          <h4>Value</h4>
+          <h2>Value</h2>
           <p>Through a process of this and that we delivered a great deal of value and it was great.</p>
         </Grid>
       </Grid>

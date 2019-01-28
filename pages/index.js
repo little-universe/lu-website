@@ -20,9 +20,9 @@ export default ({ theme, route }) =>
         />
         <div className="home-hero-bg">
           <div className="section-bubbles">
-            <img className="smallWhiteBubble bubble bubbleOne" src="../static/bubble-circle-blue.svg" />
-            <img className="smallWhiteBubble bubble bubbleThree" src="../static/bubble-circle-lightyellow.svg" />
-            <img className="smallWhiteBubble bubble bubbleFour" src="../static/bubble-circle-red.svg" />
+            <img className="smallWhiteBubble bubble bubbleOne" src="../static/bubble-circle.svg" />
+            <img className="smallWhiteBubble bubble bubbleThree" src="../static/bubble-circle.svg" />
+            <img className="smallWhiteBubble bubble bubbleFour" src="../static/bubble-circle.svg" />
           </div>
       </div>
     <Grid container className="container productProblem" spacing={40} alignItems="center">
@@ -70,9 +70,9 @@ export default ({ theme, route }) =>
         </Grid>
       </Link>
       <div className="section-bubbles">
-        <img className="smallYellowBubble bubble bubbleOne" src="../static/bubble-circle-blue.svg" />
+        <img className="smallYellowBubble bubble bubbleOne" src="../static/smallYellowBubble.svg" />
         <img className="smallYellowBubble bubble bubbleTwo" src="../static/smallYellowBubble.svg" />
-        <img className="smallYellowBubble bubble bubbleFour" src="../static/bubble-circle-red.svg" />
+        <img className="smallYellowBubble bubble bubbleFour" src="../static/smallYellowBubble.svg" />
       </div>
     </Grid>
 
