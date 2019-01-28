@@ -217,6 +217,25 @@ hr {
   z-index: 100;
 }
 
+.index-page {
+  background: $accentColor;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -113px;
+    left: 0;
+    right: 0;
+    height: 209px;
+    background-image: url(https://s3.us-east-2.amazonaws.com/lu-assets/bottom-morpher.svg);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    @include animation(morph 12s infinite);
+    z-index: -1;
+  }
+}
+
 .productProblem {
   background: $accentColor;
   padding-bottom: 0;
@@ -260,56 +279,44 @@ hr {
 
 .contactUs {
   background: $accentColor;
-  padding: $buffer*2;
-  padding-top: 0;
-  position: relative;
-  &:after {
-    content: '';
-    position: absolute;
-    bottom: -113px;
-    left: 0;
-    right: 0;
-    height: 209px;
-    background-image: url(https://s3.us-east-2.amazonaws.com/lu-assets/bottom-morpher.svg);
-    background-position: center center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    @include animation(morph 12s infinite);
+  padding: $buffer*3;
+  text-align: center;
+  background: $accentColorLight;
+  &:hover {
+    background: $secondaryColor;
+    @include transition;
+    svg {
+      transform: translateX(12px);
+      transition: all .5s ease-in-out;
+      path {
+        stroke: white !important;
+        stroke-dasharray: 260;
+        stroke-dashoffset: 0;
+        transition: all .5s ease-in-out;
+      }
+    }
+    h2 {
+      color: white;
+    }
   }
+  svg {
+    transition: all .5s ease-in-out;
+    path {
+      stroke: $secondaryColor !important;
+      stroke-dasharray: 260;
+      stroke-dashoffset: 260;
+      transition: all .5s ease-in-out;
+    }
+  }
+  h2 {
+    font-family: $fontFamilySecondary;
+  }
+
   .containerCard {
     background: $accentColorLight;
     text-align: center;
     cursor: pointer;
     @include transition;
-    &:hover {
-      background: $secondaryColor;
-      @include transition;
-      svg {
-        transform: translateX(12px);
-        transition: all .5s ease-in-out;
-        path {
-          stroke: white !important;
-          stroke-dasharray: 260;
-          stroke-dashoffset: 0;
-          transition: all .5s ease-in-out;
-        }
-      }
-      h2 {
-        color: white;
-      }
-    }
-    svg {
-      transition: all .5s ease-in-out;
-      path {
-        stroke: $secondaryColor !important;
-        stroke-dasharray: 260;
-        stroke-dashoffset: 260;
-        transition: all .5s ease-in-out;
-      }
-    }
-    h2 {
-      font-family: $fontFamilySecondary;
-    }
     p {
       display: inline-block;
       margin-bottom: 0;
