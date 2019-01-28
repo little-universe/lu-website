@@ -9,6 +9,7 @@
   color: $fontColor;
   overflow: hidden;
   position: relative;
+  z-index: -1;
 
   @media only screen and (max-width: 640px) {
     padding: $buffer;
