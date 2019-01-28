@@ -284,28 +284,24 @@ hr {
   display: flex;
   justify-content: center;
   background: $accentColorLight;
+  @include transition;
   &:hover {
-    background: $secondaryColor;
+    background: darken($accentColorLight, 3%);
     cursor: pointer;
     @include transition;
     svg {
       transform: translateX(12px);
       transition: all .5s ease-in-out;
       path {
-        stroke: white !important;
         stroke-dasharray: 260;
         stroke-dashoffset: 0;
         transition: all .5s ease-in-out;
       }
     }
-    h2 {
-      color: white;
-    }
   }
   svg {
     transition: all .5s ease-in-out;
     path {
-      stroke: $secondaryColor !important;
       stroke-dasharray: 260;
       stroke-dashoffset: 260;
       transition: all .5s ease-in-out;
