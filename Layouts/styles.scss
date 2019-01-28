@@ -629,15 +629,10 @@ hr {
 }
 
 .projectPage {
-  h4 {
-    font-family: $fontFamily;
-    font-weight: $fontWeightHeavy;
-  }
   .projectAbout {
     .aboutItem {
       p {
         margin-bottom: 0;
-        font-family: $fontFamilySecondary;
       }
     }
   }

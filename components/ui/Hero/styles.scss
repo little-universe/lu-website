@@ -7,6 +7,8 @@
   background-size: cover;
   background-position: center;
   color: $fontColor;
+  overflow: hidden;
+  position: relative;
 
   @media only screen and (max-width: 640px) {
     padding: $buffer;
@@ -97,6 +99,13 @@
 }
 
 .emphasis {
-  border-bottom: 3px solid $primaryColor;
+  border-bottom: 3px solid $accentColor;
   font-weight: $fontWeightHeavy;
+}
+
+.hero-screenshot {
+  position: absolute;
+  height: 60vh;
+  bottom: 0;
+  right: calc(10%);
 }
