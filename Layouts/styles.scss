@@ -3,6 +3,8 @@ $bubbleWidth: 30vw;
 $smallBubbleWidth: 15vw;
 $bubbleMove: 10px;
 $accentColor: #ffde7c;
+$primaryColor: #E6834A;
+$secondaryColor: #5169D9;
 $accentColorLight: #ECECE6;
 $accentColorPink: #F6D3EA;
 
@@ -12,7 +14,7 @@ $fontWeightHeavy: 500;
 $fontFamilySecondary: 'Playfair Display';
 
 
-$fontColor: #2e3648;
+// $fontColor: #2e3648;
 $fontColor: #555E68;
 $fontColorLightened: #adb1bb;
 $fontColorLight: #fff;
@@ -217,16 +219,15 @@ hr {
   padding-bottom: 0;
   .containerCard {
     background: $bgColorLightened;
-    overflow: hidden;
-    position: relative;
     .valueStatementSection {
-      margin: $buffer*4 0;
-      position: relative;
-      &:first-child {
-        margin-top: 0;
-      }
-      &:last-child {
-        margin-bottom: 0;
+      margin-bottom: $buffer*6;
+
+      img {
+        width: 70%;
+        &.product-graphic, &.process-graphic {
+          display: block;
+          margin: 0 auto;
+        }
       }
       h1 {
         font-family: $fontFamilySecondary;
@@ -240,27 +241,6 @@ hr {
         color: $fontColor;
         span {
           border-bottom: 3px solid $accentColor;
-        }
-      }
-      .valueStatementIllustration {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        img {
-          width: 40vw;
-        }
-        &.productFitIllustration {
-          position: absolute;
-          right: -10vw;
-        }
-        &.beyondProductIllustration {
-          position: absolute;
-          left: -10vw;
-        }
-        &.ourProcessIllustration {
-          position: absolute;
-          right: -10vw;
-          bottom: 2vh;
         }
       }
     }
@@ -299,21 +279,26 @@ hr {
     cursor: pointer;
     @include transition;
     &:hover {
-      background: darken($accentColorLight, 5%);
+      background: $primaryColor;
       @include transition;
       svg {
         transform: translateX(12px);
         transition: all .5s ease-in-out;
         path {
+          stroke: white !important;
           stroke-dasharray: 260;
           stroke-dashoffset: 0;
           transition: all .5s ease-in-out;
         }
       }
+      h2 {
+        color: white;
+      }
     }
     svg {
       transition: all .5s ease-in-out;
       path {
+        stroke: $primaryColor !important;
         stroke-dasharray: 260;
         stroke-dashoffset: 260;
         transition: all .5s ease-in-out;
