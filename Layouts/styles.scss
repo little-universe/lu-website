@@ -760,9 +760,18 @@ hr {
     }
   }
   .linksToWork {
+    .linksDescription {
+      padding-top: $buffer*4;
+      padding-bottom: 0;
+    }
     .workLink {
-      &:hover {
-        cursor: pointer;
+      padding-bottom: 0;
+      a {
+        h2 {
+          &:hover {
+            cursor: pointer;
+          }
+        }
       }
     }
   }
