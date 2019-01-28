@@ -674,7 +674,7 @@ hr {
     }
     .featureImageDescription {
       h2 {
-        font-family: $fontFamily;
+        // font-family: $fontFamily;
         color: $fontColorLight;
       }
       p {
@@ -689,13 +689,19 @@ hr {
   .projectSplitScreen {
     padding: 20px;
     .splitScreenItem {
-      height: 40vh;
+      // height: 40vh;
+      padding: $buffer*3;
+      .splitScreenImg {
+        height: 50vh;
+      }
     }
     .splitScreenLeft {
       background: $bgColorLight;
     }
     .splitScreenRight {
-      background: $bgColorMedium;
+      // background: $bgColorMedium;
+      display: flex;
+      justify-content: center;
     }
   }
 }
