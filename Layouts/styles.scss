@@ -694,10 +694,11 @@ hr {
       // width: 100%;
       padding: $buffer*3;
       img {
+        @include shadow;
       }
     }
     .splitScreenLeft {
-      background: $bgColorLight;
+      // background: $bgColorLight;
     }
     .splitScreenRight {
       // background: $bgColorMedium;
@@ -731,6 +732,7 @@ hr {
     }
   }
 }
+
 
 .workList {
   .containerCard {

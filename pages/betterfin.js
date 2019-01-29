@@ -80,7 +80,7 @@ export default () =>
       <div className="container">
         <Grid container className="projectFeatureImageLeft" spacing={40} alignItems="center">
           <Grid item md={7} xs={12} className="featureImageAsset">
-            <img className="product-screenshot" src="../static/product-screenshots/betterfin/betterfin-5.png" />
+            <img className="product-screenshot" src="../static/product-screenshots/betterfin/betterfin-5-nobg.png" />
           </Grid>
           <Grid item md={1} xs={0}/>
           <Grid item md={4} xs={12} className="featureImageDescription">
@@ -94,10 +94,10 @@ export default () =>
     <div className="container">
       <Grid container className="projectSplitScreen" spacing={40} alignItems="center">
         <Grid item md={6} xs={12} className="splitScreenItem splitScreenLeft">
-          <img className="product-screenshot" src="../static/product-screenshots/betterfin/betterfin-1.png" />
+          <img className="product-screenshot" src="../static/product-screenshots/betterfin/betterfin-1-nobg.png" />
         </Grid>
         <Grid item md={6} xs={12} className="splitScreenItem splitScreenRight">
-          <img className="product-screenshot" src="../static/product-screenshots/betterfin/betterfin-3.png" />
+          <img className="product-screenshot" src="../static/product-screenshots/betterfin/betterfin-3-nobg.png" />
         </Grid>
       </Grid>
     </div>
@@ -107,7 +107,7 @@ export default () =>
         <Grid container  spacing={40} alignItems="center">
           <Grid item md={2} xs={12}/>
           <Grid item md={8} xs={12} className="featureImageAsset">
-            <img className="product-screenshot" src="../static/product-screenshots/betterfin/betterfin-4.png" />
+            <img className="product-screenshot" src="../static/product-screenshots/betterfin/betterfin-4-nobg.png" />
           </Grid>
         </Grid>
       </div>
