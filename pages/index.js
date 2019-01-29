@@ -59,10 +59,9 @@ export default ({ theme, route }) =>
               </Grid>
             </Grid>
           </Grid>
+          <Link href="/about">
           <Grid container className="contactUs">
-            <Link href="/about">
               <h2>Learn more about us <ArrowSquiggly /><Icon size={42} icon={ic_keyboard_arrow_right} /></h2>
-            </Link>
             <Grid container className="valueStatementSection" spacing={40} alignItems="center">
               <div className="section-bubbles">
                 <img className="smallYellowBubble bubble bubbleOne" src="../static/smallYellowBubble.svg" />
@@ -71,6 +70,7 @@ export default ({ theme, route }) =>
               </div>
             </Grid>
           </Grid>
+          </Link>
         </Grid>
       </div>
     </div>
