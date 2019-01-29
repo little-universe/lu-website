@@ -37,12 +37,12 @@ export default ({ theme, route }) =>
                 <p className="emphasisPoint">We know how to achieve <span>product market fit</span>.</p>
               </Grid>
               <Grid item md={6} xs={12}>
-                <img className="product-graphic" src="../static/homepage-test-7.svg" />
+                <img className="product-graphic" src="../static/product-graphic2.svg" />
               </Grid>
             </Grid>
             <Grid container className="valueStatementSection" alignItems="center">
               <Grid item md={6} xs={12}>
-                <img src="../static/homepage-test-6.svg" />
+                <img src="../static/business-graphic2.svg" />
               </Grid>
               <Grid item md={6} xs={12}>
                 <h1>Experience that goes beyond product</h1>
@@ -55,7 +55,7 @@ export default ({ theme, route }) =>
                 <p>We have worked on many teams with nuanced processes fitting their strategy and market. We’ve done design sprints, agile product, lean, and all those great things. Our goal is to solve problems, and we implement the right tactic in the right place for your business. We’re tool agnostic. Love JIRA? Trello? Asana? Sounds great to us.</p>
               </Grid>
               <Grid item md={6} xs={12}>
-                <img className="process-graphic" src="../static/homepage-test-4.svg" />
+                <img className="process-graphic" src="../static/process-graphic.svg" />
               </Grid>
             </Grid>
           </Grid>
