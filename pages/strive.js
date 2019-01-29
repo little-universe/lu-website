@@ -106,6 +106,17 @@ export default () =>
       </div>
     </div>
 
+    <div className="projectCallout calloutTestimonial">
+      <div className="container">
+        <Grid container spacing={40} alignItems="center">
+          <Grid item xs={12} className="calloutItem">
+          <h2>"Little Universe was a game-changer for Strive Digital. As a young startup, we needed an agency that could step in and make an immediate impact. Perfectly balancing strategy with execution, they went far beyond our expectations by establishing a strategic foundation and product vision we're still benefitting from today."</h2>
+          <h4>Jedd Countey, Founder</h4>
+          </Grid>
+        </Grid>
+      </div>
+    </div>
+
     <div className="container">
       <Grid container className="nextProject" spacing={40} alignItems="center">
         <Grid item md={12} xs={12}>

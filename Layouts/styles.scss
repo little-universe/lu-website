@@ -668,6 +668,12 @@ hr {
         line-height: $lineHeight*1.5;
       }
     }
+    &.calloutTestimonial {
+      h2 {
+        font-family: $fontFamily;
+        padding-bottom: $buffer*2;
+      }
+    }
   }
   .projectFeatureImage {
     background: $bgColor;
