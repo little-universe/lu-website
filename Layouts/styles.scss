@@ -694,7 +694,6 @@ hr {
       // width: 100%;
       padding: $buffer*3;
       img {
-        @include shadow;
       }
     }
     .splitScreenLeft {
