@@ -83,8 +83,15 @@ p.copiedText {
 }
 
 .footer-links {
-  p {
+  a {
+    display: inline-block;
+    color: $fontColorLightened;
     cursor: pointer;
+    @include transition;
+    &:hover {
+      color: $fontColorLight;
+      @include transition;
+    }
   }
 }
 

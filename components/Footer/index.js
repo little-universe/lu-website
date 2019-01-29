@@ -33,15 +33,9 @@ class Footer extends React.Component {
               </Link>
             </Grid>
             <Grid item xs={12} md={4} className="footerItem footer-links">
-              <Link href="/about">
-                <p className="secondary">About Us</p>
-              </Link>
-              <Link href="/work">
-                <p className="secondary">Our Work</p>
-              </Link>
-              <Link href="/work-with-us">
-                <p className="secondary">Contact</p>
-              </Link>
+              <p className="secondary"><Link href="/about">About Us</Link></p>
+              <p className="secondary"><Link href="/work">Our Work</Link></p>
+              <p className="secondary"><Link href="/work-with-us">Contact</Link></p>
             </Grid>
             <Grid item xs={12} md={4} className="footerItem agencyInfo">
               <p className="secondary">260 Ainslie Street, 3rd Floor</p>
