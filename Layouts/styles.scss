@@ -773,8 +773,11 @@ hr {
       padding-bottom: 0;
       a {
         h2 {
+          @include transition;
           &:hover {
             cursor: pointer;
+            color: $fontColorLightened;
+            @include transition;
           }
         }
       }
