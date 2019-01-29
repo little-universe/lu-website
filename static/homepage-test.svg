@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="830px" height="750px" viewBox="0 0 830 750" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(3.000000, 8.000000)">
+            <path d="M278,679 C395.636652,679 471,583.636652 471,466 C471,348.363348 395.636652,253 278,253 C160.363348,253 65,348.363348 65,466 C65,583.636652 160.363348,679 278,679 Z" id="Oval" fill="#FFDD83"></path>
+            <path d="M551,381.390105 C668.636652,381.390105 764,286.026757 764,168.390105 C764,50.7534534 668.636652,132.890105 551,132.890105 C433.363348,132.890105 338,50.7534534 338,168.390105 C338,286.026757 433.363348,381.390105 551,381.390105 Z" id="Oval-Copy" fill="#FFDD83" transform="translate(551.000000, 243.195053) rotate(15.000000) translate(-551.000000, -243.195053) "></path>
+            <path d="" id="Path-2" stroke="#979797"></path>
+            <path d="M460.689671,590.840429 C521.189671,590.840429 487.689671,533.840429 559.689671,533.840429" id="Path-3" stroke="#ECECE6" stroke-width="25" stroke-linecap="round" transform="translate(510.189671, 562.340429) rotate(-15.000000) translate(-510.189671, -562.340429) "></path>
+            <circle id="Oval-2" stroke="#ECECE6" stroke-width="15" cx="806.5" cy="283.5" r="12.5"></circle>
+            <circle id="Oval-2-Copy" stroke="#ECECE6" stroke-width="15" cx="522.5" cy="323.5" r="12.5"></circle>
+            <circle id="Oval-2-Copy-2" stroke="#C7E05E" stroke-width="15" cx="467.5" cy="12.5" r="12.5"></circle>
+            <circle id="Oval-2-Copy-3" stroke="#C7E05E" stroke-width="15" cx="254.5" cy="585.5" r="12.5"></circle>
+            <circle id="Oval-2-Copy-4" stroke="#ECECE6" stroke-width="15" cx="297.5" cy="721.5" r="12.5"></circle>
+            <path d="M540.689671,159.840429 C601.189671,159.840429 567.689671,102.840429 639.689671,102.840429" id="Path-3-Copy-2" stroke="#C7E05E" stroke-width="25" stroke-linecap="round" transform="translate(590.189671, 131.340429) rotate(-5.000000) translate(-590.189671, -131.340429) "></path>
+            <path d="M321.689671,311.840429 C382.189671,311.840429 348.689671,254.840429 420.689671,254.840429" id="Path-3-Copy-3" stroke="#ECECE6" stroke-width="25" stroke-linecap="round" transform="translate(371.189671, 283.340429) rotate(-5.000000) translate(-371.189671, -283.340429) "></path>
+            <path d="M77.6896712,281.840429 C138.189671,281.840429 104.689671,224.840429 176.689671,224.840429" id="Path-3-Copy-4" stroke="#C7E05E" stroke-width="25" stroke-linecap="round" transform="translate(127.189671, 253.340429) rotate(-15.000000) translate(-127.189671, -253.340429) "></path>
+            <path d="M4.68967119,619.840429 C65.1896712,619.840429 31.6896712,562.840429 103.689671,562.840429" id="Path-3-Copy-5" stroke="#C7E05E" stroke-width="25" stroke-linecap="round" transform="translate(54.189671, 591.340429) rotate(-10.000000) translate(-54.189671, -591.340429) "></path>
+        </g>
+    </g>
+</svg>
