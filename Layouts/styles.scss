@@ -782,6 +782,18 @@ hr {
   }
 }
 
+.nextProject {
+  text-align: center;
+  padding: $buffer*3;
+  a {
+    @include transition;
+    &:hover {
+      cursor: pointer;
+      @include transition;
+    }
+  }
+}
+
 // KEYFRAMES
 
 @-webkit-keyframes fadeInUp {

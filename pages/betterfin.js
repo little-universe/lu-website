@@ -1,4 +1,5 @@
 import Layout from '../Layouts/layout'
+import Link from 'next/link'
 import Grid from '@material-ui/core/Grid'
 import Nav from '../components/Nav'
 import Hero from '../components/ui/Hero'
@@ -110,6 +111,15 @@ export default () =>
           </Grid>
         </Grid>
       </div>
+    </div>
+
+    <div className="container">
+      <Grid container className="nextProject" spacing={40} alignItems="center">
+        <Grid item md={12} xs={12}>
+          <p>Next Up</p>
+          <h2><Link href="/strive">Strive Digital</Link></h2>
+        </Grid>
+      </Grid>
     </div>
 
     <Footer />
