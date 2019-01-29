@@ -15,7 +15,7 @@ export default ({ theme, route }) =>
     <>
       <Hero
         className="hero-index"
-        headline={<>Every product is its own <br /><span className="emphasis">Little Universe</span>.</>}
+        headline={<>Every product is its own <span className="emphasis">Little Universe</span>.</>}
         subhead={["We’re Little Universe, a digital product agency based in Brooklyn, NY."]}
       />
       <div className="home-hero-bg">
@@ -64,9 +64,9 @@ export default ({ theme, route }) =>
               <h2>Learn more about us <ArrowSquiggly /><Icon size={42} icon={ic_keyboard_arrow_right} /></h2>
             <Grid container className="valueStatementSection" spacing={40} alignItems="center">
               <div className="section-bubbles">
-                <img className="smallYellowBubble bubble bubbleOne" src="../static/smallYellowBubble.svg" />
-                <img className="smallYellowBubble bubble bubbleTwo" src="../static/smallYellowBubble.svg" />
-                <img className="smallYellowBubble bubble bubbleFour" src="../static/smallYellowBubble.svg" />
+                <img className="smallBubble bubble bubbleOne" src="../static/smallBubble.svg" />
+                <img className="smallBubble bubble bubbleTwo" src="../static/smallBubble.svg" />
+                <img className="smallBubble bubble bubbleFour" src="../static/smallBubble.svg" />
               </div>
             </Grid>
           </Grid>

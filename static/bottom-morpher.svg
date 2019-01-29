@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="2107px" height="208px" viewBox="0 0 2107 208" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+<svg width="2107px" height="206px" viewBox="0 0 2107 206" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
     <title>bottom-morpher</title>
     <desc>Created with Sketch.</desc>
-    <g id="bottom-morpher" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M1152.69961,206 C1786.0761,206 2107,176.331295 2107,99.9932739 C2107,23.6552534 1706.93613,-2.84217094e-14 1073.55964,-2.84217094e-14 C780.127642,-2.84217094e-14 567.823221,2.12399252 365,23.9722309 C130.026864,49.2836771 0,59.0212928 0,99.9932739 C0,176.331295 519.323124,206 1152.69961,206 Z" id="Oval" fill="#FFDE7C"></path>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bottom-morpher" fill="#ECECE6" fill-rule="nonzero">
+            <path d="M1152.69961,206 C1786.0761,206 2107,176.331295 2107,99.9932739 C2107,23.6552534 1706.93613,-2.84217094e-14 1073.55964,-2.84217094e-14 C780.127642,-2.84217094e-14 567.823221,2.12399252 365,23.9722309 C130.026864,49.2836771 0,59.0212928 0,99.9932739 C0,176.331295 519.323124,206 1152.69961,206 Z" id="Oval"></path>
+        </g>
     </g>
 </svg>

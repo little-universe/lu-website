@@ -132,7 +132,7 @@ a {
 button {
   padding: $buffer;
   color: $fontColor;
-  background: $accentColorLight;
+  background: $accentColor;
   @include shadow;
   font-size: $fontSize;
   font-family: $fontFamily;
@@ -219,7 +219,7 @@ hr {
 }
 
 .index-page {
-  background: $accentColor;
+  background: $accentColorLight;
   position: relative;
   &:after {
     content: '';
@@ -228,7 +228,7 @@ hr {
     left: 0;
     right: 0;
     height: 209px;
-    background-image: url(https://s3.us-east-2.amazonaws.com/lu-assets/bottom-morpher.svg);
+    // background-image: url(https://s3.us-east-2.amazonaws.com/lu-assets/bottom-morpher.svg);
     background-position: center center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -238,7 +238,7 @@ hr {
 }
 
 .productProblem {
-  background: $accentColor;
+  background: $accentColorLight;
   padding-bottom: 0;
   padding-top: 0;
   .containerCard {
@@ -285,10 +285,10 @@ hr {
   padding: $buffer*2;
   display: flex;
   justify-content: center;
-  background: $accentColorLight;
+  background: $accentColor;
   @include transition;
   &:hover {
-    background: darken($accentColorLight, 3%);
+    background: darken($accentColor, 3%);
     cursor: pointer;
     @include transition;
     svg {
