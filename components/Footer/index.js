@@ -42,8 +42,8 @@ class Footer extends React.Component {
               <p className="secondary">Brooklyn, NY 11211</p>
               <br />
               <Grid container alignItems="center">
-                <p className="secondary">agency@littleuniverse.com</p>
-                <CopyToClipboard text="agency@littleuniverse.com"
+                <p className="secondary">adrian@littleuniverse.com</p>
+                <CopyToClipboard text="adrian@littleuniverse.com"
                   onCopy={this.setCopy}
                 >
                   <Icon className="copyIcon" size={18} icon={ic_content_copy} />

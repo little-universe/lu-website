@@ -24,7 +24,7 @@ export default () =>
             <Grid item md={6} xs={12}>
               <div className="visitItem visitUsContact">
                 <h3>Drop us a line.</h3>
-                <p>agency@littleuniverse.com</p>
+                <p>adrian@littleuniverse.com</p>
               </div>
               <div className="visitItem visitUsAddress">
                 <h3>Come Visit.</h3>
