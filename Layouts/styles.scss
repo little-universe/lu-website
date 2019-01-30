@@ -642,6 +642,9 @@ hr {
 .skills-container {
   background: $bgColorLightened;
   padding:$buffer*2;
+  @media only screen and (max-width: 640px) {
+    padding: 0;
+  }
 }
 .skill-description {
   min-height: 105px;
