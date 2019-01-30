@@ -254,7 +254,9 @@ hr {
     background: $bgColorLightened;
     .valueStatementSection {
       margin-bottom: $buffer*6;
-
+      @media only screen and (max-width: 640px) {
+        margin-bottom: $buffer*2;
+      }
       img {
         width: 70%;
         &.product-graphic, &.process-graphic {
@@ -296,6 +298,11 @@ hr {
   justify-content: center;
   background: $accentColor;
   @include transition;
+  @media only screen and (max-width: 640px) {
+    h2 {
+      text-align: center;
+    }
+  }
   &:hover {
     background: darken($accentColor, 3%);
     cursor: pointer;
