@@ -670,6 +670,11 @@ hr {
   .projectContext {
     background: $bgColorLightened;
     .contextItem {
+      @media only screen and (max-width: 640px) {
+        h2 {
+          margin-bottom:0;
+        }
+      }
       p {
         margin-bottom: 0;
       }
