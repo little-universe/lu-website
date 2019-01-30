@@ -84,6 +84,9 @@
   }
   &.hero-strive {
     background-color: #f0f2ff;
+    .hero-image {
+      max-width: 250px;
+    }
   }
   &.hero-dv01 {
     background-color: #fafafa;
