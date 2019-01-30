@@ -33,7 +33,7 @@ class Layout extends React.Component {
           <meta charSet='utf-8' />
           <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         </Head>
-        <div className={className}>
+        <div className={className} style={{ overflowX: "hidden"}}>
           {this.props.children}
         </div>
       </>

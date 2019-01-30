@@ -4,6 +4,10 @@
   padding: $buffer*2 $buffer*2 0 $buffer*2;
   color: $fontColorLightened;
   z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   @media only screen and (max-width: 640px) {
     padding: $buffer !important;
   }
