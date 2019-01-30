@@ -37,6 +37,7 @@
     .subhead {
       color: $fontColor;
       font-size: $fontSizeSubHeadline;
+      line-height: $fontSizeSubHeadline*2;
     }
   }
   &.hero-workWith {

@@ -13,7 +13,6 @@ import CLIENTS from '../utils/clients'
 
 export default ({ theme, route }) =>
     <Layout title='Little Universe - Agency' className="agency-page">
-
       <Hero
         className="hero-index"
         headline={<>Every product is its own <span className="emphasis">Little Universe</span>.</>}
@@ -96,6 +95,5 @@ export default ({ theme, route }) =>
         </Grid>
       </Grid>
     </Grid>
-
     <Footer />
-    </Layout>
+  </Layout>

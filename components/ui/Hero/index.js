@@ -13,7 +13,7 @@ export default ({ className, headline, subhead, bgImage }) =>
     { headline &&
       <div classname="container">
       <Grid className={`hero ${className}`} container alignItems="center">
-        <Grid item md={10} xs={12}>
+        <Grid item md={8} xs={12}>
           <div className="container">
             <h1 className="headline">{headline}</h1>
             <p className="subhead">{subhead}</p>
