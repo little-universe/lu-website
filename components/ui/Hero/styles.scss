@@ -15,9 +15,16 @@
     padding: $buffer;
     height: 60vh;
     min-height: 200px;
-    h1.headline, p.subhead{
-      font-size: 140% !important;
-      line-height: 180% !important;
+    .container {
+      padding: 0;
+    }
+    h1.headline {
+      font-size: 200% !important;
+      line-height: 160% !important;
+    }
+    p.subhead {
+      font-size: 120%;
+      line-height: 100%;
     }
   }
   &.hero-index {
