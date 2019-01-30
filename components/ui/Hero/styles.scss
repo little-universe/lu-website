@@ -72,6 +72,7 @@
 
   &.hero-betterfin {
     background-color: #DBE3E0;
+    align-items: center !important;
     .hero-image {
       max-width: 250px;
     }
@@ -84,6 +85,7 @@
   }
   &.hero-strive {
     background-color: #f0f2ff;
+    align-items: center !important;
     .hero-image {
       max-width: 250px;
     }
