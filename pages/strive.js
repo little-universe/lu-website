@@ -83,16 +83,18 @@ export default () =>
       </div>
     </div>
 
-    <div className="container">
-      <Grid container className="projectSplitScreen" spacing={40} alignItems="center">
-        <Grid item md={6} xs={12} className="splitScreenItem splitScreenLeft">
-          <h2>Multi Channel</h2>
-          <p> Strive allowed users to Design and develop custom messaging capabilities optimized for their needs, including powerful machine learning, platform extensions, and deep integrations with a CRM.</p>
+    <div clasname="projectSplitScreen">
+      <div className="container">
+        <Grid container spacing={40} alignItems="center">
+          <Grid item md={6} xs={12} className="splitScreenItem splitScreenLeft">
+            <h2>Multi Channel</h2>
+            <p> Strive allowed users to Design and develop custom messaging capabilities optimized for their needs, including powerful machine learning, platform extensions, and deep integrations with a CRM.</p>
+          </Grid>
+          <Grid item md={6} xs={12} className="splitScreenItem splitScreenRight">
+            <img className="splitScreenImg" src="../static/product-screenshots/strive/services-graphic.png" />
+          </Grid>
         </Grid>
-        <Grid item md={6} xs={12} className="splitScreenItem splitScreenRight">
-          <img className="splitScreenImg" src="../static/product-screenshots/strive/services-graphic.png" />
-        </Grid>
-      </Grid>
+      </div>
     </div>
 
     <div className="projectFeatureImage">

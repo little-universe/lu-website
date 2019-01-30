@@ -723,7 +723,7 @@ hr {
     }
   }
   .projectSplitScreen {
-    padding: 20px;
+    background: $bgColorLightened;
     @media only screen and (max-width: 640px) {
       padding: $buffer*2 $buffer;
     }

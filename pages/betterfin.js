@@ -91,15 +91,17 @@ export default () =>
       </div>
     </div>
 
-    <div className="container">
-      <Grid container className="projectSplitScreen" spacing={40} alignItems="center">
-        <Grid item md={6} xs={12} className="splitScreenItem splitScreenLeft">
-          <img className="product-screenshot" src="../static/product-screenshots/betterfin/betterfin-1-nobg.png" />
+    <div className="projectSplitScreen">
+      <div className="container">
+        <Grid container spacing={40} alignItems="center">
+          <Grid item md={6} xs={12} className="splitScreenItem splitScreenLeft">
+            <img className="product-screenshot" src="../static/product-screenshots/betterfin/betterfin-1-nobg.png" />
+          </Grid>
+          <Grid item md={6} xs={12} className="splitScreenItem splitScreenRight">
+            <img className="product-screenshot" src="../static/product-screenshots/betterfin/betterfin-3-nobg.png" />
+          </Grid>
         </Grid>
-        <Grid item md={6} xs={12} className="splitScreenItem splitScreenRight">
-          <img className="product-screenshot" src="../static/product-screenshots/betterfin/betterfin-3-nobg.png" />
-        </Grid>
-      </Grid>
+      </div>
     </div>
 
     <div className="projectFeatureImage">
