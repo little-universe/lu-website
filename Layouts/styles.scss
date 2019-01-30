@@ -208,6 +208,15 @@ hr {
   max-width: 1400px;
   margin: 0 auto;
   // margin-top: $buffer*2;
+  @media only screen and (max-width: 640px) {
+    .containerCard {
+      padding: $buffer;
+    }
+    h1, p, h2{
+      font-size: 140% !important;
+      line-height: 180% !important;
+    }
+  }
 }
 
 .containerCard {

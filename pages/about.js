@@ -23,7 +23,7 @@ class Agency extends React.Component {
           <img className="green-bubble bubble" src="https://s3.us-east-2.amazonaws.com/lu-assets/green.svg" />
           <Hero
             className="hero-agency"
-            headline={<>We're a pretty cool bunch of folks who <br/>absolutely <span className="emphasis">love product</span>.</>}
+            headline={<>We're a pretty cool bunch of folks who absolutely <span className="emphasis">love product</span>.</>}
           />
         </div>
 

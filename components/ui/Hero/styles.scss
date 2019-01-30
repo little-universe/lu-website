@@ -15,6 +15,10 @@
     padding: $buffer;
     height: 60vh;
     min-height: 200px;
+    h1.headline, p.subhead{
+      font-size: 140% !important;
+      line-height: 180% !important;
+    }
   }
   &.hero-index {
     height: 95vh;
@@ -85,8 +89,10 @@
     }
     @media only screen and (max-width: 640px) {
       h1.headline {
-        font-size: $fontSize !important;
-        line-height: $lineHeight !important;
+        // font-size: 140%;
+        // line-height: 180%;
+        // font-size: $fontSize !important;
+        // line-height: $lineHeight !important;
       }
     }
   &.hero-h1 {
