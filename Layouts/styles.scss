@@ -755,6 +755,10 @@ hr {
       padding: $buffer*2;
       max-height: 40vh;
       overflow: hidden;
+      @media only screen and (max-width: 640px) {
+        padding: $buffer;
+        max-height: 90vh;
+      }
       @include transition;
       p {
         padding-bottom: $buffer*2;
