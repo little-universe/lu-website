@@ -4,6 +4,10 @@
   // border-top: $border;
   background: $fontColor;
   padding: $buffer*3;
+  @media only screen and (max-width: 640px) {
+    padding: $buffer !important;
+    font-size: 80%;
+  }
   * {
     color: $fontColorLight;
   }
