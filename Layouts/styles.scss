@@ -685,6 +685,9 @@ hr {
     display: flex;
     justify-content: center;
     background: $bgColorMediumLight;
+    @media only screen and (max-width: 640px) {
+      padding: $buffer*4 $buffer;
+    }
     .calloutItem {
       text-align: center;
       h4 {
@@ -721,6 +724,9 @@ hr {
   }
   .projectSplitScreen {
     padding: 20px;
+    @media only screen and (max-width: 640px) {
+      padding: $buffer*2 $buffer;
+    }
     .splitScreenItem {
       // height: 40vh;
       // max-height: 50vh;
