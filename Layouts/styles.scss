@@ -302,6 +302,9 @@ hr {
     h2 {
       text-align: center;
     }
+    span {
+      display: none;
+    }
   }
   &:hover {
     background: darken($accentColor, 3%);
@@ -801,11 +804,17 @@ hr {
     .linksDescription {
       padding-top: $buffer*4;
       padding-bottom: 0;
+      @media only screen and (max-width: 640px) {
+        p{margin-bottom: 0;}
+      }
     }
     .workLink {
       padding-bottom: 0;
       a {
         h2 {
+          @media only screen and (max-width: 640px) {
+            margin-bottom: 0;
+          }
           @include transition;
           &:hover {
             cursor: pointer;
