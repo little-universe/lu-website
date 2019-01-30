@@ -560,14 +560,14 @@ hr {
   &.agency {
     .bubble {
       min-width: 20%;
-      width: $bubbleWidth;
+      width: $bubbleWidth*2;
     }
     .yellow-bubble {
-      top: -20%;
+      top: 5%;
       left: -10%;
     }
     .green-bubble {
-      top: 5%;
+      top: 35%;
       right: -15%;
       @include animation(bubblemotion2 20s infinite)
       animation-direction: reverse;
