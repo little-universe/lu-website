@@ -544,7 +544,7 @@ hr {
   }
 
   .bubble {
-    min-width: 300px;
+    max-width: 500px;
     width: $bubbleWidth;
     position: absolute;
     z-index: -100 !important;
