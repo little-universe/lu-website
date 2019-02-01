@@ -13,9 +13,55 @@ export default ({ theme, route }) =>
           <Logo />
         </Grid>
       </Link>
-
+      <MobileNav />
       <Grid item xs={10}>
-        <Grid container spacing={24} justify="flex-end" alignItems="flex-end">
+        <div className="desktopNav">
+          <Grid container spacing={24} justify="flex-end" alignItems="flex-end">
+            <Grid item md={2} xs={12}>
+              <Link href='/about'>
+                <Grid item className={ route === '/about' && 'disable' }>
+                  <NavLink linkTitle="About Us" />
+                </Grid>
+              </Link>
+            </Grid>
+            <Grid item md={2} xs={12}>
+              <Link href='/work'>
+                <Grid item className={ route === '/work' && 'disable' }>
+                  <NavLink linkTitle="Work"/>
+                </Grid>
+              </Link>
+            </Grid>
+            <Grid item md={2} xs={12}>
+              <Link href='/work-with-us'>
+                <Grid item className={ route === '/work-with-us' && 'disable' }>
+                  <NavLink linkTitle="Work With Us"/>
+                </Grid>
+              </Link>
+            </Grid>
+          </Grid>
+        </div>
+      </Grid>
+    </Grid>
+  </div>
+
+
+  class MobileNav extends React.Component {
+    state = {
+      mobileNavIsOpen: false
+    }
+    toggleMobileNav = () => {
+      this.setState({ mobileNavIsOpen: !this.state.mobileNavIsOpen })
+    }
+
+    render() {
+      let route = this.props;
+
+      return (
+        <>
+            <Grid item md={1} xs={6}>
+              <div onClick={this.toggleMobileNav} className="hamburger">Toggle</div>
+            </Grid>
+          <Grid container className={ this.state.mobileNavIsOpen ? "mobileNav" : "mobileNav hidden" } spacing={24} justify="flex-start" alignItems="center">
           <Grid item md={2} xs={12}>
             <Link href='/about'>
               <Grid item className={ route === '/about' && 'disable' }>
@@ -37,8 +83,8 @@ export default ({ theme, route }) =>
               </Grid>
             </Link>
           </Grid>
-
-        </Grid>
-      </Grid>
-    </Grid>
-  </div>
+          </Grid>
+        </>
+      )
+    }
+  }

@@ -11,6 +11,31 @@
   @media only screen and (max-width: 640px) {
     padding: $buffer !important;
   }
+  .desktopNav {
+    display: block;
+    @media only screen and (max-width: 640px) {
+      display: none;
+    }
+  }
+  .hamburger {
+    text-align: right;
+    position: relative;
+    z-index: 20;
+  }
+  .mobileNav {
+    display: none;
+    background-color: $bgColorLight;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    @media only screen and (max-width: 640px) {
+      display: block;
+      &.hidden {
+        display: none;
+      }
+    }
+  }
   .disable {
     .navLink {
       color: $fontColor !important;
