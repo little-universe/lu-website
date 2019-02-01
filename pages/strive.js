@@ -14,17 +14,20 @@ export default () =>
       className="hero-strive project-hero"
       bgImage="../static/bg-strive.png"
     />
-    <Fade bottom distance="20px" duration={700} cascade>
+
     <div className="container">
+    <Fade bottom distance="20px" duration={700} cascade>
       <Grid container className="projectAbout" spacing={40}>
         <Grid item md={8} xs={12} className="aboutItem">
           <h2>Strive Digital is multi-channel messaging platform used by nonprofits and campaigns across the country to recruit and activate their supporters.</h2>
         </Grid>
       </Grid>
+      </Fade>
     </div>
 
     <div className="projectContext">
       <div className="container">
+      <Fade bottom distance="20px" duration={700} cascade>
         <Grid container spacing={40} alignItems="flex-start">
           <Grid item md={4} xs={12} className="contextItem">
             <h2>Challenge</h2>
@@ -33,9 +36,11 @@ export default () =>
             <p>In the aftermath of the 2016 elections, advocacy organizations large and small across the country were seeking more effective tools to activate their membership. The founders of Strive Digital had built a network of activists ready for a new and affordable texting tool built specifically for advocacy. However, they didn’t have a product team or the budget to hire an entire team to begin building out the solution they had identified.</p>
           </Grid>
         </Grid>
+        </Fade>
       </div>
 
       <div className="container">
+      <Fade bottom distance="20px" duration={700} cascade>
         <Grid container spacing={40} alignItems="flex-start">
           <Grid item md={4} xs={12} className="contextItem">
             <h2>Approach</h2>
@@ -44,9 +49,11 @@ export default () =>
             <p>We stepped in with a product strategy that fit Strive Digital’s processes and budget. Starting with the development of an MVP, we created a product roadmap tied to growth milestones, so Strive could share the product vision with customers and invest in new features whenever they had the revenue to support the work.</p>
           </Grid>
         </Grid>
+        </Fade>
       </div>
 
       <div className="container">
+      <Fade bottom distance="20px" duration={700} cascade>
         <Grid container spacing={40} alignItems="flex-start">
           <Grid item md={4} xs={12} className="contextItem">
             <h2>Value</h2>
@@ -55,22 +62,26 @@ export default () =>
             <p>Strive Digital is used by hundreds of advocacy organizations and campaigns across the country. Just over a year after Little Universe built Strive’s MVP, the tool facilitates thousands of text messages to campaign supporters and hundreds of calls to legislators on a weekly basis.</p>
           </Grid>
         </Grid>
+        </Fade>
       </div>
     </div>
 
     <div className="projectCallout">
       <div className="container">
+      <Fade bottom distance="20px" duration={700} cascade>
         <Grid container spacing={40} alignItems="center">
           <Grid item xs={12} className="calloutItem">
             <h4>Partnership</h4>
             <h2>Our process with Strive fostered a deeper strategic partnership between our two teams, where growth and product enjoyed a shared interest in success and creative problem solving.</h2>
           </Grid>
         </Grid>
+        </Fade>
       </div>
     </div>
 
     <div className="projectFeatureImage">
       <div className="container">
+      <Fade bottom distance="20px" duration={700} cascade>
         <Grid container className="projectFeatureImageLeft" spacing={40} alignItems="center">
           <Grid item md={7} xs={12} className="featureImageAsset">
             <img className="product-screenshot" src="../static/product-screenshots/strive/strive-1.png" />
@@ -81,11 +92,13 @@ export default () =>
             <p>We built a call and text tool that was special as friggin anything and did the job it was supposed to it was great.</p>
           </Grid>
         </Grid>
+        </Fade>
       </div>
     </div>
 
     <div clasname="projectSplitScreen">
       <div className="container">
+      <Fade bottom distance="20px" duration={700} cascade>
         <Grid container spacing={40} alignItems="center">
           <Grid item md={6} xs={12} className="splitScreenItem splitScreenLeft">
             <h2>Multi Channel</h2>
@@ -95,40 +108,46 @@ export default () =>
             <img className="splitScreenImg" src="../static/product-screenshots/strive/services-graphic.png" />
           </Grid>
         </Grid>
+        </Fade>
       </div>
     </div>
 
     <div className="projectFeatureImage">
       <div className="container">
+      <Fade bottom distance="20px" duration={700} cascade>
         <Grid container  spacing={40} alignItems="center">
           <Grid item md={2} xs={12}/>
           <Grid item md={8} xs={12} className="featureImageAsset">
             <img className="product-screenshot" src="../static/product-screenshots/strive/strive-1.png" />
           </Grid>
         </Grid>
+        </Fade>
       </div>
     </div>
 
     <div className="projectCallout calloutTestimonial">
       <div className="container">
+      <Fade bottom distance="20px" duration={700} cascade>
         <Grid container spacing={40} alignItems="center">
           <Grid item xs={12} className="calloutItem">
           <h2>"Little Universe was a game-changer for Strive Digital. As a young startup, we needed an agency that could step in and make an immediate impact. Perfectly balancing strategy with execution, they went far beyond our expectations by establishing a strategic foundation and product vision we're still benefitting from today."</h2>
           <h4>Jedd Countey, Founder</h4>
           </Grid>
         </Grid>
+        </Fade>
       </div>
     </div>
 
     <div className="container">
+    <Fade bottom distance="20px" duration={700} cascade>
       <Grid container className="nextProject" spacing={40} alignItems="center">
         <Grid item md={12} xs={12}>
           <p>Next Up</p>
           <h2><Link href="/betterfin">Betterfin</Link></h2>
         </Grid>
       </Grid>
+      </Fade>
     </div>
-    </Fade>
 
     <Footer />
   </Layout>

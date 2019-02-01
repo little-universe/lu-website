@@ -22,17 +22,19 @@ export default () =>
       <img className="hero-screenshot" src="../static/product-screenshots/betterfin/betterfin-hero.png" />
     </Grid>
     */ }
-    <Fade bottom distance="20px" duration={700} cascade>
     <div className="container">
+    <Fade bottom distance="20px" duration={700} cascade>
       <Grid container className="projectAbout" spacing={40}>
         <Grid item md={8} xs={12} className="aboutItem">
           <h2>Betterfin is a service for business owners to get educated on small business lending and navigate commercial products with confidence. They provide transparency into lending through data analytics to help owners secure business financing they understand.</h2>
         </Grid>
       </Grid>
+      </Fade>
     </div>
 
     <div className="projectContext">
       <div className="container">
+      <Fade bottom distance="20px" duration={700} cascade>
         <Grid container spacing={40} alignItems="flex-start">
           <Grid item md={4} xs={12} className="contextItem">
             <h2>Challenge</h2>
@@ -41,9 +43,11 @@ export default () =>
             <p>Betterfin is tackling a massively complex tasks of offering businesses transparency in navigating financing options. We needed to distill it into a product users could understand and adopt.</p>
           </Grid>
         </Grid>
+        </Fade>
       </div>
 
       <div className="container">
+      <Fade bottom distance="20px" duration={700} cascade>
         <Grid container spacing={40} alignItems="flex-start">
           <Grid item md={4} xs={12} className="contextItem">
             <h2>Approach</h2>
@@ -52,9 +56,11 @@ export default () =>
             <p>We worked closely with the Betterfin team to synthesize their wisdom about the SMB lending industry and translate that into a valuable product for their customers.</p>
           </Grid>
         </Grid>
+        </Fade>
       </div>
 
       <div className="container">
+      <Fade bottom distance="20px" duration={700} cascade>
         <Grid container spacing={40} alignItems="flex-start">
           <Grid item md={4} xs={12} className="contextItem">
             <h2>Value</h2>
@@ -63,22 +69,26 @@ export default () =>
             <p>The product we shipped makes small business financing friendly, transparent and, most importantly, dead simple. Businesses can efficiently use this tool to see how lenders view them, and get offers from over 30 lenders in one portal.</p>
           </Grid>
         </Grid>
+        </Fade>
       </div>
     </div>
 
     <div className="projectCallout">
       <div className="container">
+      <Fade bottom distance="20px" duration={700} cascade>
         <Grid container spacing={40} alignItems="center">
           <Grid item xs={12} className="calloutItem">
           <h4>Building Trust</h4>
           <h2>Betterfin had built complex tech. They were frustrated that it was not packaged into a product that could build trust with their customers, satisfy their investors, and - of course - make their team proud. We worked closely with them to create a <span className="emphasis">powerful, clean and polished product</span>.</h2>
           </Grid>
         </Grid>
+        </Fade>
       </div>
     </div>
 
     <div className="projectFeatureImage">
       <div className="container">
+      <Fade bottom distance="20px" duration={700} cascade>
         <Grid container className="projectFeatureImageLeft" spacing={40} alignItems="center">
           <Grid item md={7} xs={12} className="featureImageAsset">
             <img className="product-screenshot" src="../static/product-screenshots/betterfin/betterfin-5-nobg.png" />
@@ -89,11 +99,13 @@ export default () =>
             <p>Betterfin exchanges data for value, and their onboarding flow captures that data in a clean and efficient manner.</p>
           </Grid>
         </Grid>
+        </Fade>
       </div>
     </div>
 
     <div className="projectSplitScreen">
       <div className="container">
+      <Fade bottom distance="20px" duration={700} cascade>
         <Grid container spacing={40} alignItems="center">
           <Grid item md={6} xs={12} className="splitScreenItem splitScreenLeft">
             <img className="product-screenshot" src="../static/product-screenshots/betterfin/betterfin-1-nobg.png" />
@@ -102,29 +114,33 @@ export default () =>
             <img className="product-screenshot" src="../static/product-screenshots/betterfin/betterfin-3-nobg.png" />
           </Grid>
         </Grid>
+        </Fade>
       </div>
     </div>
 
     <div className="projectFeatureImage">
       <div className="container">
+      <Fade bottom distance="20px" duration={700} cascade>
         <Grid container  spacing={40} alignItems="center">
           <Grid item md={2} xs={12}/>
           <Grid item md={8} xs={12} className="featureImageAsset">
             <img className="product-screenshot" src="../static/product-screenshots/betterfin/betterfin-4-nobg.png" />
           </Grid>
         </Grid>
+        </Fade>
       </div>
     </div>
 
     <div className="container">
+    <Fade bottom distance="20px" duration={700} cascade>
       <Grid container className="nextProject" spacing={40} alignItems="center">
         <Grid item md={12} xs={12}>
           <p>Next Up</p>
           <h2><Link href="/strive">Strive Digital</Link></h2>
         </Grid>
       </Grid>
+      </Fade>
     </div>
-    </Fade>
 
     <Footer />
   </ Layout>

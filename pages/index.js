@@ -28,7 +28,7 @@ export default ({ theme, route }) =>
       </div>
 
     <div className="index-page">
-      <Fade bottom distance="20px" duration={700}>
+    <Fade bottom distance="20px" duration={700} cascade>
       <div className="productProblem container">
         <Grid container spacing={40} alignItems="center">
           <Grid container className="containerCard" alignItems="center">
