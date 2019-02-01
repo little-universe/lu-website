@@ -41,7 +41,7 @@
       display: flex;
       .navLink {
         float: none;
-        padding: $buffer*3;
+        // padding: $buffer*3;
         font-size: 180%;
       }
       &.hidden {

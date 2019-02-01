@@ -61,26 +61,26 @@ export default ({ theme, route }) =>
             <Grid item md={1} xs={6}>
               <div onClick={this.toggleMobileNav} className="hamburger">Toggle</div>
             </Grid>
-          <Grid container className={ this.state.mobileNavIsOpen ? "mobileNav" : "mobileNav hidden" } spacing={24} justify="center" alignItems="justify">
+          <Grid container className={ this.state.mobileNavIsOpen ? "mobileNav" : "mobileNav hidden" } spacing={24} alignItems="justify">
             <Grid item md={2} xs={12}>
               <Link href='/about'>
-                <Grid item className={ route === '/about' && 'disable' }>
+                <span className={ route === '/about' && 'disable' }>
                   <NavLink linkTitle="About Us" />
-                </Grid>
+                </span>
               </Link>
             </Grid>
             <Grid item md={2} xs={12}>
               <Link href='/work'>
-                <Grid item className={ route === '/work' && 'disable' }>
+                <span className={ route === '/work' && 'disable' }>
                   <NavLink linkTitle="Work"/>
-                </Grid>
+                </span>
               </Link>
             </Grid>
             <Grid item md={2} xs={12}>
               <Link href='/work-with-us'>
-                <Grid item className={ route === '/work-with-us' && 'disable' }>
+                <span className={ route === '/work-with-us' && 'disable' }>
                   <NavLink linkTitle="Work With Us"/>
-                </Grid>
+                </span>
               </Link>
             </Grid>
           </Grid>
