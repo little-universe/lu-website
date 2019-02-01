@@ -6,6 +6,7 @@ import Hero from '../components/ui/Hero'
 import Project from '../components/Project'
 import Footer from '../components/Footer'
 import CLIENTS from '../utils/clients'
+import Fade from 'react-reveal/Fade';
 
 export default () =>
   <Layout title='Betterfin' className="betterfin-page projectPage">
@@ -21,7 +22,7 @@ export default () =>
       <img className="hero-screenshot" src="../static/product-screenshots/betterfin/betterfin-hero.png" />
     </Grid>
     */ }
-
+    <Fade bottom distance="20px" duration={700} cascade>
     <div className="container">
       <Grid container className="projectAbout" spacing={40}>
         <Grid item md={8} xs={12} className="aboutItem">
@@ -123,6 +124,7 @@ export default () =>
         </Grid>
       </Grid>
     </div>
+    </Fade>
 
     <Footer />
   </ Layout>
