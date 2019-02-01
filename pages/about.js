@@ -6,6 +6,7 @@ import Hero from '../components/ui/Hero'
 import Project from '../components/Project'
 import Footer from '../components/Footer'
 import LineDrawing from '../components/LineDrawing'
+import Fade from 'react-reveal/Fade';
 
 import CLIENTS from '../utils/clients'
 
@@ -39,7 +40,7 @@ class Agency extends React.Component {
             <img className="smallWhiteBubble bubble bubbleFour" src="../static/bubble-circle.svg" />
           </div>
       </div>*/}
-
+      <Fade bottom distance="20px" duration={700} cascade>
         <div className="container">
           <Grid container spacing={40} alignItems="center">
             <Grid item md={6} xs={12}>
@@ -122,6 +123,7 @@ class Agency extends React.Component {
             </Grid>
           </Grid>
         </div>
+        </Fade>
 
         <Footer />
       </Layout>

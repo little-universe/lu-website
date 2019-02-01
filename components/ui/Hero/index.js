@@ -1,5 +1,6 @@
 import "./styles.scss"
 import Grid from '@material-ui/core/Grid'
+import Fade from 'react-reveal/Fade';
 
 export default ({ className, headline, subhead, bgImage }) =>
   <>
@@ -15,8 +16,10 @@ export default ({ className, headline, subhead, bgImage }) =>
       <Grid className={`hero ${className}`} container alignItems="center">
         <Grid item md={8} xs={12}>
           <div className="container">
+            <Fade bottom distance="20px" duration={500}>
             <h1 className="headline">{headline}</h1>
             <p className="subhead">{subhead}</p>
+            </Fade>
           </div>
         </Grid>
       </Grid>

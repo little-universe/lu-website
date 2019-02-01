@@ -7,6 +7,7 @@ import Project from '../components/Project'
 import Research from '../components/Research'
 import Footer from '../components/Footer'
 import CLIENTS from '../utils/clients'
+import Fade from 'react-reveal/Fade';
 
 export default () =>
   <Layout title='Little Universe - Work' className="work-page">
@@ -19,6 +20,7 @@ export default () =>
       subhead="Here are a few projects we're proud of."
     />
   </div>
+  <Fade bottom distance="20px" duration={700}>
   <div className="container">
     <Grid container className="container workList" spacing={40} alignItems="center">
       <Grid container className="containerCard workContainer" spacing={40} alignItems="center">
@@ -48,6 +50,7 @@ export default () =>
       </Grid>
     </Grid>
   </div>
+  </Fade>
 
   <Footer />
 </ Layout>

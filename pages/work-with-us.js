@@ -5,6 +5,7 @@ import Hero from '../components/ui/Hero'
 import Footer from '../components/Footer'
 import LeadForm from '../components/LeadForm'
 import LuHqMap from '../components/LuHqMap'
+import Fade from 'react-reveal/Fade'
 
 export default () =>
   <>
@@ -18,6 +19,7 @@ export default () =>
         subhead="We're always interested in hearing great ideas that we can collaborate on."
       />
       </div>
+      <Fade bottom distance="20px" duration={700}>
       <div className="visitUs">
         <div className="container">
           <Grid container className=""  spacing={40} alignItems="center">
@@ -42,6 +44,7 @@ export default () =>
           </Grid>
         </div>
       </div>
+      </Fade>
 
       <Footer />
     </ Layout>

@@ -10,6 +10,7 @@ import ArrowSquiggly from '../components/ArrowSquiggly'
 import { Icon } from 'react-icons-kit'
 import {ic_keyboard_arrow_right} from 'react-icons-kit/md/ic_keyboard_arrow_right'
 import CLIENTS from '../utils/clients'
+import Fade from 'react-reveal/Fade';
 
 export default ({ theme, route }) =>
     <Layout title='Little Universe - Agency' className="agency-page">
@@ -27,6 +28,7 @@ export default ({ theme, route }) =>
       </div>
 
     <div className="index-page">
+      <Fade bottom distance="20px" duration={700}>
       <div className="productProblem container">
         <Grid container spacing={40} alignItems="center">
           <Grid container className="containerCard" alignItems="center">
@@ -73,7 +75,9 @@ export default ({ theme, route }) =>
           </Link>
         </Grid>
       </div>
+      </Fade>
     </div>
+
 
     {/*<div className="container">
       <Grid container className="valueStatementSection" spacing={40} alignItems="center">
