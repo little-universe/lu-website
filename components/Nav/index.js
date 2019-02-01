@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid'
 import Logo from '../ui/Logo'
 import React from 'react'
 import NavLink from '../ui/NavLink'
+import HamburgerMenu from 'react-hamburger-menu'
 
 export default ({ theme, route }) =>
   <div className={ theme === "light" ? "nav light" : "nav" }>
@@ -58,32 +59,46 @@ export default ({ theme, route }) =>
 
       return (
         <>
-            <Grid item md={1} xs={6}>
-              <div onClick={this.toggleMobileNav} className="hamburger">Toggle</div>
-            </Grid>
-          <Grid container className={ this.state.mobileNavIsOpen ? "mobileNav" : "mobileNav hidden" } spacing={24} alignItems="justify">
-            <Grid item md={2} xs={12}>
-              <Link href='/about'>
-                <span className={ route === '/about' && 'disable' }>
-                  <NavLink linkTitle="About Us" />
-                </span>
-              </Link>
-            </Grid>
-            <Grid item md={2} xs={12}>
-              <Link href='/work'>
-                <span className={ route === '/work' && 'disable' }>
-                  <NavLink linkTitle="Work"/>
-                </span>
-              </Link>
-            </Grid>
-            <Grid item md={2} xs={12}>
-              <Link href='/work-with-us'>
-                <span className={ route === '/work-with-us' && 'disable' }>
-                  <NavLink linkTitle="Work With Us"/>
-                </span>
-              </Link>
-            </Grid>
+          <Grid item md={1} xs={6}>
+            <div className="hamburger">
+              <HamburgerMenu
+              	isOpen={this.state.mobileNavIsOpen}
+              	menuClicked={this.toggleMobileNav}
+              	width={18}
+              	height={15}
+              	strokeWidth={1}
+              	rotate={0}
+              	color='#2e3648'
+              	borderRadius={0}
+              	animationDuration={0.5}
+              />
+            </div>
           </Grid>
+          <div className={ this.state.mobileNavIsOpen ? "mobileNav" : "mobileNav hidden" }>
+            <Grid container spacing={24}>
+              <Grid item md={2} xs={12}>
+                <Link href='/about'>
+                  <span className={ route === '/about' && 'disable' }>
+                    <NavLink linkTitle="About Us" />
+                  </span>
+                </Link>
+              </Grid>
+              <Grid item md={2} xs={12}>
+                <Link href='/work'>
+                  <span className={ route === '/work' && 'disable' }>
+                    <NavLink linkTitle="Work"/>
+                  </span>
+                </Link>
+              </Grid>
+              <Grid item md={2} xs={12}>
+                <Link href='/work-with-us'>
+                  <span className={ route === '/work-with-us' && 'disable' }>
+                    <NavLink linkTitle="Work With Us"/>
+                  </span>
+                </Link>
+              </Grid>
+            </Grid>
+          </div>
         </>
       )
     }
