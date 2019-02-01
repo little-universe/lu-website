@@ -11,6 +11,10 @@
   @media only screen and (max-width: 640px) {
     padding: $buffer !important;
   }
+  .logoWrapper {
+    z-index: 20;
+    position: relative;
+  }
   .desktopNav {
     display: block;
     @media only screen and (max-width: 640px) {
