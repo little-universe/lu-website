@@ -14,6 +14,8 @@
   .logoWrapper {
     z-index: 20;
     position: relative;
+    max-width: 150px;
+    display: inline-block;
   }
   .desktopNav {
     display: block;
@@ -23,8 +25,10 @@
   }
   .hamburger {
     text-align: right;
-    position: relative;
+    position: absolute;
     z-index: 20;
+    top: $buffer;
+    right: $buffer;
   }
   .mobileNav {
     display: none;
