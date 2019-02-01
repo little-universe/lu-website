@@ -74,31 +74,29 @@ export default ({ theme, route }) =>
               />
             </div>
           </Grid>
-          <div className={ this.state.mobileNavIsOpen ? "mobileNav" : "mobileNav hidden" }>
-            <Grid container spacing={24}>
-              <Grid item md={2} xs={12}>
-                <Link href='/about'>
-                  <span className={ route === '/about' && 'disable' }>
-                    <NavLink linkTitle="About Us" />
-                  </span>
-                </Link>
-              </Grid>
-              <Grid item md={2} xs={12}>
-                <Link href='/work'>
-                  <span className={ route === '/work' && 'disable' }>
-                    <NavLink linkTitle="Work"/>
-                  </span>
-                </Link>
-              </Grid>
-              <Grid item md={2} xs={12}>
-                <Link href='/work-with-us'>
-                  <span className={ route === '/work-with-us' && 'disable' }>
-                    <NavLink linkTitle="Work With Us"/>
-                  </span>
-                </Link>
-              </Grid>
+          <Grid className={ this.state.mobileNavIsOpen ? "mobileNav" : "mobileNav hidden" } container spacing={24} direction="column" alignItems="flex-start">
+            <Grid item className="mobileNavLinkContainer" xs={12}>
+              <Link href='/about'>
+                <span className={ route === '/about' && 'disable' }>
+                  <NavLink linkTitle="About Us" />
+                </span>
+              </Link>
             </Grid>
-          </div>
+            <Grid item className="mobileNavLinkContainer" xs={12}>
+              <Link href='/work'>
+                <span className={ route === '/work' && 'disable' }>
+                  <NavLink linkTitle="Work"/>
+                </span>
+              </Link>
+            </Grid>
+            <Grid item className="mobileNavLinkContainer" xs={12}>
+              <Link href='/work-with-us'>
+                <span className={ route === '/work-with-us' && 'disable' }>
+                  <NavLink linkTitle="Work With Us"/>
+                </span>
+              </Link>
+            </Grid>
+          </Grid>
         </>
       )
     }

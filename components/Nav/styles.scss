@@ -37,12 +37,12 @@
     height: 100vh;
     position:absolute;
     z-index: 10;
+    padding-top: $buffer*2;
     @media only screen and (max-width: 640px) {
       display: flex;
-      .navLink {
-        float: none;
-        // padding: $buffer*3;
-        font-size: 180%;
+      .mobileNavLinkContainer {
+        flex-basis: 0;
+        font-size: 32px;
       }
       &.hidden {
         display: none;
