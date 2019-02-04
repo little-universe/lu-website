@@ -59,6 +59,11 @@ export default ({ theme, route }) =>
 
       return (
         <>
+          <Link href="/">
+            <Grid item onClick={this.toggleMobileNav} xs={1} className="logoWrapper">
+              <Logo />
+            </Grid>
+          </Link>
           <Grid item md={1} xs={6}>
             <div className="hamburger">
               <HamburgerMenu
