@@ -6,7 +6,10 @@ import Loader from '../components/Loader'
 import "../static/empty.css"
 import ReactGA from 'react-ga'
 
-ReactGA.initialize('UA-133769605-1')
+function initializeReactGA() {
+    ReactGA.initialize('UA-133769605-1');
+    ReactGA.pageview('/homepage');
+}
 
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx, pathName }) {
