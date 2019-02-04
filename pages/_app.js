@@ -4,6 +4,7 @@ import { PageTransition } from 'next-page-transitions'
 import Nav from '../components/Nav'
 import Loader from '../components/Loader'
 import "../static/empty.css"
+import ReactGA from 'react-ga'
 
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx, pathName }) {
@@ -17,6 +18,10 @@ export default class MyApp extends App {
   }
 
   render() {
+    function initializeReactGA() {
+      ReactGA.initialize('UA-133769605-1');
+      ReactGA.pageview('/homepage');
+    }
     const { Component, pageProps, router } = this.props
     const { route } = router
     return (

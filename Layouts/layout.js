@@ -33,6 +33,7 @@ class Layout extends React.Component {
           <meta charSet='utf-8' />
           <meta name='viewport' content='initial-scale=1.0, width=device-width' />
           <link rel="shortcut icon" type="image/png" href="../static/lu-favicon.png"/>
+
         </Head>
         <div className={className} style={{ overflowX: "hidden"}}>
           {this.props.children}
