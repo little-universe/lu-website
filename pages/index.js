@@ -21,11 +21,9 @@ export default ({ theme, route }) =>
       />
       <div className="home-hero-bg">
         <div className="section-bubbles">
-        <Fade bottom distance="20px" duration={700} cascade>
           <img className="smallWhiteBubble bubble bubbleOne" src="../static/bubble-circle.svg" />
           <img className="smallWhiteBubble bubble bubbleThree" src="../static/bubble-circle.svg" />
           <img className="smallWhiteBubble bubble bubbleFour" src="../static/bubble-circle.svg" />
-          </Fade>
         </div>
       </div>
 
