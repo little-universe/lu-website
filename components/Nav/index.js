@@ -66,33 +66,33 @@ export default ({ theme, route }) =>
               	menuClicked={this.toggleMobileNav}
               	width={18}
               	height={15}
-              	strokeWidth={1}
+              	strokeWidth={2}
               	rotate={0}
               	color='#2e3648'
               	borderRadius={0}
-              	animationDuration={0.5}
+              	animationDuration={0.25}
               />
             </div>
           </Grid>
-          <Grid className={ this.state.mobileNavIsOpen ? "mobileNav" : "mobileNav hidden" } container spacing={24} direction="column" alignItems="flex-start">
+          <Grid className={ this.state.mobileNavIsOpen ? "mobileNav showNav" : "mobileNav hidden" } container spacing={24} direction="column" alignItems="flex-start">
             <Grid item className="mobileNavLinkContainer" xs={12}>
               <Link href='/about'>
                 <span className={ route === '/about' && 'disable' }>
-                  <NavLink linkTitle="About Us" />
+                  <NavLink onClick={this.setState.mobileNavIsOpen} linkTitle="About Us" />
                 </span>
               </Link>
             </Grid>
             <Grid item className="mobileNavLinkContainer" xs={12}>
               <Link href='/work'>
                 <span className={ route === '/work' && 'disable' }>
-                  <NavLink linkTitle="Work"/>
+                  <NavLink onClick={this.setState.mobileNavIsOpen} linkTitle="Work"/>
                 </span>
               </Link>
             </Grid>
             <Grid item className="mobileNavLinkContainer" xs={12}>
               <Link href='/work-with-us'>
                 <span className={ route === '/work-with-us' && 'disable' }>
-                  <NavLink linkTitle="Work With Us"/>
+                  <NavLink onClick={this.setState.mobileNavIsOpen} linkTitle="Work With Us"/>
                 </span>
               </Link>
             </Grid>

@@ -16,6 +16,9 @@
     position: relative;
     max-width: 150px;
     display: inline-block;
+    @media only screen and (max-width: 640px) {
+      position: fixed;
+    }
   }
   .desktopNav {
     display: block;
@@ -25,27 +28,39 @@
   }
   .hamburger {
     text-align: right;
-    position: absolute;
+    position: fixed;
     z-index: 20;
     top: $buffer;
     right: $buffer;
+    display: none;
+    @media only screen and (max-width: 640px) {
+      display: flex;
+    }
   }
   .mobileNav {
-    display: none;
     background-color: $bgColorLight;
     width: 100vw;
     height: 100vh;
-    position:absolute;
+    position:fixed;
     z-index: 10;
-    padding-top: $buffer*2;
+    padding: $buffer*2 ;
+    padding-top: $buffer*4;
+    display: none;
     @media only screen and (max-width: 640px) {
       display: flex;
       .mobileNavLinkContainer {
         flex-basis: 0;
         font-size: 32px;
       }
+      &.showNav {
+        visibility: visible;
+        opacity: 1;
+        @include transition;
+      }
       &.hidden {
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+        @include transition;
       }
     }
   }
