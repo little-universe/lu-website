@@ -60,7 +60,7 @@ export default ({ theme, route }) =>
       return (
         <>
           <Link href="/">
-            <Grid item onClick={this.toggleMobileNav} xs={1} className="logoWrapper mobileLogoWrapper">
+            <Grid item xs={1} onClick={this.toggleMobileNav} className={ this.state.mobileNavIsOpen ? "mobileLogoWrapper navOpenLogo" : "mobileLogoWrapper navClosedLogo" }>
               <Logo />
             </Grid>
           </Link>
