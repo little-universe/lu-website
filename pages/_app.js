@@ -11,6 +11,8 @@ ReactGA.pageview("/");
 ReactGA.pageview("/about");
 ReactGA.pageview("/work");
 ReactGA.pageview("/work-with-us");
+ReactGA.pageview("/strive");
+ReactGA.pageview("/betterfin");
 
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx, pathName }) {
