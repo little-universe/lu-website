@@ -7,6 +7,10 @@ import "../static/empty.css"
 import ReactGA from 'react-ga'
 
 ReactGA.initialize('UA-133769605-1');
+ReactGA.pageview("/");
+ReactGA.pageview("/about");
+ReactGA.pageview("/work");
+ReactGA.pageview("/work-with-us");
 
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx, pathName }) {
