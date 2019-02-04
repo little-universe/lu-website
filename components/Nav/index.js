@@ -75,24 +75,24 @@ export default ({ theme, route }) =>
             </div>
           </Grid>
           <Grid className={ this.state.mobileNavIsOpen ? "mobileNav showNav" : "mobileNav hidden" } container spacing={24} direction="column" alignItems="flex-start">
-            <Grid item className="mobileNavLinkContainer" xs={12}>
+            <Grid item onClick={this.toggleMobileNav} className="mobileNavLinkContainer" xs={12}>
               <Link href='/about'>
                 <span className={ route === '/about' && 'disable' }>
-                  <NavLink onClick={this.setState.mobileNavIsOpen} linkTitle="About Us" />
+                  <NavLink linkTitle="About Us" />
                 </span>
               </Link>
             </Grid>
-            <Grid item className="mobileNavLinkContainer" xs={12}>
+            <Grid item onClick={this.toggleMobileNav} className="mobileNavLinkContainer" xs={12}>
               <Link href='/work'>
                 <span className={ route === '/work' && 'disable' }>
-                  <NavLink onClick={this.setState.mobileNavIsOpen} linkTitle="Work"/>
+                  <NavLink linkTitle="Work"/>
                 </span>
               </Link>
             </Grid>
-            <Grid item className="mobileNavLinkContainer" xs={12}>
+            <Grid item onClick={this.toggleMobileNav} className="mobileNavLinkContainer" xs={12}>
               <Link href='/work-with-us'>
                 <span className={ route === '/work-with-us' && 'disable' }>
-                  <NavLink onClick={this.setState.mobileNavIsOpen} linkTitle="Work With Us"/>
+                  <NavLink linkTitle="Work With Us"/>
                 </span>
               </Link>
             </Grid>
