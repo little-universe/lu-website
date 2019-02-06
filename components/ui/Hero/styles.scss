@@ -135,4 +135,11 @@
     p.subhead {
       // color: $fontColorLightened;
     }
+    p.explaination {
+      color: $accentColor;
+      font-size: $fontSizeSmall;
+      position: absolute;
+      bottom: 0;
+      padding-bottom: $buffer;
+    }
 }

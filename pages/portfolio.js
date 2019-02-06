@@ -18,6 +18,7 @@ export default ({ theme, route }) =>
       className="hero-portfolio"
       headline={<>Welcome to our portfolio.</>}
       subhead={["This is some work our team has done together, and some work our team has done separately."]}
+      explaination={["Not for distribution. Confidential!"]}
     />
     <div className="portfolio-page-wrapper container">
       <div className="project-container farmigo">
@@ -84,7 +85,7 @@ export default ({ theme, route }) =>
             <h1>Vote Crew</h1>
           </Grid>
           <Grid item className="description" xs={12} md={6}>
-            <p>This was</p>
+            <p>An advocacy product that helps voters organize and hold each other accountable.</p>
           </Grid>
         </Grid>
         <Grid container className="projectItem projectImages" spacing={40} alignItems="flex-start">

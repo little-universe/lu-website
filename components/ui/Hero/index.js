@@ -2,7 +2,7 @@ import "./styles.scss"
 import Grid from '@material-ui/core/Grid'
 import Fade from 'react-reveal/Fade';
 
-export default ({ className, headline, subhead, bgImage }) =>
+export default ({ className, headline, subhead, explaination, bgImage }) =>
   <>
     { bgImage &&
       <Grid className={`hero ${className}`} container justify="center" alignItems="center">
@@ -19,6 +19,7 @@ export default ({ className, headline, subhead, bgImage }) =>
             <Fade bottom distance="20px" duration={500}>
             <h1 className="headline">{headline}</h1>
             <p className="subhead">{subhead}</p>
+            <p className="explaination">{explaination}</p>
             </Fade>
           </div>
         </Grid>
