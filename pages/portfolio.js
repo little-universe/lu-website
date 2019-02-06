@@ -18,7 +18,7 @@ export default ({ theme, route }) =>
       className="hero-portfolio"
       headline={<>Welcome to our portfolio.</>}
       subhead={["This is some work our team has done together, and some work our team has done separately."]}
-      explaination={["Not for distribution. Confidential!"]}
+      explaination={["Not for distribution. Confidential."]}
     />
     <div className="portfolio-page-wrapper container">
       <div className="project-container farmigo">
