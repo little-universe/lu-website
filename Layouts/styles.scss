@@ -26,6 +26,7 @@ $lineHeight: $fontSize*1.75;
 $lineHeightHeadline: $fontSizeHeadline*1.5;
 
 $bgColor: #2e3648;
+$bgColorDark: #292E34;
 $bgColorMedium: #F6F5F0;
 $bgColorLight: #fff;
 $bgColorLightened: #fafafa;
@@ -38,6 +39,9 @@ $buffer: 24px;
 $border: 1px solid $strokeColor;
 $timing: .15s;
 $easing: ease-in-out;
+
+$projectBgColorCool: #F1F1F9;
+$projectBgColorNeutral: #F5F5F5;
 
 // MIXINS
 
@@ -854,6 +858,48 @@ hr {
     }
   }
 }
+
+.portfolio-page-wrapper {
+  // margin: $buffer*3;
+  .project-container {
+    margin-top: $buffer*8;
+      .projectItem{
+      }
+      .projectHeader {
+        padding: $buffer*2;
+        // background-color: $bgColorLightened;
+      }
+      .projectImages {
+        padding: $buffer*2;
+      }
+      .projectItem {
+        // padding: $buffer*2;
+      }
+      &.farmigo {
+        .projectHeader{
+        }
+        .projectImages{
+          background-color: $projectBgColorCool;
+          .imageItem {
+            img {
+              @include shadow;
+            }
+          }
+        }
+      }
+      &.myxfitness {
+        .projectImages {
+          background-color: $projectBgColorCool;
+        }
+      }
+      &.instructrr {
+        .projectImages {
+          background-color: $projectBgColorNeutral;
+        }
+      }
+  }
+}
+
 
 // KEYFRAMES
 
