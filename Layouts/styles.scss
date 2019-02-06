@@ -862,7 +862,10 @@ hr {
 .portfolio-page-wrapper {
   // margin: $buffer*3;
   .project-container {
-      .projectItem{}
+      .projectItem{
+        margin-bottom: $buffer*10;
+        margin-top: $buffer*4;
+      }
       .projectHeader {
         padding: $buffer*2;
         // background-color: $bgColorLightened;

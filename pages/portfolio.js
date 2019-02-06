@@ -21,7 +21,7 @@ export default ({ theme, route }) =>
     />
     <div className="portfolio-page-wrapper container">
       <div className="project-container farmigo">
-        <Grid container className="projectItem projectHeader" spacing={40} alignItems="center">
+        <Grid container className="projectItem projectHeader" spacing={40} alignItems="flex-start">
           <Grid item className="title" xs={12} md={6}>
             <h1>Farmigo</h1>
           </Grid>
@@ -29,7 +29,7 @@ export default ({ theme, route }) =>
             <p>This was</p>
           </Grid>
         </Grid>
-        <Grid container className="projectItem projectImages" spacing={40} alignItems="center">
+        <Grid container className="projectItem projectImages" spacing={40} alignItems="flex-start">
           <Grid item className="imageItem" xs={12} md={12}>
             <img className="product-screenshot" src="../static/product-screenshots/farmigo/farmigo-1.png" />
           </Grid>
@@ -42,15 +42,16 @@ export default ({ theme, route }) =>
         </Grid>
       </div>{/*Close project-container*/}
       <div className="project-container myxfitness">
-        <Grid container className="projectItem projectHeader" spacing={40} alignItems="center">
+        <Grid container className="projectItem projectHeader" spacing={40} alignItems="flex-start">
           <Grid item className="title" xs={12} md={6}>
             <h1>Myx Fitness</h1>
           </Grid>
           <Grid item className="description" xs={12} md={6}>
-            <p>This was</p>
+            <p>This project for Myx Fitness involved the design of an entire consumer fitness application. Aimed at the quickly growing market of home fitness, this project involved extensive product design for a native android application mounted to a stand-alone bike.</p>
+            <p>The product encouraged users to schedule live workouts with live trainers and would guide them through the entire workout.</p>
           </Grid>
         </Grid>
-        <Grid container className="projectItem projectImages" spacing={40} alignItems="center">
+        <Grid container className="projectItem projectImages" spacing={40} alignItems="flex-start">
           <Grid item className="imageItem" xs={12} md={12}>
             <img className="product-screenshot" src="../static/product-screenshots/myxfitness/myxfitness-1.png" />
           </Grid>
@@ -60,7 +61,7 @@ export default ({ theme, route }) =>
         </Grid>
       </div>{/*Close project-container*/}
       <div className="project-container instructrr">
-        <Grid container className="projectItem projectHeader" spacing={40} alignItems="center">
+        <Grid container className="projectItem projectHeader" spacing={40} alignItems="flex-start">
           <Grid item className="title" xs={12} md={6}>
             <h1>Instructrr</h1>
           </Grid>
@@ -68,14 +69,14 @@ export default ({ theme, route }) =>
             <p>This was</p>
           </Grid>
         </Grid>
-        <Grid container className="projectItem projectImages" spacing={40} alignItems="center">
+        <Grid container className="projectItem projectImages" spacing={40} alignItems="flex-start">
           <Grid item className="imageItem" xs={12} md={12}>
             <img className="product-screenshot" src="../static/product-screenshots/instructrr/instructrr-1.png" />
           </Grid>
         </Grid>
       </div>{/*Close project-container*/}
       <div className="project-container votecrew">
-        <Grid container className="projectItem projectHeader" spacing={40} alignItems="center">
+        <Grid container className="projectItem projectHeader" spacing={40} alignItems="flex-start">
           <Grid item className="title" xs={12} md={6}>
             <h1>Vote Crew</h1>
           </Grid>
@@ -83,7 +84,7 @@ export default ({ theme, route }) =>
             <p>This was</p>
           </Grid>
         </Grid>
-        <Grid container className="projectItem projectImages" spacing={40} alignItems="center">
+        <Grid container className="projectItem projectImages" spacing={40} alignItems="flex-start">
           <Grid item className="imageItem" xs={12} md={12}>
             <img className="product-screenshot" src="../static/product-screenshots/votecrew/votecrew-1.png" />
           </Grid>
