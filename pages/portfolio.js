@@ -26,7 +26,7 @@ export default ({ theme, route }) =>
             <h1>Farmigo</h1>
           </Grid>
           <Grid item className="description" xs={12} md={6}>
-            <p>This was</p>
+            <p>Our mission was to create a food system that's better for everyone, from farmers to eaters. As a grocery service, the design team's challenge was to create a beautiful food experience that is enabled by the digital product.</p>
           </Grid>
         </Grid>
         <Grid container className="projectItem projectImages" spacing={40} alignItems="flex-start">
@@ -66,12 +66,15 @@ export default ({ theme, route }) =>
             <h1>Instructrr</h1>
           </Grid>
           <Grid item className="description" xs={12} md={6}>
-            <p>This was</p>
+            <p>We did visual design and user experience research for Instructrr, a company with a vision to be <em>the</em> tool for indoor cycling instructors to build and perform workouts.</p>
           </Grid>
         </Grid>
         <Grid container className="projectItem projectImages" spacing={40} alignItems="flex-start">
           <Grid item className="imageItem" xs={12} md={12}>
             <img className="product-screenshot" src="../static/product-screenshots/instructrr/instructrr-1.png" />
+          </Grid>
+          <Grid item className="imageItem" xs={12} md={12}>
+            <img className="product-screenshot" src="../static/product-screenshots/instructrr/instructrr-2.png" />
           </Grid>
         </Grid>
       </div>{/*Close project-container*/}
