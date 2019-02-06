@@ -74,6 +74,27 @@ export default ({ theme, route }) =>
           </Grid>
         </Grid>
       </div>{/*Close project-container*/}
+      <div className="project-container votecrew">
+        <Grid container className="projectItem projectHeader" spacing={40} alignItems="center">
+          <Grid item className="title" xs={12} md={6}>
+            <h1>Vote Crew</h1>
+          </Grid>
+          <Grid item className="description" xs={12} md={6}>
+            <p>This was</p>
+          </Grid>
+        </Grid>
+        <Grid container className="projectItem projectImages" spacing={40} alignItems="center">
+          <Grid item className="imageItem" xs={12} md={12}>
+            <img className="product-screenshot" src="../static/product-screenshots/votecrew/votecrew-1.png" />
+          </Grid>
+          <Grid item className="imageItem" xs={12} md={12}>
+            <img className="product-screenshot" src="../static/product-screenshots/votecrew/votecrew-2.png" />
+          </Grid>
+          <Grid item className="imageItem" xs={12} md={12}>
+            <img className="product-screenshot" src="../static/product-screenshots/votecrew/votecrew-3.png" />
+          </Grid>
+        </Grid>
+      </div>{/*Close project-container*/}
     </div>
     <Footer />
   </Layout>

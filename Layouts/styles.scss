@@ -862,9 +862,7 @@ hr {
 .portfolio-page-wrapper {
   // margin: $buffer*3;
   .project-container {
-    margin-top: $buffer*8;
-      .projectItem{
-      }
+      .projectItem{}
       .projectHeader {
         padding: $buffer*2;
         // background-color: $bgColorLightened;
@@ -895,6 +893,11 @@ hr {
       &.instructrr {
         .projectImages {
           background-color: $projectBgColorNeutral;
+        }
+      }
+      &.votecrew {
+        .projectImages {
+          background-color: $projectBgColorCool;
         }
       }
   }
