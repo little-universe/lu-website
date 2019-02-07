@@ -85,7 +85,7 @@ export default ({ theme, route }) =>
             <h1>Vote Crew</h1>
           </Grid>
           <Grid item className="description" xs={12} md={6}>
-            <p>An advocacy product that helps voters organize and hold each other accountable.</p>
+            <p>An advocacy product that helps voters organize and hold each other accountable. We advised on core product decision making that resulted in tactical production of a dashboard UI and sign up flow. We did visual design and UX for this project.</p>
           </Grid>
         </Grid>
         <Grid container className="projectItem projectImages" spacing={40} alignItems="flex-start">
