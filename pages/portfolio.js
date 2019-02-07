@@ -31,14 +31,20 @@ export default ({ theme, route }) =>
           </Grid>
         </Grid>
         <Grid container className="projectItem projectImages" spacing={40} alignItems="flex-start">
-          <Grid item className="imageItem" xs={12} md={12}>
+          <Grid item className="imageItem" xs={12} md={10}>
             <img className="product-screenshot" src="../static/product-screenshots/farmigo/farmigo-1.png" />
           </Grid>
-          <Grid item className="imageItem" xs={12} md={12}>
+          <Grid item className="imageItem" xs={12} md={10}>
             <img className="product-screenshot" src="../static/product-screenshots/farmigo/farmigo-2.png" />
           </Grid>
-          <Grid item className="imageItem" xs={12} md={12}>
+          <Grid item className="imageItem" xs={12} md={10}>
             <img className="product-screenshot" src="../static/product-screenshots/farmigo/farmigo-3.png" />
+          </Grid>
+          <Grid item className="imageItem" xs={12} md={10}>
+            <img className="product-screenshot" src="../static/product-screenshots/farmigo/farmigo-4.png" />
+          </Grid>
+          <Grid item className="imageItem imageMobile" xs={12} md={12}>
+            <img className="product-screenshot" src="../static/product-screenshots/farmigo/farmigo-5.png" />
           </Grid>
         </Grid>
       </div>{/*Close project-container*/}
@@ -53,10 +59,10 @@ export default ({ theme, route }) =>
           </Grid>
         </Grid>
         <Grid container className="projectItem projectImages" spacing={40} alignItems="flex-start">
-          <Grid item className="imageItem" xs={12} md={12}>
+          <Grid item className="imageItem" xs={12} md={10}>
             <img className="product-screenshot" src="../static/product-screenshots/myxfitness/myxfitness-1.png" />
           </Grid>
-          <Grid item className="imageItem" xs={12} md={12}>
+          <Grid item className="imageItem" xs={12} md={10}>
             <img className="product-screenshot" src="../static/product-screenshots/myxfitness/myxfitness-2.png" />
           </Grid>
         </Grid>
@@ -71,10 +77,10 @@ export default ({ theme, route }) =>
           </Grid>
         </Grid>
         <Grid container className="projectItem projectImages" spacing={40} alignItems="flex-start">
-          <Grid item className="imageItem" xs={12} md={12}>
+          <Grid item className="imageItem imageMobile" xs={12} md={10}>
             <img className="product-screenshot" src="../static/product-screenshots/instructrr/instructrr-1.png" />
           </Grid>
-          <Grid item className="imageItem" xs={12} md={12}>
+          <Grid item className="imageItem imageMobile" xs={12} md={10}>
             <img className="product-screenshot" src="../static/product-screenshots/instructrr/instructrr-2.png" />
           </Grid>
         </Grid>
@@ -89,14 +95,35 @@ export default ({ theme, route }) =>
           </Grid>
         </Grid>
         <Grid container className="projectItem projectImages" spacing={40} alignItems="flex-start">
-          <Grid item className="imageItem" xs={12} md={12}>
+          <Grid item className="imageItem" xs={12} md={10}>
             <img className="product-screenshot" src="../static/product-screenshots/votecrew/votecrew-1.png" />
           </Grid>
-          <Grid item className="imageItem" xs={12} md={12}>
+          <Grid item className="imageItem" xs={12} md={10}>
             <img className="product-screenshot" src="../static/product-screenshots/votecrew/votecrew-2.png" />
           </Grid>
-          <Grid item className="imageItem" xs={12} md={12}>
+          <Grid item className="imageItem" xs={12} md={10}>
             <img className="product-screenshot" src="../static/product-screenshots/votecrew/votecrew-3.png" />
+          </Grid>
+        </Grid>
+      </div>{/*Close project-container*/}
+      <div className="project-container foodworks">
+        <Grid container className="projectItem projectHeader" spacing={40} alignItems="flex-start">
+          <Grid item className="title" xs={12} md={6}>
+            <h1>Foodworks</h1>
+          </Grid>
+          <Grid item className="description" xs={12} md={6}>
+            <p>Foodworks is aiming to change the landscape of food from the ground up. The mission is to empower a community of food entrepreneurs to start and grow quality brands.</p>
+          </Grid>
+        </Grid>
+        <Grid container className="projectItem projectImages" spacing={40} alignItems="flex-start">
+          <Grid item className="imageItem" xs={12} md={10}>
+            <img className="product-screenshot" src="../static/product-screenshots/foodworks/foodworks-1.png" />
+          </Grid>
+          <Grid item className="imageItem" xs={12} md={10}>
+            <img className="product-screenshot" src="../static/product-screenshots/foodworks/foodworks-2.png" />
+          </Grid>
+          <Grid item className="imageItem" xs={12} md={10}>
+            <img className="product-screenshot" src="../static/product-screenshots/foodworks/foodworks-3.png" />
           </Grid>
         </Grid>
       </div>{/*Close project-container*/}

@@ -865,6 +865,17 @@ hr {
       .projectItem{
         margin-bottom: $buffer*10;
         margin-top: $buffer*4;
+        .imageItem {
+          margin-bottom: $buffer*2;
+          img {
+            @include shadow;
+          }
+        }
+        .imageMobile {
+          img {
+            box-shadow: none !important;
+          }
+        }
       }
       .projectHeader {
         padding: $buffer*2;
@@ -875,17 +886,14 @@ hr {
       }
       .projectItem {
         // padding: $buffer*2;
+        display: flex;
+        justify-content: center;
       }
       &.farmigo {
         .projectHeader{
         }
         .projectImages{
           background-color: $projectBgColorCool;
-          .imageItem {
-            img {
-              @include shadow;
-            }
-          }
         }
       }
       &.myxfitness {
@@ -901,6 +909,11 @@ hr {
       &.votecrew {
         .projectImages {
           background-color: $projectBgColorCool;
+        }
+      }
+      &.foodworks {
+        .projectImages {
+          background-color: $projectBgColorNeutral;
         }
       }
   }
