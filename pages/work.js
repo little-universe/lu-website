@@ -43,10 +43,10 @@ export default () =>
         <Grid item md={6} xs={12} className="linksDescription">
           <p>We've worked with some pretty amazing companies whose businesses are always growing and changing. We've helped in one capacity or another with the growth of these companies over the years.</p>
         </Grid>
-        <Grid item md={12} xs={12} className="workLink"><a target="_blank" href="https://www.myxfitness.com/"><h2>Myx Fitness</h2></a></Grid>
         <Grid item md={12} xs={12} className="workLink"><a target="_blank" href="https://dv01.co//"><h2>Dv01</h2></a></Grid>
         <Grid item md={12} xs={12} className="workLink"><a target="_blank" href="https://h1insights.com/"><h2>H1 Insights</h2></a></Grid>
         <Grid item md={12} xs={12} className="workLink"><a target="_blank" href="https://votecrew.org/"><h2>Vote Crew</h2></a></Grid>
+        <Grid item md={12} xs={12} className="workLink"><a target="_blank" href="https://www.myxfitness.com/"><h2>Myx Fitness</h2></a></Grid>
       </Grid>
     </Grid>
   </div>
