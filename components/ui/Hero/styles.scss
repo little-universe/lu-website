@@ -136,10 +136,14 @@
       // color: $fontColorLightened;
     }
     p.explaination {
-      color: $accentColor;
+      color: $fontColor;
+      font-weight: $fontWeightHeavy;
+      background: $accentColor;
       font-size: $fontSizeSmall;
+      padding: $buffer*.75;
+      margin-bottom: $buffer*2;
       position: absolute;
       bottom: 0;
-      padding-bottom: $buffer;
+      border-radius: 3px;
     }
 }
