@@ -865,6 +865,9 @@ hr {
       .projectItem{
         margin-bottom: $buffer*10;
         margin-top: $buffer*4;
+        @media only screen and (max-width: 640px) {
+          margin-bottom: 0 !important;
+        }
         .imageItem {
           margin-bottom: $buffer*2;
           img {
@@ -879,10 +882,16 @@ hr {
       }
       .projectHeader {
         padding: $buffer*2;
+        @media only screen and (max-width: 640px) {
+          padding: 0;
+        }
         // background-color: $bgColorLightened;
       }
       .projectImages {
         padding: $buffer*2;
+        @media only screen and (max-width: 640px) {
+          padding: 0;
+        }
       }
       .projectItem {
         // padding: $buffer*2;
