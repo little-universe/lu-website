@@ -30,6 +30,9 @@ class Layout extends React.Component {
       <>
         <Head>
           <title>{ title }</title>
+          <meta property="og:title" content="Little Universe"/>
+          <meta property="og:description" content="We're a digital product agency based in Brooklyn. Every product is its own Little Universe."/>
+          <meta property="og:image" content="../static/little-universe-meta.png"/>
           <meta charSet='utf-8' />
           <meta name='viewport' content='initial-scale=1.0, width=device-width' />
           <link rel="shortcut icon" type="image/png" href="../static/lu-favicon.png"/>
