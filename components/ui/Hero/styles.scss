@@ -23,15 +23,18 @@
     h1.headline {
       font-size: 200% !important;
       line-height: 160% !important;
+      z-index: 100;
     }
     p.subhead {
       font-size: 120%;
       line-height: 100%;
       margin-bottom: 0;
+      z-index: 100;
     }
   }
   &.hero-index {
     background-color: $accentColorLight;
+    z-index: 10 !important;
     // background-color: linear-gradient($accentColor, #FEC62E);
     // background: linear-gradient(#FFD667  10%, 50%,$accentColor 80%);
     .headline {
