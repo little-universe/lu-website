@@ -105,6 +105,12 @@ p.copiedText {
   }
 }
 
+.copyright {
+  font-size: $fontSizeSmall;
+  color: $fontColorLightened;
+  padding-top: $buffer*1;
+}
+
 @keyframes fadeInLeft {
   0% {
     opacity: 0;

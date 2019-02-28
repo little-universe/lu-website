@@ -49,6 +49,7 @@ class Footer extends React.Component {
                   <Icon className="copyIcon" size={18} icon={ic_content_copy} />
                 </CopyToClipboard>
                 <p className={ this.state.copiedText ? "copiedText" : "copiedText fadeOut"}>Copied</p>
+                <p className="copyright">&copy; Little Universe LLC 2019</p>
               </Grid>
             </Grid>
           </Grid>
