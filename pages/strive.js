@@ -88,8 +88,8 @@ export default () =>
           </Grid>
           <Grid item md={1} xs={0}/>
           <Grid item md={4} xs={12} className="featureImageDescription">
-            <h2>Texts for days.</h2>
-            <p>We built a call and text tool that was special as friggin anything and did the job it was supposed to it was great.</p>
+            <h2>Powerful Messaging Tools</h2>
+            <p>We built a call and text tool which enabled organizers to send messages to huge audiences, getting their outreach done on a channel with increasing engagement potential.</p>
           </Grid>
         </Grid>
         </Fade>
@@ -118,7 +118,7 @@ export default () =>
         <Grid container  spacing={40} alignItems="center">
           <Grid item md={2} xs={12}/>
           <Grid item md={8} xs={12} className="featureImageAsset">
-            <img className="product-screenshot" src="../static/product-screenshots/strive/strive-1.png" />
+            <img className="product-screenshot" src="../static/product-screenshots/strive/strive-2.png" />
           </Grid>
         </Grid>
         </Fade>
