@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^3.6.2",
     "@zeit/next-sass": "^1.0.1",
+    "classnames": "^2.2.6",
     "lodash": "^4.17.11",
     "next": "^8.0.0-canary.11",
     "node-sass": "^4.11.0",
